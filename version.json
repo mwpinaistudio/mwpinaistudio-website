@@ -2,19 +2,17 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.0.3",
-  "versionCode": 4,
+  "version": "1.0.4",
+  "versionCode": 5,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 6802677,
-  "sha256": "C4EFD526798B7F427C5211ED79688267DBBE576B56AE1827D3E07E86CBBD9EA1",
+  "sizeBytes": 6804333,
+  "sha256": "35EC9B18DD87BD2F40394C5704C4BF00CF07043CC0756A134D974D1782018060",
   "minAndroid": "7.0",
   "releasedAt": "2026-09-17",
   "notes": [
-    "Added in-app update check with release notes and download button",
-    "Official signed release build",
-    "New Android app icon and improved mobile layout",
-    "Product library width and long-title display fixes",
-    "Complete product sharing as a single HTML file with text, images, and video",
-    "Backup restore improvements and clearer manage-mode delete action"
+    "Added About & Help page with manual update check",
+    "Official website, privacy policy, terms, and support links",
+    "Improved in-app automatic update notice",
+    "Official signed release build with the existing release key"
   ]
 }
