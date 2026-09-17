@@ -2,18 +2,19 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.0.1",
-  "versionCode": 2,
+  "version": "1.0.2",
+  "versionCode": 3,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 8470891,
-  "sha256": "3B1CDB1EF46E971446055DB9149AB350C1E51C269777BF61473C63ACCC88EC07",
+  "sizeBytes": 6801259,
+  "sha256": "5A9692018CB196FC893C81D80AEBE9E222396E4CCD08CE325212072FF31CCF62",
   "minAndroid": "7.0",
-  "releasedAt": "2026-09-16",
+  "releasedAt": "2026-09-17",
   "notes": [
-    "新增拍品通应用图标",
-    "优化手机端页面布局和标题自适应",
-    "完善产品完整信息分享文件",
-    "修复产品库管理模式下删除入口",
-    "优化备份恢复和标题输入框显示"
+    "Official signed release build",
+    "New Android app icon and improved mobile layout",
+    "Product library width and long-title display fixes",
+    "Complete product sharing as a single HTML file with text, images, and video",
+    "Backup restore improvements and clearer manage-mode delete action",
+    "Responsive title fields and specification fields for English content"
   ]
 }
