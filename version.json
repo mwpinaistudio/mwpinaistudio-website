@@ -2,18 +2,18 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.0.7",
-  "versionCode": 8,
+  "version": "1.0.9",
+  "versionCode": 10,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 6805633,
-  "sha256": "556F46E02A1BB468ED4C394FB82E3D832219209802AD7BB2DFECE8010B76F455",
+  "sizeBytes": 6806281,
+  "sha256": "8D9F371E5D23BA73A2AE2E9405A3F354493B0A1D654D6EAAAF0A94B359124655",
   "minAndroid": "7.0",
   "releasedAt": "2026-09-17",
   "notes": [
-    "Cloud photos and video now restore automatically on a new device",
-    "Product pages show a cloud restore status while media downloads",
-    "Backup now downloads missing cloud media before creating the backup file",
-    "Product, bulk, image, and video deletion clean up cloud media safely",
-    "Update checking and About & Help improvements remain included"
+    "Video upload now shows progress, success, and failure status",
+    "Selecting a video uploads it to cloud storage immediately",
+    "Editing a product replaces the video only after the new upload succeeds",
+    "Cloud media deletion and cross-device restore remain included",
+    "About & Help and update checking remain included"
   ]
 }
