@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Version & Updates | PaiPinTong</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="manifest" href="site.webmanifest" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="wrap">
+    <nav class="nav">
+      <div class="brand">MW <span>PinAI</span> Studio</div>
+      <div class="nav-links"><a href="index.html">Home</a><a href="paipintong.html">Download</a><a href="version.html" class="active">Version</a><a href="support.html">Support</a></div>
+    </nav>
+    <main class="legal">
+      <div class="eyebrow">Release information</div>
+      <h1>PaiPinTong version</h1>
+      <p>This page reads the official <a href="version.json">version.json</a> metadata used by the app update process.</p>
+      <div class="panel" id="version-card"><p>Loading version information…</p></div>
+      <div class="panel">
+        <h2>Update policy</h2>
+        <p>For direct APK distribution, users should download the latest version from the official download page and install it over the previous version. Account data stored in the cloud is not removed by an app update.</p>
+        <p><a class="button" href="paipintong.html">Open download page</a></p>
+      </div>
+    </main>
+    <footer class="footer"><span>© <span id="year"></span> MW PinAI Studio.</span><span><a href="support.html">Support</a> · <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a></span></footer>
+  </div>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear()
+    const card = document.getElementById('version-card')
+    function row(label, value) {
+      const p = document.createElement('p')
+      const strong = document.createElement('strong')
+      strong.textContent = label + ': '
+      p.appendChild(strong)
+      p.appendChild(document.createTextNode(value))
+      return p
+    }
+    fetch('version.json', { cache: 'no-store' })
+      .then((response) => { if (!response.ok) throw new Error('Version file not found'); return response.json() })
+      .then((data) => {
+        card.textContent = ''
+        const title = document.createElement('h2')
+        title.textContent = data.nameZh + ' / ' + data.app
+        card.appendChild(title)
+        card.appendChild(row('Version', data.version))
+        card.appendChild(row('Version code', data.versionCode))
+        card.appendChild(row('Minimum Android', data.minAndroid))
+        card.appendChild(row('File size', Math.round(data.sizeBytes / 1024 / 1024 * 10) / 10 + ' MB'))
+        card.appendChild(row('Released', data.releasedAt))
+        const notes = document.createElement('ul')
+        notes.className = 'release-list'
+        ;(data.notes || []).forEach((note) => { const li = document.createElement('li'); li.textContent = note; notes.appendChild(li) })
+        card.appendChild(notes)
+        const link = document.createElement('a')
+        link.className = 'button'
+        link.href = data.apk
+        link.setAttribute('download', '')
+        link.textContent = 'Download version ' + data.version
+        card.appendChild(link)
+      })
+      .catch((error) => {
+        card.textContent = ''
+        const h = document.createElement('h2')
+        h.textContent = 'Version information unavailable'
+        const p = document.createElement('p')
+        p.textContent = error.message
+        card.appendChild(h); card.appendChild(p)
+      })
+  </script>
+</body>
+</html>
