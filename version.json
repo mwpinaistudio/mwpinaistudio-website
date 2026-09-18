@@ -2,16 +2,16 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.0.13",
-  "versionCode": 14,
+  "version": "1.0.14",
+  "versionCode": 15,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 6809725,
-  "sha256": "93E2C457B4CF7E4EF6BB55487692BFDF031ABDFBE1891886CA47E7BCFC4DE631",
+  "sizeBytes": 6810093,
+  "sha256": "AA7AE8D8D5A02F98B634C9E5783AA9D0E146A63D7BA57C40E47F87EDB8B95EE4",
   "minAndroid": "7.0",
   "releasedAt": "2026-09-18",
   "notes": [
+    "Admin panel now lists every signed-in account with search and pagination",
     "Added account switching and sign-out to About & Help",
-    "AI quotas, budget circuit breaker, and admin controls remain included",
-    "Video AI and staged progress improvements remain included"
+    "AI quotas, budget circuit breaker, video AI, and progress improvements remain included"
   ]
 }
