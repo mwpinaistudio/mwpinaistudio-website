@@ -2,17 +2,17 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.0.28",
-  "versionCode": 29,
+  "version": "1.0.29",
+  "versionCode": 30,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 6824243,
-  "sha256": "0512023BA441D4372BEF9BA02D3BBBD03E682798F38D8DF239311B9B9B48329A",
+  "sizeBytes": 6824767,
+  "sha256": "0D99C0D7E37ED3E5014295389F028F14281C39A0E1312909CC11FF4680063B1D",
   "minAndroid": "7.0",
   "releasedAt": "2026-09-18",
   "notes": [
-    "GCash payment can now show only the QR code",
-    "Full GCash account numbers can be hidden from customers",
-    "Payment settings support Alipay and all previous external methods",
-    "VIP plans, order confirmation, and activation-code delivery remain included"
+    "Redesigned payment and order management into a compact layout",
+    "Payment methods and membership plans now edit one item at a time",
+    "Order filters for pending, fulfilled, and all orders",
+    "QR-only GCash privacy and Alipay support remain included"
   ]
 }
