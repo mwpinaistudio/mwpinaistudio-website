@@ -17,11 +17,11 @@
     <main class="legal">
       <div class="eyebrow">Release information</div>
       <h1>PaiPinTong version</h1>
-      <p>This page reads the official <a href="version.json">version.json</a> metadata used by the app update process.</p>
+      <p>View the latest official PaiPinTong release information and download the newest version.</p>
       <div class="panel" id="version-card"><p>Loading version information…</p></div>
       <div class="panel">
         <h2>Update policy</h2>
-        <p>For direct APK distribution, users should download the latest version from the official download page and install it over the previous version. Account data stored in the cloud is not removed by an app update.</p>
+        <p>Download the latest version from the official download page and install it over the previous version. Account data stored in the cloud is not removed by an app update.</p>
         <p><a class="button" href="paipintong.html">Open download page</a></p>
       </div>
     </main>
@@ -42,14 +42,44 @@
       .then((response) => { if (!response.ok) throw new Error('Version file not found'); return response.json() })
       .then((data) => {
         card.textContent = ''
+        const header = document.createElement('div')
+        header.className = 'version-card-head'
+        const titleWrap = document.createElement('div')
         const title = document.createElement('h2')
         title.textContent = data.nameZh + ' / ' + data.app
-        card.appendChild(title)
-        card.appendChild(row('Version', data.version))
-        card.appendChild(row('Version code', data.versionCode))
-        card.appendChild(row('Minimum Android', data.minAndroid))
-        card.appendChild(row('File size', Math.round(data.sizeBytes / 1024 / 1024 * 10) / 10 + ' MB'))
-        card.appendChild(row('Released', data.releasedAt))
+        const subtitle = document.createElement('p')
+        subtitle.className = 'muted'
+        subtitle.textContent = 'Official release information'
+        titleWrap.appendChild(title)
+        titleWrap.appendChild(subtitle)
+        header.appendChild(titleWrap)
+        const versionBadge = document.createElement('span')
+        versionBadge.className = 'badge version-badge'
+        versionBadge.textContent = 'v' + data.version
+        header.appendChild(versionBadge)
+        card.appendChild(header)
+        const meta = document.createElement('div')
+        meta.className = 'version-meta'
+        const metaItems = [
+          ['Version', data.version],
+          ['Android', data.minAndroid + '+'],
+          ['Size', Math.round(data.sizeBytes / 1024 / 1024 * 10) / 10 + ' MB'],
+          ['Released', data.releasedAt],
+        ]
+        metaItems.forEach(([label, value]) => {
+          const item = document.createElement('div')
+          const small = document.createElement('small')
+          small.textContent = label
+          const strong = document.createElement('strong')
+          strong.textContent = value
+          item.appendChild(small)
+          item.appendChild(strong)
+          meta.appendChild(item)
+        })
+        card.appendChild(meta)
+        const notesTitle = document.createElement('h3')
+        notesTitle.textContent = 'Latest features'
+        card.appendChild(notesTitle)
         const notes = document.createElement('ul')
         notes.className = 'release-list'
         ;(data.notes || []).forEach((note) => { const li = document.createElement('li'); li.textContent = note; notes.appendChild(li) })
@@ -58,7 +88,7 @@
         link.className = 'button'
         link.href = data.apk
         link.setAttribute('download', '')
-        link.textContent = 'Download version ' + data.version
+        link.textContent = 'Download latest version'
         card.appendChild(link)
       })
       .catch((error) => {

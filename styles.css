@@ -41,3 +41,4 @@ details p{margin:10px 0 0}
   .panel{padding:20px}
   .download-actions .button{width:100%;justify-content:center}
 }
+.version-card-head{display:flex;justify-content:space-between;align-items:flex-start;gap:16px}.version-card-head h2{margin-bottom:4px}.version-badge{color:#06111d;background:linear-gradient(135deg,#5df2d6,#4b9fff);border:0;font-weight:900}.version-meta{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin:18px 0 22px}.version-meta>div{display:grid;gap:4px;padding:12px;border:1px solid var(--line);border-radius:14px;background:rgba(4,14,27,.45)}.version-meta small{color:#7f9bb0;font-size:11px;text-transform:uppercase;letter-spacing:1px}.version-meta strong{color:#eaf3ff;font-size:14px;overflow-wrap:anywhere}.legal h3{margin:22px 0 8px;color:#eaf3ff;font-size:17px}@media(max-width:760px){.version-card-head{display:block}.version-badge{display:inline-flex;margin-top:10px}.version-meta{grid-template-columns:repeat(2,minmax(0,1fr))}}

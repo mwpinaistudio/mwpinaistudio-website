@@ -2,18 +2,17 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.0.22",
-  "versionCode": 23,
+  "version": "1.0.23",
+  "versionCode": 24,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 6817171,
-  "sha256": "AF91CDCFEE8D997D87833EE37F4EDEDE1B8A3835659B7925BC45C68905D5957D",
+  "sizeBytes": 6817611,
+  "sha256": "080D3AEC8E35F15DC481D4B16CDD49C7718F3B48FA58ADD7FF0E964D8E385469",
   "minAndroid": "7.0",
   "releasedAt": "2026-09-18",
   "notes": [
-    "Cloud share links for product text, images and video",
-    "Activation codes for VIP and Agent membership",
-    "Text, text + images, and complete product sharing",
-    "Video upload progress, retry support and 30MB warning",
-    "Improved product library, backup restore and update experience"
+    "Admins can send activation codes directly to users with clear feedback",
+    "Activation codes can be copied, revoked, or permanently deleted",
+    "Assigned codes are hidden until the user chooses to show or use them",
+    "Share-link records can be permanently deleted"
   ]
 }
