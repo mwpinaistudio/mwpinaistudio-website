@@ -2,17 +2,16 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.0.12",
-  "versionCode": 13,
+  "version": "1.0.13",
+  "versionCode": 14,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 6809305,
-  "sha256": "3FF5635E1DB9388961545B0BAAAFA34FB419E539BBB694C6A4D1396762263ACE",
+  "sizeBytes": 6809725,
+  "sha256": "93E2C457B4CF7E4EF6BB55487692BFDF031ABDFBE1891886CA47E7BCFC4DE631",
   "minAndroid": "7.0",
-  "releasedAt": "2026-09-17",
+  "releasedAt": "2026-09-18",
   "notes": [
-    "Video AI remains enabled with image and video analysis kept separate",
-    "Added authenticated AI quotas, hourly rate limits, and a global daily budget circuit breaker",
-    "Added a hidden admin page for per-user AI limits and recent usage",
-    "Added AI stage progress, retry, source indicators, and a 30MB video warning"
+    "Added account switching and sign-out to About & Help",
+    "AI quotas, budget circuit breaker, and admin controls remain included",
+    "Video AI and staged progress improvements remain included"
   ]
 }
