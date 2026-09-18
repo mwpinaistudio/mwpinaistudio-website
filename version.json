@@ -2,16 +2,17 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.0.16",
-  "versionCode": 17,
+  "version": "1.0.18",
+  "versionCode": 19,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 6812885,
-  "sha256": "0A9FA2AC63D3F4F769CDEEB2120F78A7E46A708EECC891FC27BDCB8601DB2526",
+  "sizeBytes": 6813835,
+  "sha256": "4925F600298F7A5656EE6DB79EDF1F4AC0B5EBAC9D07D680F0C798C1B8455D40",
   "minAndroid": "7.0",
   "releasedAt": "2026-09-18",
   "notes": [
-    "Added user tiers: Default, VIP, Agent and Custom",
-    "Added bulk selection and bulk AI-limit updates in the admin panel",
-    "Added share modes for text, text + images, and complete package"
+    "Added device-level free AI quota protection",
+    "VIP and Agent accounts are limited to one active device",
+    "Admins can reset a user device session",
+    "Cloud share links and previous features remain included"
   ]
 }

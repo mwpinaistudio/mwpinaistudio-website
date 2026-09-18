@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="robots" content="noindex,nofollow" />
+  <title>PaiPinTong Shared Product</title>
+  <style>
+    :root{font-family:Inter,"Noto Sans SC",system-ui,-apple-system,"Segoe UI",sans-serif;color:#2b2620;background:#fff7f0}*{box-sizing:border-box}body{margin:0;background:linear-gradient(180deg,#fffaf5,#fff7f0 38%,#fffaf6)}main{width:min(100%,920px);margin:0 auto;padding:28px 18px 70px}.top{display:flex;justify-content:space-between;gap:16px;align-items:flex-start;margin-bottom:18px}.brand{font-size:30px;font-weight:900;letter-spacing:-1px}.sku{color:#978b7d;margin-top:6px}.lang{border:1px solid #f0dfd0;border-radius:999px;background:#fff;color:#5d4a3c;padding:9px 14px;font-weight:800}.hero{background:#fff;border:1px solid #f0dfd0;border-radius:22px;padding:20px;box-shadow:0 12px 34px rgba(118,74,42,.06)}.hero h1{font-size:25px;line-height:1.3;margin:0 0 10px}.hero p{color:#75695e;line-height:1.65;margin:0}.copy-all,.section-head button{border:0;border-radius:999px;background:#ff6f3c;color:#fff;padding:10px 15px;font-weight:800;cursor:pointer}.copy-all{margin-top:16px}.content-card,.media-card{margin-top:14px;padding:18px;background:#fff;border:1px solid #f0dfd0;border-radius:20px;box-shadow:0 12px 34px rgba(118,74,42,.06)}.section-head{display:flex;justify-content:space-between;align-items:center;gap:12px}.section-head h2,.media-card h2{margin:0;font-size:16px}.section-head button{background:#fff0e6;color:#e95422;padding:7px 11px;font-size:12px}pre{margin:12px 0 0;white-space:pre-wrap;word-break:break-word;font:inherit;line-height:1.65;color:#4f463d}.media-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px;margin-top:14px}figure{margin:0;border:1px solid #f0dfd0;border-radius:16px;overflow:hidden;background:#fffdfb}figure img,figure video{width:100%;display:block;object-fit:contain;background:#f6ece0;max-height:560px}figcaption{display:flex;justify-content:space-between;gap:10px;align-items:center;padding:10px 12px;font-size:12px;color:#75695e}figcaption span{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}figcaption a{color:#e95422;font-weight:800;text-decoration:none;flex:0 0 auto}.video-item{grid-column:1/-1}.loading,.error{padding:28px;text-align:center;color:#75695e}.hidden{display:none}footer{margin-top:22px;color:#978b7d;font-size:12px;text-align:center}@media(max-width:560px){main{padding:18px 12px 50px}.top{flex-direction:column}.brand{font-size:27px}.hero{padding:16px}.hero h1{font-size:21px}.content-card,.media-card{padding:14px;border-radius:16px}.media-grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <main>
+    <div id="loading" class="loading">Loading product...</div>
+    <div id="error" class="error hidden"></div>
+    <div id="content" class="hidden"></div>
+  </main>
+  <script>
+    var SUPABASE_URL = 'https://tpoudmzpufqeyravryhx.supabase.co';
+    var SUPABASE_KEY = 'sb_publishable_J21dpbcVAZc-n1NvWiBycA_vOQls-2d';
+    var FUNCTION_URL = SUPABASE_URL + '/functions/v1/AI';
+    var token = new URLSearchParams(location.search).get('t') || '';
+    var data = null;
+    var lang = (navigator.language || 'en').toLowerCase().indexOf('zh') === 0 ? 'zh' : 'en';
+
+    function esc(value) {
+      return String(value == null ? '' : value).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+    }
+
+    function text(snapshot, key) {
+      var result = snapshot.result || {};
+      return lang === 'zh' ? (result[key + 'Zh'] || '') : (result[key + 'En'] || '');
+    }
+
+    function spec(snapshot) {
+      return (snapshot.result && (lang === 'zh' ? snapshot.result.specZh : snapshot.result.specEn)) || {};
+    }
+
+    function line(label, value) {
+      return label + ': ' + (value || '-');
+    }
+
+    function makeCopyText(snapshot) {
+      var result = snapshot.result || {};
+      var titles = lang === 'zh' ? (result.titlesZh || []) : (result.titlesEn || []);
+      var s = spec(snapshot);
+      return [
+        'PaiPinTong / 拍品通',
+        line('SKU', snapshot.sku),
+        '',
+        line(lang === 'zh' ? '标题' : 'Titles', (titles || []).join(' / ')),
+        '',
+        line(lang === 'zh' ? '分类' : 'Category', text(snapshot, 'category')),
+        '',
+        line(lang === 'zh' ? '规格' : 'Specifications', ''),
+        line(lang === 'zh' ? '品牌' : 'Brand', s.brand),
+        line(lang === 'zh' ? '保质期' : 'Shelf life', s.life),
+        line(lang === 'zh' ? '重量' : 'Weight', s.weight),
+        line(lang === 'zh' ? '容量' : 'Volume', s.volume),
+        line(lang === 'zh' ? '成分' : 'Ingredients', s.ingredients),
+        line(lang === 'zh' ? '数量' : 'Quantity', s.qty),
+        '',
+        text(snapshot, 'desc'),
+        '',
+        text(snapshot, 'price')
+      ].join('\n');
+    }
+
+    function section(id, title, body) {
+      return '<section class="content-card"><div class="section-head"><h2>' + esc(title) + '</h2><button type="button" data-copy="' + id + '">Copy</button></div><pre id="' + id + '">' + esc(body) + '</pre></section>';
+    }
+
+    function render() {
+      if (!data) return;
+      var snapshot = data.snapshot || {};
+      var result = snapshot.result || {};
+      var s = spec(snapshot);
+      var titles = lang === 'zh' ? (result.titlesZh || []) : (result.titlesEn || []);
+      var heading = titles[0] || snapshot.sku || 'PaiPinTong';
+      var labels = lang === 'zh' ? {
+        titles: '标题', category: '分类', specs: '规格', description: '商品描述', packing: '包装与物流', price: '市场价格参考', media: '图片与视频', copyAll: '复制全部资料', download: '下载'
+      } : {
+        titles: 'Titles', category: 'Category', specs: 'Specifications', description: 'Description', packing: 'Packing & Shipping', price: 'Market Price Reference', media: 'Images & Video', copyAll: 'Copy all information', download: 'Download'
+      };
+      var titlesText = (titles || []).map(function(item, index) { return (index + 1) + '. ' + (item || '-'); }).join('\n');
+      var specsText = [line(lang === 'zh' ? '品牌' : 'Brand', s.brand), line(lang === 'zh' ? '保质期' : 'Shelf life', s.life), line(lang === 'zh' ? '重量' : 'Weight', s.weight), line(lang === 'zh' ? '容量' : 'Volume', s.volume), line(lang === 'zh' ? '成分' : 'Ingredients', s.ingredients), line(lang === 'zh' ? '数量' : 'Quantity', s.qty)].join('\n');
+      var packingText = [line(lang === 'zh' ? '包装重量' : 'Package weight', lang === 'zh' ? (result.packageWeightZh || result.packageWeight) : (result.packageWeightEn || result.packageWeight)), line(lang === 'zh' ? '包装尺寸' : 'Package size', lang === 'zh' ? (result.packageSizeZh || result.packageSize) : (result.packageSizeEn || result.packageSize))].join('\n');
+      var mediaHtml = (data.media || []).map(function(item) {
+        var url = item.url || '';
+        var name = esc(item.name || '');
+        var download = '<a href="' + esc(url) + '" download>' + esc(labels.download) + '</a>';
+        if (item.kind === 'video') return '<figure class="video-item"><video src="' + esc(url) + '" controls playsinline></video><figcaption><span>' + name + '</span>' + download + '</figcaption></figure>';
+        return '<figure><img src="' + esc(url) + '" alt="' + name + '" /><figcaption><span>' + name + '</span>' + download + '</figcaption></figure>';
+      }).join('');
+      document.getElementById('content').innerHTML = '<div class="top"><div><div class="brand">PaiPinTong / 拍品通</div><div class="sku">SKU: ' + esc(snapshot.sku || '-') + '</div></div><button class="lang" id="lang-button">' + (lang === 'zh' ? 'English' : '中文') + '</button></div><section class="hero"><h1>' + esc(heading) + '</h1><p>' + esc(text(snapshot, 'desc').slice(0, 220)) + '</p><button class="copy-all" id="copy-all">' + esc(labels.copyAll) + '</button></section>' + section('titles', labels.titles, titlesText) + section('category', labels.category, text(snapshot, 'category')) + section('specs', labels.specs, specsText) + section('description', labels.description, text(snapshot, 'desc')) + section('packing', labels.packing, packingText) + section('price', labels.price, text(snapshot, 'price')) + '<section class="media-card"><h2>' + esc(labels.media) + '</h2>' + (mediaHtml ? '<div class="media-grid">' + mediaHtml + '</div>' : '<p>-</p>') + '</section>';
+      document.getElementById('loading').classList.add('hidden');
+      document.getElementById('content').classList.remove('hidden');
+      document.getElementById('lang-button').addEventListener('click', function() { lang = lang === 'zh' ? 'en' : 'zh'; render(); });
+      document.getElementById('copy-all').addEventListener('click', function() { navigator.clipboard.writeText(makeCopyText(snapshot)).then(function() { alert(lang === 'zh' ? '已复制' : 'Copied'); }); });
+      document.querySelectorAll('[data-copy]').forEach(function(button) { button.addEventListener('click', function() { var el = document.getElementById(button.dataset.copy); navigator.clipboard.writeText(el ? el.innerText : '').then(function() { alert(lang === 'zh' ? '已复制' : 'Copied'); }); }); });
+    }
+
+    async function load() {
+      if (!token) { document.getElementById('loading').classList.add('hidden'); document.getElementById('error').textContent = 'Missing share token.'; document.getElementById('error').classList.remove('hidden'); return; }
+      try {
+        var response = await fetch(FUNCTION_URL, { method: 'POST', headers: { 'Content-Type': 'application/json', 'Authorization': 'Bearer ' + SUPABASE_KEY, 'apikey': SUPABASE_KEY }, body: JSON.stringify({ action: 'get-shared-product', token: token }) });
+        var payload = await response.json();
+        if (!response.ok || !payload.ok) throw new Error(payload.msg || 'Share not found');
+        data = payload.data;
+        render();
+      } catch (error) {
+        document.getElementById('loading').classList.add('hidden');
+        document.getElementById('error').textContent = error && error.message ? error.message : 'Share not found';
+        document.getElementById('error').classList.remove('hidden');
+      }
+    }
+    load();
+  </script>
+</body>
+</html>
