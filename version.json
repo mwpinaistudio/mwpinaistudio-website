@@ -2,17 +2,17 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.0.23",
-  "versionCode": 24,
+  "version": "1.0.24",
+  "versionCode": 25,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 6817611,
-  "sha256": "080D3AEC8E35F15DC481D4B16CDD49C7718F3B48FA58ADD7FF0E964D8E385469",
+  "sizeBytes": 6817719,
+  "sha256": "4C921C259484AD5C276F32013224A45CE1B198EDF487EEA5F6970AA10B73D81B",
   "minAndroid": "7.0",
   "releasedAt": "2026-09-18",
   "notes": [
-    "Admins can send activation codes directly to users with clear feedback",
-    "Activation codes can be copied, revoked, or permanently deleted",
-    "Assigned codes are hidden until the user chooses to show or use them",
-    "Share-link records can be permanently deleted"
+    "Share link records can now be deleted from the share link manager",
+    "Assigned activation codes can be copied or deleted by administrators",
+    "Activation code sending now shows clear success feedback",
+    "Users can reveal, copy, and use assigned activation codes"
   ]
 }
