@@ -2,18 +2,17 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.0.9",
-  "versionCode": 10,
+  "version": "1.0.12",
+  "versionCode": 13,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 6806281,
-  "sha256": "8D9F371E5D23BA73A2AE2E9405A3F354493B0A1D654D6EAAAF0A94B359124655",
+  "sizeBytes": 6809305,
+  "sha256": "3FF5635E1DB9388961545B0BAAAFA34FB419E539BBB694C6A4D1396762263ACE",
   "minAndroid": "7.0",
   "releasedAt": "2026-09-17",
   "notes": [
-    "Video upload now shows progress, success, and failure status",
-    "Selecting a video uploads it to cloud storage immediately",
-    "Editing a product replaces the video only after the new upload succeeds",
-    "Cloud media deletion and cross-device restore remain included",
-    "About & Help and update checking remain included"
+    "Video AI remains enabled with image and video analysis kept separate",
+    "Added authenticated AI quotas, hourly rate limits, and a global daily budget circuit breaker",
+    "Added a hidden admin page for per-user AI limits and recent usage",
+    "Added AI stage progress, retry, source indicators, and a 30MB video warning"
   ]
 }
