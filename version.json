@@ -2,17 +2,17 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.0.24",
-  "versionCode": 25,
+  "version": "1.0.26",
+  "versionCode": 27,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 6817719,
-  "sha256": "4C921C259484AD5C276F32013224A45CE1B198EDF487EEA5F6970AA10B73D81B",
+  "sizeBytes": 6820967,
+  "sha256": "BCE15B1883664485AAEC94D1E9DFF89B182B384BF978E32B8AC8BE668A8B8101",
   "minAndroid": "7.0",
   "releasedAt": "2026-09-18",
   "notes": [
-    "Share link records can now be deleted from the share link manager",
-    "Assigned activation codes can be copied or deleted by administrators",
-    "Activation code sending now shows clear success feedback",
-    "Users can reveal, copy, and use assigned activation codes"
+    "Video AI credits now scale with video duration",
+    "Home screen shows how many complete products the remaining credits can generate",
+    "Added clear AI credit usage rules and image-first savings guidance",
+    "Video upload now shows duration and estimated credit cost"
   ]
 }
