@@ -2,17 +2,17 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.0.18",
-  "versionCode": 19,
+  "version": "1.0.19",
+  "versionCode": 20,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 6813835,
-  "sha256": "4925F600298F7A5656EE6DB79EDF1F4AC0B5EBAC9D07D680F0C798C1B8455D40",
+  "sizeBytes": 6813907,
+  "sha256": "69F30D676B15CD9C8693021D2C947A6945B8EE2403ABF9B7513539F177142112",
   "minAndroid": "7.0",
   "releasedAt": "2026-09-18",
   "notes": [
-    "Added device-level free AI quota protection",
-    "VIP and Agent accounts are limited to one active device",
-    "Admins can reset a user device session",
-    "Cloud share links and previous features remain included"
+    "Added Android native device identity for quota protection",
+    "Device quotas remain after uninstall and reinstall on the same phone",
+    "VIP and Agent single-device protection now uses the stronger device ID",
+    "Cloud share links, user tiers, and bulk admin controls remain included"
   ]
 }
