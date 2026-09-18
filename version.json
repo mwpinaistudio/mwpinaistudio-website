@@ -2,17 +2,17 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.0.20",
-  "versionCode": 21,
+  "version": "1.0.21",
+  "versionCode": 22,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 6815127,
-  "sha256": "BD7F38C98B0B8BE5789D8C401A4666226E1FE78FB533AA5A9C4E57FF9B19BFC4",
+  "sizeBytes": 6816691,
+  "sha256": "388F5BD9CAAD925647C35E518EDAAD9A729ABB5C5C45EB750B7E4BF14498D0D3",
   "minAndroid": "7.0",
   "releasedAt": "2026-09-18",
   "notes": [
-    "Added share link management page",
-    "Users can view, copy, revoke, and change expiry for cloud share links",
-    "Share link view counts are visible",
-    "Android device ID, AI quotas, user tiers, and bulk admin controls remain included"
+    "Added VIP and Agent membership expiry dates",
+    "Added activation codes with 30, 90, 180, 365 day and permanent options",
+    "Users can redeem activation codes from About & Help",
+    "Admins can generate, list, revoke, and track activation codes"
   ]
 }
