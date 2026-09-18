@@ -2,17 +2,17 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.0.27",
-  "versionCode": 28,
+  "version": "1.0.28",
+  "versionCode": 29,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 6824175,
-  "sha256": "5401346237D63EC4096A81264B74C61A89AC9360F8F3CADD32E5E8E9E5354F19",
+  "sizeBytes": 6824243,
+  "sha256": "0512023BA441D4372BEF9BA02D3BBBD03E682798F38D8DF239311B9B9B48329A",
   "minAndroid": "7.0",
   "releasedAt": "2026-09-18",
   "notes": [
-    "Added VIP membership plans and a one-tap purchase page",
-    "Added GCash, Maya, PayPal, bank transfer and WeChat Pay instructions",
-    "Customers can submit payment orders and track confirmation",
-    "Admins can confirm payments and automatically issue activation codes"
+    "GCash payment can now show only the QR code",
+    "Full GCash account numbers can be hidden from customers",
+    "Payment settings support Alipay and all previous external methods",
+    "VIP plans, order confirmation, and activation-code delivery remain included"
   ]
 }
