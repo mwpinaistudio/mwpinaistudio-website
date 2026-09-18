@@ -10,9 +10,10 @@
   "minAndroid": "7.0",
   "releasedAt": "2026-09-18",
   "notes": [
-    "Admins can send activation codes directly to selected users",
-    "Users see assigned activation codes hidden by default with show and copy actions",
-    "Users can delete old share-link records",
-    "VIP expiry, device protection, and cloud share links remain included"
+    "Cloud share links for product text, images and video",
+    "Activation codes for VIP and Agent membership",
+    "Text, text + images, and complete product sharing",
+    "Video upload progress, retry support and 30MB warning",
+    "Improved product library, backup restore and update experience"
   ]
 }
