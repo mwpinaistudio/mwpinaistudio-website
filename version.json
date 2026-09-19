@@ -2,18 +2,18 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.0.52",
-  "versionCode": 53,
+  "version": "1.0.53",
+  "versionCode": 54,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 6836255,
-  "sha256": "B3C64DC9729B2E79BDD6A5F409EA9522B03A2DDC24138D663F9EFEA76D39D664",
+  "sizeBytes": 6836503,
+  "sha256": "6A2D4149631CD45EC6B611CAC213A8C6DD5A76C4CACDD28C6EB46F676798A9AE",
   "minAndroid": "7.0",
   "releasedAt": "2026-09-19",
   "notes": [
-    "Split purchase into unpaid order and paid awaiting confirmation states",
-    "Unpaid orders can be cancelled; paid orders cannot be cancelled or refunded",
-    "Administrator email notification is sent only after the customer marks the order as paid",
-    "Activation code list now has search and 10-item pagination"
+    "Merged AI Budget and Payments into one unified administrator center",
+    "Removed duplicate AI status information from the payment overview",
+    "Added the administrator notification email address to diagnostics",
+    "Kept unpaid order cancellation, paid-order confirmation, and activation code pagination"
   ],
   "apkMirrors": [
     "https://cdn.jsdelivr.net/gh/mwpinaistudio/mwpinaistudio-website@main/downloads/paipintong.apk",
