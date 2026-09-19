@@ -2,18 +2,18 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.0.38",
-  "versionCode": 39,
+  "version": "1.0.39",
+  "versionCode": 40,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 6831579,
-  "sha256": "4C8A7B7055D982EBF7DD6F5DAEDB3D927B9A103977C6742A8272576A01F9E218",
+  "sizeBytes": 6831411,
+  "sha256": "6B69907958EE371AF295B51C9765EBF0D81234A6A2923D17F0B8CB8FA6DA6DDB",
   "minAndroid": "7.0",
   "releasedAt": "2026-09-19",
   "notes": [
-    "Added a clear My Account entry on the home page",
-    "Membership status now refreshes automatically when returning to the app",
-    "Active members see their membership level, expiry date, Renew, and Upgrade actions",
-    "Renewal opens the current plan directly; upgrade only shows higher-level plans"
+    "Moved My Account to the top header for easier access",
+    "Removed the account card from the My Products area for a cleaner layout",
+    "Membership badges and renewal or upgrade actions remain available on the home page",
+    "Small-screen layout automatically compacts the account button"
   ],
   "apkMirrors": [
     "https://cdn.jsdelivr.net/gh/mwpinaistudio/mwpinaistudio-website@main/downloads/paipintong.apk",
