@@ -2,18 +2,18 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.0.32",
-  "versionCode": 33,
+  "version": "1.0.33",
+  "versionCode": 34,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 6825443,
-  "sha256": "56F9AA6BA627CE9BB649B61DE5DC87B8BA14E4D2C77D4EA3F6529CC0CA812FB5",
+  "sizeBytes": 6826435,
+  "sha256": "A1C66FFA5A178AF61233603C98D7F9A2A83315EFBABF04873934EDC3FC950664",
   "minAndroid": "7.0",
   "releasedAt": "2026-09-19",
   "notes": [
-    "Admins can upload payment QR code images directly",
-    "Customers can tap a payment QR code to enlarge it for scanning",
-    "GCash QR-only privacy and Alipay support remain included",
-    "Backup download mirrors remain included for unstable networks"
+    "Simplified VIP purchase into plan, payment, confirmation, and activation steps",
+    "Customers can scan payment QR codes directly",
+    "Activation codes appear automatically after payment confirmation",
+    "One-tap activation shows daily AI credits and expiry date"
   ],
   "apkMirrors": [
     "https://cdn.jsdelivr.net/gh/mwpinaistudio/mwpinaistudio-website@main/downloads/paipintong.apk",
