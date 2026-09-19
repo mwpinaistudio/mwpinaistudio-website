@@ -2,17 +2,21 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.0.29",
-  "versionCode": 30,
+  "version": "1.0.30",
+  "versionCode": 31,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 6824767,
-  "sha256": "0D99C0D7E37ED3E5014295389F028F14281C39A0E1312909CC11FF4680063B1D",
+  "sizeBytes": 6824911,
+  "sha256": "DFE30422C209BE2AD34F7C68968151F036F21D9ABB2978926EEAC29D6556519D",
   "minAndroid": "7.0",
-  "releasedAt": "2026-09-18",
+  "releasedAt": "2026-09-19",
   "notes": [
-    "Redesigned payment and order management into a compact layout",
-    "Payment methods and membership plans now edit one item at a time",
-    "Order filters for pending, fulfilled, and all orders",
-    "QR-only GCash privacy and Alipay support remain included"
+    "Improved update downloads by opening the system browser",
+    "Added backup download mirrors for unstable Wi-Fi networks",
+    "Added a backup download button when a normal download stalls",
+    "Compact payment and order management remains included"
+  ],
+  "apkMirrors": [
+    "https://cdn.jsdelivr.net/gh/mwpinaistudio/mwpinaistudio-website@main/downloads/paipintong.apk",
+    "https://raw.githubusercontent.com/mwpinaistudio/mwpinaistudio-website/main/downloads/paipintong.apk"
   ]
 }
