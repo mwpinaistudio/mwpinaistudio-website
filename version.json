@@ -2,18 +2,18 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.0.53",
-  "versionCode": 54,
+  "version": "1.0.54",
+  "versionCode": 55,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 6836503,
-  "sha256": "6A2D4149631CD45EC6B611CAC213A8C6DD5A76C4CACDD28C6EB46F676798A9AE",
+  "sizeBytes": 6837207,
+  "sha256": "2E8FD3FF9A344F789874CEEA6B172B0496CBE6535F54DE1706C481C09AD3F396",
   "minAndroid": "7.0",
   "releasedAt": "2026-09-19",
   "notes": [
-    "Merged AI Budget and Payments into one unified administrator center",
-    "Removed duplicate AI status information from the payment overview",
-    "Added the administrator notification email address to diagnostics",
-    "Kept unpaid order cancellation, paid-order confirmation, and activation code pagination"
+    "Redesigned activation code and bulk account settings as compact collapsible panels",
+    "Activation code rows now use compact cards with coordinated copy, revoke, and delete actions",
+    "Notification test results now appear directly below the test button",
+    "Merged administrator pages continue to reduce overall scrolling"
   ],
   "apkMirrors": [
     "https://cdn.jsdelivr.net/gh/mwpinaistudio/mwpinaistudio-website@main/downloads/paipintong.apk",
