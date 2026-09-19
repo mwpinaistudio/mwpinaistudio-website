@@ -2,18 +2,18 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.0.39",
-  "versionCode": 40,
+  "version": "1.0.41",
+  "versionCode": 42,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 6831411,
-  "sha256": "6B69907958EE371AF295B51C9765EBF0D81234A6A2923D17F0B8CB8FA6DA6DDB",
+  "sizeBytes": 6831963,
+  "sha256": "866C279B698CC7601CEED26D17C90603C682909907BBD436B0D9DB815B88143F",
   "minAndroid": "7.0",
   "releasedAt": "2026-09-19",
   "notes": [
-    "Moved My Account to the top header for easier access",
-    "Removed the account card from the My Products area for a cleaner layout",
-    "Membership badges and renewal or upgrade actions remain available on the home page",
-    "Small-screen layout automatically compacts the account button"
+    "All membership plans now show PHP prices with estimated CNY reference prices",
+    "Signature Elite Annual is now PHP 59,990 per year, about PHP 4,999 per month",
+    "The annual plan doubles daily credits to 1,000 and includes priority support",
+    "Pricing has been aligned with comparable AI e-commerce tools"
   ],
   "apkMirrors": [
     "https://cdn.jsdelivr.net/gh/mwpinaistudio/mwpinaistudio-website@main/downloads/paipintong.apk",
