@@ -2,18 +2,18 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.0.33",
-  "versionCode": 34,
+  "version": "1.0.34",
+  "versionCode": 35,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 6826435,
-  "sha256": "A1C66FFA5A178AF61233603C98D7F9A2A83315EFBABF04873934EDC3FC950664",
+  "sizeBytes": 6827987,
+  "sha256": "05894DEB23119D09FF46AF052F0B5A07084281AAC2B59F19809F6532721CD6FD",
   "minAndroid": "7.0",
   "releasedAt": "2026-09-19",
   "notes": [
-    "Simplified VIP purchase into plan, payment, confirmation, and activation steps",
-    "Customers can scan payment QR codes directly",
-    "Activation codes appear automatically after payment confirmation",
-    "One-tap activation shows daily AI credits and expiry date"
+    "Simplified VIP purchase into plan, scan payment, customer-service confirmation, and activation",
+    "Customers no longer need to enter a payment reference number",
+    "Long-press a payment QR code to try automatic recognition and open the payment app",
+    "Activation appears automatically after payment confirmation"
   ],
   "apkMirrors": [
     "https://cdn.jsdelivr.net/gh/mwpinaistudio/mwpinaistudio-website@main/downloads/paipintong.apk",
