@@ -2,18 +2,18 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.0.41",
-  "versionCode": 42,
+  "version": "1.0.43",
+  "versionCode": 44,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 6831963,
-  "sha256": "866C279B698CC7601CEED26D17C90603C682909907BBD436B0D9DB815B88143F",
+  "sizeBytes": 6832895,
+  "sha256": "0C8946C580B52AF5741358184217BA034BB04E54618C31958D9ECEFC1CC30B10",
   "minAndroid": "7.0",
   "releasedAt": "2026-09-19",
   "notes": [
-    "All membership plans now show PHP prices with estimated CNY reference prices",
-    "Signature Elite Annual is now PHP 59,990 per year, about PHP 4,999 per month",
-    "The annual plan doubles daily credits to 1,000 and includes priority support",
-    "Pricing has been aligned with comparable AI e-commerce tools"
+    "WeChat Pay and Alipay now use fixed actual CNY prices instead of estimates",
+    "GCash, Maya, PayPal, and bank transfers continue to settle in PHP",
+    "Added an official price adjustment notice for customer clarity",
+    "Reorganized the About & Help page: account switching moved to its own section and update checking is now at the bottom"
   ],
   "apkMirrors": [
     "https://cdn.jsdelivr.net/gh/mwpinaistudio/mwpinaistudio-website@main/downloads/paipintong.apk",
