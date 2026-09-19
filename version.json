@@ -2,18 +2,18 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.0.46",
-  "versionCode": 47,
+  "version": "1.0.47",
+  "versionCode": 48,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 6832963,
-  "sha256": "6C9FF35E246F91631440E7F32906064BFAEC1EA2039B1578E3A2F67CA1717F34",
+  "sizeBytes": 6833095,
+  "sha256": "9E471D35073732FD661762DC3E09D34B0A1BE8482BEFBB5A972151C4F20BA642",
   "minAndroid": "7.0",
   "releasedAt": "2026-09-19",
   "notes": [
-    "Redesigned the account switch action as a compact profile-style row",
-    "Removed the separate Account Actions heading and prominent helper text",
-    "Moved the helper description into a subtle secondary line",
-    "Kept the About & Help page cleaner and less visually busy"
+    "Created a dedicated My Account page for the profile button",
+    "The page title now correctly shows My Account instead of About & Help",
+    "Account, membership, activation, renewal, and switch-account actions stay on this page",
+    "About & Help remains a separate page for version information and support links"
   ],
   "apkMirrors": [
     "https://cdn.jsdelivr.net/gh/mwpinaistudio/mwpinaistudio-website@main/downloads/paipintong.apk",
