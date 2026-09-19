@@ -2,18 +2,18 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.0.30",
-  "versionCode": 31,
+  "version": "1.0.32",
+  "versionCode": 33,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 6824911,
-  "sha256": "DFE30422C209BE2AD34F7C68968151F036F21D9ABB2978926EEAC29D6556519D",
+  "sizeBytes": 6825443,
+  "sha256": "56F9AA6BA627CE9BB649B61DE5DC87B8BA14E4D2C77D4EA3F6529CC0CA812FB5",
   "minAndroid": "7.0",
   "releasedAt": "2026-09-19",
   "notes": [
-    "Improved update downloads by opening the system browser",
-    "Added backup download mirrors for unstable Wi-Fi networks",
-    "Added a backup download button when a normal download stalls",
-    "Compact payment and order management remains included"
+    "Admins can upload payment QR code images directly",
+    "Customers can tap a payment QR code to enlarge it for scanning",
+    "GCash QR-only privacy and Alipay support remain included",
+    "Backup download mirrors remain included for unstable networks"
   ],
   "apkMirrors": [
     "https://cdn.jsdelivr.net/gh/mwpinaistudio/mwpinaistudio-website@main/downloads/paipintong.apk",
