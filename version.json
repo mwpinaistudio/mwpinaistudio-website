@@ -2,18 +2,18 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.0.47",
-  "versionCode": 48,
+  "version": "1.0.49",
+  "versionCode": 50,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 6833095,
-  "sha256": "9E471D35073732FD661762DC3E09D34B0A1BE8482BEFBB5A972151C4F20BA642",
+  "sizeBytes": 6834207,
+  "sha256": "416047108198CD8C0AB12D3B9B57E99B8D285801273028DE54BDA5DE1FC181D4",
   "minAndroid": "7.0",
   "releasedAt": "2026-09-19",
   "notes": [
-    "Created a dedicated My Account page for the profile button",
-    "The page title now correctly shows My Account instead of About & Help",
-    "Account, membership, activation, renewal, and switch-account actions stay on this page",
-    "About & Help remains a separate page for version information and support links"
+    "New order notifications can now be delivered to the administrator email",
+    "Email delivery uses Resend while Telegram and webhook notifications remain available",
+    "Administrator overview shows email, Telegram, and webhook notification status",
+    "Added an email notification configuration guide"
   ],
   "apkMirrors": [
     "https://cdn.jsdelivr.net/gh/mwpinaistudio/mwpinaistudio-website@main/downloads/paipintong.apk",
