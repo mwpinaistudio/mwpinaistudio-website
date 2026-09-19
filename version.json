@@ -2,18 +2,18 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.0.51",
-  "versionCode": 52,
+  "version": "1.0.52",
+  "versionCode": 53,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 6835391,
-  "sha256": "0B50CB61B8165215DEEEF79110C1453A1D6A06AFB41FBF9AB41EC13A36851A26",
+  "sizeBytes": 6836255,
+  "sha256": "B3C64DC9729B2E79BDD6A5F409EA9522B03A2DDC24138D663F9EFEA76D39D664",
   "minAndroid": "7.0",
   "releasedAt": "2026-09-19",
   "notes": [
-    "Redesigned the administrator payments area for quicker management",
-    "Orders now support search, status filters, compact cards, and 10-item pagination",
-    "Payment methods and membership plans are split into separate sub-tabs",
-    "Reduced the overall page length and improved information hierarchy"
+    "Split purchase into unpaid order and paid awaiting confirmation states",
+    "Unpaid orders can be cancelled; paid orders cannot be cancelled or refunded",
+    "Administrator email notification is sent only after the customer marks the order as paid",
+    "Activation code list now has search and 10-item pagination"
   ],
   "apkMirrors": [
     "https://cdn.jsdelivr.net/gh/mwpinaistudio/mwpinaistudio-website@main/downloads/paipintong.apk",
