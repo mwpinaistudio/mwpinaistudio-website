@@ -2,18 +2,18 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.0.45",
-  "versionCode": 46,
+  "version": "1.0.46",
+  "versionCode": 47,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 6832827,
-  "sha256": "25321BAB5AB66D5CCD452608D499052C5E7A4F6DBA5469EA6436C37D21591AD3",
+  "sizeBytes": 6832963,
+  "sha256": "6C9FF35E246F91631440E7F32906064BFAEC1EA2039B1578E3A2F67CA1717F34",
   "minAndroid": "7.0",
   "releasedAt": "2026-09-19",
   "notes": [
-    "Moved AI Smart Extract directly below the video section",
-    "Removed the floating bottom action button for a cleaner layout",
-    "Reduced unnecessary bottom spacing on the home page",
-    "Video upload and AI extraction behavior remain unchanged"
+    "Redesigned the account switch action as a compact profile-style row",
+    "Removed the separate Account Actions heading and prominent helper text",
+    "Moved the helper description into a subtle secondary line",
+    "Kept the About & Help page cleaner and less visually busy"
   ],
   "apkMirrors": [
     "https://cdn.jsdelivr.net/gh/mwpinaistudio/mwpinaistudio-website@main/downloads/paipintong.apk",
