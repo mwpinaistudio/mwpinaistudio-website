@@ -2,18 +2,18 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.0.43",
-  "versionCode": 44,
+  "version": "1.0.45",
+  "versionCode": 46,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 6832895,
-  "sha256": "0C8946C580B52AF5741358184217BA034BB04E54618C31958D9ECEFC1CC30B10",
+  "sizeBytes": 6832827,
+  "sha256": "25321BAB5AB66D5CCD452608D499052C5E7A4F6DBA5469EA6436C37D21591AD3",
   "minAndroid": "7.0",
   "releasedAt": "2026-09-19",
   "notes": [
-    "WeChat Pay and Alipay now use fixed actual CNY prices instead of estimates",
-    "GCash, Maya, PayPal, and bank transfers continue to settle in PHP",
-    "Added an official price adjustment notice for customer clarity",
-    "Reorganized the About & Help page: account switching moved to its own section and update checking is now at the bottom"
+    "Moved AI Smart Extract directly below the video section",
+    "Removed the floating bottom action button for a cleaner layout",
+    "Reduced unnecessary bottom spacing on the home page",
+    "Video upload and AI extraction behavior remain unchanged"
   ],
   "apkMirrors": [
     "https://cdn.jsdelivr.net/gh/mwpinaistudio/mwpinaistudio-website@main/downloads/paipintong.apk",
