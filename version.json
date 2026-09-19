@@ -2,18 +2,18 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.0.37",
-  "versionCode": 38,
+  "version": "1.0.38",
+  "versionCode": 39,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 6829815,
-  "sha256": "EE03C172960184F9F6DC83E5059994DFAD82F724357F51DBA609BF653A54E0C5",
+  "sizeBytes": 6831579,
+  "sha256": "4C8A7B7055D982EBF7DD6F5DAEDB3D927B9A103977C6742A8272576A01F9E218",
   "minAndroid": "7.0",
   "releasedAt": "2026-09-19",
   "notes": [
-    "Added premium membership badges: Silver VIP, Gold VIP, SVIP Agent, and Signature Elite",
-    "Membership badges now appear on the home page, membership plans, and activation results",
-    "Administrators can permanently delete payment and order records",
-    "Deleting an order record does not remove an already issued activation code or active membership"
+    "Added a clear My Account entry on the home page",
+    "Membership status now refreshes automatically when returning to the app",
+    "Active members see their membership level, expiry date, Renew, and Upgrade actions",
+    "Renewal opens the current plan directly; upgrade only shows higher-level plans"
   ],
   "apkMirrors": [
     "https://cdn.jsdelivr.net/gh/mwpinaistudio/mwpinaistudio-website@main/downloads/paipintong.apk",
