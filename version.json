@@ -2,18 +2,18 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.0.34",
-  "versionCode": 35,
+  "version": "1.0.36",
+  "versionCode": 37,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 6827987,
-  "sha256": "05894DEB23119D09FF46AF052F0B5A07084281AAC2B59F19809F6532721CD6FD",
+  "sizeBytes": 6828351,
+  "sha256": "3536BD628083D240CAAFAB0C0A523765CCE296BCC42C8C278DAE3E4BB869BA4B",
   "minAndroid": "7.0",
   "releasedAt": "2026-09-19",
   "notes": [
-    "Simplified VIP purchase into plan, scan payment, customer-service confirmation, and activation",
-    "Customers no longer need to enter a payment reference number",
-    "Long-press a payment QR code to try automatic recognition and open the payment app",
-    "Activation appears automatically after payment confirmation"
+    "Fixed membership order confirmation refresh",
+    "Refresh Status now checks the exact current order and can open activation immediately",
+    "The order is checked again when returning to the app from a payment app",
+    "The simplified scan-to-pay membership flow remains unchanged"
   ],
   "apkMirrors": [
     "https://cdn.jsdelivr.net/gh/mwpinaistudio/mwpinaistudio-website@main/downloads/paipintong.apk",
