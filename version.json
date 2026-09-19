@@ -2,18 +2,18 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.0.49",
-  "versionCode": 50,
+  "version": "1.0.51",
+  "versionCode": 52,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 6834207,
-  "sha256": "416047108198CD8C0AB12D3B9B57E99B8D285801273028DE54BDA5DE1FC181D4",
+  "sizeBytes": 6835391,
+  "sha256": "0B50CB61B8165215DEEEF79110C1453A1D6A06AFB41FBF9AB41EC13A36851A26",
   "minAndroid": "7.0",
   "releasedAt": "2026-09-19",
   "notes": [
-    "New order notifications can now be delivered to the administrator email",
-    "Email delivery uses Resend while Telegram and webhook notifications remain available",
-    "Administrator overview shows email, Telegram, and webhook notification status",
-    "Added an email notification configuration guide"
+    "Redesigned the administrator payments area for quicker management",
+    "Orders now support search, status filters, compact cards, and 10-item pagination",
+    "Payment methods and membership plans are split into separate sub-tabs",
+    "Reduced the overall page length and improved information hierarchy"
   ],
   "apkMirrors": [
     "https://cdn.jsdelivr.net/gh/mwpinaistudio/mwpinaistudio-website@main/downloads/paipintong.apk",
