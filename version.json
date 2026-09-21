@@ -2,18 +2,18 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.0.60",
-  "versionCode": 61,
+  "version": "1.0.61",
+  "versionCode": 62,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 6841699,
-  "sha256": "27A976DEC85A30DEE03DAE2AD00EEBE68E29B8D3FB09A6FB8B205886ED495D6B",
+  "sizeBytes": 6845463,
+  "sha256": "0D7DD301880773BA596402A390E9D2A195737550EAB0D85417A7F035ED154EC3",
   "minAndroid": "7.0",
   "releasedAt": "2026-09-21",
   "notes": [
-    "WhatsApp sharing now opens the WhatsApp app directly instead of wa.me",
-    "WeChat now uses the native Android share sheet",
-    "Added QQ sharing support",
-    "Kept one-tap sharing and advertising-style referral copy"
+    "Added Take Photo and Choose from Gallery options for product images",
+    "Added Record Video and Choose from Gallery options for product videos",
+    "Camera and microphone permissions added for direct capture",
+    "Existing video upload and AI extraction flow remains unchanged"
   ],
   "apkMirrors": [
     "https://cdn.jsdelivr.net/gh/mwpinaistudio/mwpinaistudio-website@main/downloads/paipintong.apk",
