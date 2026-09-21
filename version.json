@@ -2,18 +2,18 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.0.54",
-  "versionCode": 55,
+  "version": "1.0.55",
+  "versionCode": 56,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 6837207,
-  "sha256": "2E8FD3FF9A344F789874CEEA6B172B0496CBE6535F54DE1706C481C09AD3F396",
+  "sizeBytes": 6837723,
+  "sha256": "A5E3C32221130B8AB75F06E906D58982DE309C6920BF48665EF89E3FB5FA1DB3",
   "minAndroid": "7.0",
-  "releasedAt": "2026-09-19",
+  "releasedAt": "2026-09-21",
   "notes": [
-    "Redesigned activation code and bulk account settings as compact collapsible panels",
-    "Activation code rows now use compact cards with coordinated copy, revoke, and delete actions",
-    "Notification test results now appear directly below the test button",
-    "Merged administrator pages continue to reduce overall scrolling"
+    "Added notification delivery logs and failed-notification retry",
+    "Added membership expiry email reminders",
+    "Added activation-ready emails after payment confirmation",
+    "Administrator overview now shows recent notification status and supports expiry reminder delivery"
   ],
   "apkMirrors": [
     "https://cdn.jsdelivr.net/gh/mwpinaistudio/mwpinaistudio-website@main/downloads/paipintong.apk",
