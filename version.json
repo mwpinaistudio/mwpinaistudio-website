@@ -2,18 +2,18 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.0.59",
-  "versionCode": 60,
+  "version": "1.0.60",
+  "versionCode": 61,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 6841587,
-  "sha256": "A7CE8189D571159578ED20D7F8A84CAAC58FDC8DE9F2B4A7F15DB80DC2E68AB0",
+  "sizeBytes": 6841699,
+  "sha256": "27A976DEC85A30DEE03DAE2AD00EEBE68E29B8D3FB09A6FB8B205886ED495D6B",
   "minAndroid": "7.0",
   "releasedAt": "2026-09-21",
   "notes": [
-    "Simplified sharing to one-tap system share and popular social apps",
-    "Added advertising-style referral copy instead of a bare link",
-    "Removed invite-code display and transactional reward statistics from the customer UI",
-    "Added an invitation landing page and app deep-link association"
+    "WhatsApp sharing now opens the WhatsApp app directly instead of wa.me",
+    "WeChat now uses the native Android share sheet",
+    "Added QQ sharing support",
+    "Kept one-tap sharing and advertising-style referral copy"
   ],
   "apkMirrors": [
     "https://cdn.jsdelivr.net/gh/mwpinaistudio/mwpinaistudio-website@main/downloads/paipintong.apk",
