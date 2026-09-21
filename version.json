@@ -2,18 +2,18 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.0.57",
-  "versionCode": 58,
+  "version": "1.0.58",
+  "versionCode": 59,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 6837871,
-  "sha256": "8BEA939FACB84282D4AD33CF2EAAF8E7AAE7482609FA7CDF0F0A054745A9E9D9",
+  "sizeBytes": 6840807,
+  "sha256": "F255936BB14A8CA77EA492C3B17AFF898AF24B0DD328E1E2E2DAA0AFA411B0A5",
   "minAndroid": "7.0",
   "releasedAt": "2026-09-21",
   "notes": [
-    "New users receive a registration-day 20-credit trial only; no daily reset",
-    "Added a live trial countdown and quota-finished prompt",
-    "Added referral codes with 5-credit independent 24-hour rewards after genuine use",
-    "Added plan-based referral rewards with 30-day or 365-day validity"
+    "Added a formal Free User tier in the administrator center",
+    "Administrators can set free users individually or in bulk and reset their trial",
+    "Expired memberships now automatically downgrade to the formal free tier",
+    "Used free trial credits remain consumed and do not refresh after downgrade"
   ],
   "apkMirrors": [
     "https://cdn.jsdelivr.net/gh/mwpinaistudio/mwpinaistudio-website@main/downloads/paipintong.apk",
