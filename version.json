@@ -2,18 +2,18 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.0.58",
-  "versionCode": 59,
+  "version": "1.0.59",
+  "versionCode": 60,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 6840807,
-  "sha256": "F255936BB14A8CA77EA492C3B17AFF898AF24B0DD328E1E2E2DAA0AFA411B0A5",
+  "sizeBytes": 6841587,
+  "sha256": "A7CE8189D571159578ED20D7F8A84CAAC58FDC8DE9F2B4A7F15DB80DC2E68AB0",
   "minAndroid": "7.0",
   "releasedAt": "2026-09-21",
   "notes": [
-    "Added a formal Free User tier in the administrator center",
-    "Administrators can set free users individually or in bulk and reset their trial",
-    "Expired memberships now automatically downgrade to the formal free tier",
-    "Used free trial credits remain consumed and do not refresh after downgrade"
+    "Simplified sharing to one-tap system share and popular social apps",
+    "Added advertising-style referral copy instead of a bare link",
+    "Removed invite-code display and transactional reward statistics from the customer UI",
+    "Added an invitation landing page and app deep-link association"
   ],
   "apkMirrors": [
     "https://cdn.jsdelivr.net/gh/mwpinaistudio/mwpinaistudio-website@main/downloads/paipintong.apk",

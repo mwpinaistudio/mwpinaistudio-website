@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>拍品通｜电商人的专属 AI 上架助手</title>
+  <meta name="description" content="上传商品图片或视频，AI 自动生成标题、卖点、描述和价格参考。新用户注册当天获得 20 AI 额度。" />
+  <meta property="og:title" content="拍品通｜电商人的专属 AI 上架助手" />
+  <meta property="og:description" content="上传图片或视频，AI 自动生成商品标题、卖点、描述和价格参考。新用户注册当天获得 20 AI 额度。" />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="wrap">
+    <main class="hero" style="padding-top:48px">
+      <div class="eyebrow">AI LISTING ASSISTANT FOR E-COMMERCE</div>
+      <h1>电商人的专属<br><span style="color:#ff6f3c">AI 上架助手</span></h1>
+      <p class="lead">上传商品图片或视频，拍品通自动生成标题、卖点、商品描述和市场价格参考，让上架效率直接拉满。</p>
+      <div class="panel" style="text-align:left">
+        <h2 style="margin-top:0">好友邀请你体验拍品通</h2>
+        <p>新用户注册当天可获得 <strong>20 AI 额度</strong>。已经安装拍品通？点击下面按钮，自动打开 App 并关联邀请。</p>
+        <p><a class="button" id="open-app" href="paipintong://invite">打开拍品通并领取体验额度</a></p>
+        <p><a class="button secondary" href="downloads/paipintong.apk" download>下载安卓版拍品通</a></p>
+        <div class="notice">如果还没安装，请先下载安装。安装完成后，再点击“打开拍品通并领取体验额度”。如果没有自动打开，请返回本页面重试。</div>
+      </div>
+      <div class="panel">
+        <h2>为什么值得试试？</h2>
+        <ul class="release-list">
+          <li>图片和 30 秒内短视频都能识别</li>
+          <li>中英文标题、卖点、描述和规格自动整理</li>
+          <li>自动给出市场价格参考和优化建议</li>
+          <li>商品资料可以分享到微信、Messenger、Facebook 等常用软件</li>
+        </ul>
+      </div>
+    </main>
+  </div>
+  <script>
+    const ref = new URLSearchParams(location.search).get('ref') || ''
+    const open = document.getElementById('open-app')
+    open.href = 'paipintong://invite' + (ref ? '?ref=' + encodeURIComponent(ref) : '')
+    if (!ref) open.style.display = 'none'
+  </script>
+</body>
+</html>
