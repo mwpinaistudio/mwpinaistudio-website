@@ -2,18 +2,18 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.0.55",
-  "versionCode": 56,
+  "version": "1.0.57",
+  "versionCode": 58,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 6837723,
-  "sha256": "A5E3C32221130B8AB75F06E906D58982DE309C6920BF48665EF89E3FB5FA1DB3",
+  "sizeBytes": 6837871,
+  "sha256": "8BEA939FACB84282D4AD33CF2EAAF8E7AAE7482609FA7CDF0F0A054745A9E9D9",
   "minAndroid": "7.0",
   "releasedAt": "2026-09-21",
   "notes": [
-    "Added notification delivery logs and failed-notification retry",
-    "Added membership expiry email reminders",
-    "Added activation-ready emails after payment confirmation",
-    "Administrator overview now shows recent notification status and supports expiry reminder delivery"
+    "New users receive a registration-day 20-credit trial only; no daily reset",
+    "Added a live trial countdown and quota-finished prompt",
+    "Added referral codes with 5-credit independent 24-hour rewards after genuine use",
+    "Added plan-based referral rewards with 30-day or 365-day validity"
   ],
   "apkMirrors": [
     "https://cdn.jsdelivr.net/gh/mwpinaistudio/mwpinaistudio-website@main/downloads/paipintong.apk",
