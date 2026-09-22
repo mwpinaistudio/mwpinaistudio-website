@@ -5,16 +5,17 @@
   "version": "1.0.63",
   "versionCode": 64,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 6847391,
-  "sha256": "FEBF84C1AC291E9152D27AAD0E21D48E361E3494E0ACACC621205E8A30D30EFC",
+  "sizeBytes": 6848799,
+  "sha256": "53D1BEB3B499353EE5BCD89E7B63EC0BD473B39CED3F48171DE5F74047B42220",
   "minAndroid": "7.0",
   "releasedAt": "2026-09-22",
   "notes": [
-    "AI credits are now delivered for the whole period in one go (30 days) or one year, with a clear expiry reminder on the home screen",
-    "Product page generation now costs 3 credits; regenerate titles and rewrite description cost 2 credits each",
-    "Agent plan now includes 21,000 credits per month (700 per day)",
-    "Silver plan stays at PHP 499; annual Elite plan now PHP 49,990",
-    "Photos are compressed before upload for faster, lighter usage"
+    "AI credits for your whole period are now added to your account at once, so you can plan a large batch of listings whenever it suits you",
+    "The home screen now shows your remaining credits together with a clear expiry reminder",
+    "When your period credits are used up, AI generation pauses until you renew",
+    "Photos are optimised automatically before upload - faster uploads and lighter data usage",
+    "Faster, clearer AI workflow: snap a photo or record a video, then generate the complete product page in one step",
+    "Updated app icon and overall visual polish"
   ],
   "apkMirrors": [
     "https://cdn.jsdelivr.net/gh/mwpinaistudio/mwpinaistudio-website@main/downloads/paipintong.apk",
