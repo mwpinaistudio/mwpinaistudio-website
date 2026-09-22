@@ -2,18 +2,19 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.0.62",
-  "versionCode": 63,
+  "version": "1.0.63",
+  "versionCode": 64,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 6847123,
-  "sha256": "15F9DBA014ABABE3F6FA2D41ED866FB6D351ACDE5A7FA8D1640B7F6BEEE334BF",
+  "sizeBytes": 8571571,
+  "sha256": "BA26BE84E4A54702CED25411EA826A0E2FE0658350F7C75F4772FE88F92B7426",
   "minAndroid": "7.0",
   "releasedAt": "2026-09-22",
   "notes": [
-    "Added administrator referral relationship and reward management",
-    "Administrators can freeze referral relationships and revoke unused rewards",
-    "Added referral reward search, status filters, and pagination",
-    "Added audit fields for blocked relationships and revoked rewards"
+    "AI credits are now delivered for the whole period in one go (30 days) or one year, with a clear expiry reminder on the home screen",
+    "Product page generation now costs 3 credits; regenerate titles and rewrite description cost 2 credits each",
+    "Agent plan now includes 21,000 credits per month (700 per day)",
+    "Silver plan stays at PHP 499; annual Elite plan now PHP 49,990",
+    "Photos are compressed before upload for faster, lighter usage"
   ],
   "apkMirrors": [
     "https://cdn.jsdelivr.net/gh/mwpinaistudio/mwpinaistudio-website@main/downloads/paipintong.apk",
