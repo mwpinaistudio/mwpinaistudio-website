@@ -2,18 +2,18 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.0.61",
-  "versionCode": 62,
+  "version": "1.0.62",
+  "versionCode": 63,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 6845463,
-  "sha256": "0D7DD301880773BA596402A390E9D2A195737550EAB0D85417A7F035ED154EC3",
+  "sizeBytes": 6847123,
+  "sha256": "15F9DBA014ABABE3F6FA2D41ED866FB6D351ACDE5A7FA8D1640B7F6BEEE334BF",
   "minAndroid": "7.0",
-  "releasedAt": "2026-09-21",
+  "releasedAt": "2026-09-22",
   "notes": [
-    "Added Take Photo and Choose from Gallery options for product images",
-    "Added Record Video and Choose from Gallery options for product videos",
-    "Camera and microphone permissions added for direct capture",
-    "Existing video upload and AI extraction flow remains unchanged"
+    "Added administrator referral relationship and reward management",
+    "Administrators can freeze referral relationships and revoke unused rewards",
+    "Added referral reward search, status filters, and pagination",
+    "Added audit fields for blocked relationships and revoked rewards"
   ],
   "apkMirrors": [
     "https://cdn.jsdelivr.net/gh/mwpinaistudio/mwpinaistudio-website@main/downloads/paipintong.apk",

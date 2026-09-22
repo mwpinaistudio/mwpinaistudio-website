@@ -16,6 +16,8 @@ a{color:inherit}.wrap{width:min(1080px,calc(100% - 32px));margin:auto}.nav{displ
 .badge{display:inline-flex;padding:7px 11px;border:1px solid var(--line);border-radius:999px;color:#b8d1e3;font-size:12px;background:rgba(6,20,36,.45)}
 .panel{margin:0 0 18px;padding:26px;border:1px solid var(--line);border-radius:22px;background:var(--card);box-shadow:0 18px 60px rgba(0,0,0,.18)}
 .panel h2{margin:8px 0 14px;font-size:24px}
+.demo-section{padding:18px}.demo-section h2{margin-bottom:12px}.demo-video-frame{display:block;width:100%;aspect-ratio:16/9;min-height:520px;border:1px solid var(--line);border-radius:18px;background:#07111f;box-shadow:0 20px 60px rgba(0,0,0,.28)}
+@media(max-width:760px){.demo-video-frame{min-height:640px;aspect-ratio:4/5}}
 .panel p,.panel li,.legal p,.legal li{color:#a9c1d4;line-height:1.75;font-size:15px}
 .steps{padding-left:22px;margin:0}
 .steps li{margin:10px 0}
