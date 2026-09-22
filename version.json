@@ -5,16 +5,14 @@
   "version": "1.0.63",
   "versionCode": 64,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 6848799,
-  "sha256": "53D1BEB3B499353EE5BCD89E7B63EC0BD473B39CED3F48171DE5F74047B42220",
+  "sizeBytes": 6848839,
+  "sha256": "EF825C5B2B57860E6B0E129725425948184A287DA309887AA122F2746ED6EB3C",
   "minAndroid": "7.0",
   "releasedAt": "2026-09-22",
   "notes": [
-    "AI credits for your whole period are now added to your account at once, so you can plan a large batch of listings whenever it suits you",
-    "The home screen now shows your remaining credits together with a clear expiry reminder",
-    "When your period credits are used up, AI generation pauses until you renew",
-    "Photos are optimised automatically before upload - faster uploads and lighter data usage",
-    "Faster, clearer AI workflow: snap a photo or record a video, then generate the complete product page in one step",
+    "AI credits for your whole period are added to your account at once - plan a big batch whenever you like",
+    "The home screen shows your remaining credits, expiry date and the cost per product",
+    "Photos are optimised automatically before upload for faster, lighter uploads",
     "Updated app icon and overall visual polish"
   ],
   "apkMirrors": [
