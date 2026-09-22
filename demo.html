@@ -240,7 +240,7 @@ addEventListener('resize',resize);
 
 let ac=null,on=false;
 function actx(){if(!ac){try{ac=new (window.AudioContext||window.webkitAudioContext)();}catch(e){ac=null}}return ac;}
-function setOn(v){on=v;snd.classList.remove('empty');snd.innerHTML=v?'<span>SOUND ON</span> <span class="ver">v3</span>':'<span class="sp">SOUND OFF</span> <span class="ver">v3</span>';if(v)startMusic();else stopMusic();}
+function setOn(v){on=v;snd.classList.remove('empty');snd.innerHTML=v?'<span>SOUND ON</span> <span class="ver">v6</span>':'<span class="sp">SOUND OFF</span> <span class="ver">v6</span>';if(v)startMusic();else stopMusic();}
 function unlock(){const a=actx();if(!a)return;try{if(a.state!=='running'){a.resume().then(function(){if(a.state==='running'&&!on)setOn(true);},function(){});}else if(!on)setOn(true);}catch(e){}}
 snd.addEventListener('pointerdown',function(e){e.stopPropagation();const a=actx();if(!a)return;
  if(a.state!=='running'){a.resume().then(function(){setOn(true);blip(880);},function(){});}else{setOn(!on);}});
@@ -273,68 +273,92 @@ function blip(hz){if(!on||!ac)return;const a=ac,t=a.currentTime;
  const g=a.createGain();g.gain.setValueAtTime(.035,t);g.gain.exponentialRampToValueAtTime(.001,t+.09);
  o.connect(g);g.connect(a.destination);o.start(t);o.stop(t+.1);}
 
-let music=null,musicGain=null,pad=[],stepT=null,stepIdx=0,airSrc=null,duck=false;
-const CHORDS=[
- {bass:146.83,v:[293.66,440.00,587.33]},
- {bass:220.00,v:[329.63,440.00,554.37]},
- {bass:246.94,v:[369.99,493.88,587.33]},
- {bass:196.00,v:[293.66,392.00,493.88]},
- {bass:146.83,v:[293.66,440.00,587.33]},
- {bass:196.00,v:[293.66,392.00,493.88]},
- {bass:146.83,v:[293.66,369.99,587.33]}
+let music=null,musicGain=null,bus=null,dry=null,conv=null,schedT=null,nextT=0,stepIdx=0,loopIdx=0,duck=false,pw=null,hammerBuf=null;
+const A2=110.00,D3=146.83,E3=164.81,F3=174.61,G3=196.00,A3=220.00,B3=246.94,C4=261.63,D4=293.66,E4=329.63,F4=349.23,G4=392.00,A4=440.00,B4=493.88,C5=523.25,D5=587.33;
+const CH=[
+ {bass:F3,v:[A3,C4,E4,F4],st:[F3,C4]},
+ {bass:G3,v:[B3,D4,F4,G4],st:[G3,D4]},
+ {bass:E3,v:[G3,B3,D4,E4],st:[E3,B3]},
+ {bass:A2,v:[A3,C4,E4,G4],st:[A3,E4]},
+ {bass:D3,v:[F3,A3,C4,D4],st:[D3,A3]},
+ {bass:G3,v:[B3,D4,F4,G4],st:[G3,D4]},
+ {bass:C4/2,v:[F4,G4,C5,C5],st:[C4/2,G4]},
+ {bass:C4/2,v:[E4,G4,B4,C5],st:[C4/2,G4]}
+];
+const PHRASES=[
+ [A4,C5, B4,D5, G4,B4, E4,A4, F4,A4, G4,B4, C5,G4, E4,C4],
+ [C5,A4, D5,B4, B4,G4, A4,E4, A4,F4, B4,G4, G4,C5, C4,E4],
+ [A4,G4, B4,D5, G4,E4, A4,C4, F4,G4, B4,D5, C5,E4, C4,C4]
 ];
 function ir(a,dur,decay){const n=Math.max(1,Math.floor(a.sampleRate*dur)),b=a.createBuffer(2,n,a.sampleRate);
  for(let c=0;c<2;c++){const d=b.getChannelData(c);for(let i=0;i<n;i++){const k=i/n;d[i]=(Math.random()*2-1)*Math.pow(1-k,decay);}}return b;}
+function makePW(a){const real=new Float32Array(12),imag=new Float32Array(12);
+ imag[1]=1;imag[2]=.5;imag[3]=.27;imag[4]=.16;imag[5]=.09;imag[6]=.055;imag[7]=.032;imag[8]=.018;imag[9]=.01;
+ return a.createPeriodicWave(real,imag,{disableNormalization:false});}
 function startMusic(){
  if(!on||!ac||music)return;
  const a=ac,t=a.currentTime;
  musicGain=a.createGain();musicGain.gain.setValueAtTime(.0001,t);musicGain.connect(a.destination);
  window.__ppMusicGain=musicGain;
- const conv=a.createConvolver();conv.buffer=ir(a,2.4,2.2);
- const wet=a.createGain();wet.gain.value=.42;conv.connect(wet);wet.connect(musicGain);
- const bus=a.createBiquadFilter();bus.type='lowpass';bus.frequency.setValueAtTime(3400,t);bus.Q.value=.4;
- const dry=a.createGain();dry.gain.value=.85;bus.connect(dry);dry.connect(musicGain);
- bus.connect(conv);
- const lfo=a.createOscillator();lfo.frequency.value=.05;const lg=a.createGain();lg.gain.value=600;lfo.connect(lg);lg.connect(bus.frequency);lfo.start();
- const an=a.createBufferSource();an.buffer=nb(a,3);an.loop=true;
- const hp=a.createBiquadFilter();hp.type='highpass';hp.frequency.value=5000;
- const ag=a.createGain();ag.gain.value=.004;an.connect(hp);hp.connect(ag);ag.connect(conv);an.start();
- airSrc=an; pad=[];
- const add=function(f,gain){const o=a.createOscillator();o.type='triangle';o.frequency.setValueAtTime(f,t);o.detune.value=Math.random()*8-4;
-  const g=a.createGain();g.gain.setValueAtTime(.0001,t);g.gain.linearRampToValueAtTime(gain,t+1.6);o.connect(g);g.connect(bus);o.start();pad.push({o:o,g:g});};
- add(CHORDS[0].bass,.24);
- CHORDS[0].v.forEach(function(f){add(f,.15);});
- music={conv:conv,bus:bus,lfo:lfo,lg:lg,idx:0};
- musicGain.gain.linearRampToValueAtTime(.30,t+2.2);
- stepIdx=0; stepT=setInterval(step,540);
+ conv=a.createConvolver();conv.buffer=ir(a,3.4,1.9);
+ const wet=a.createGain();wet.gain.value=.44;conv.connect(wet);wet.connect(musicGain);
+ dry=a.createGain();dry.gain.value=.78;dry.connect(musicGain);dry.connect(conv);
+ bus=a.createBiquadFilter();bus.type='lowpass';bus.frequency.value=4600;bus.Q.value=.25;bus.connect(dry);
+ pw=makePW(a);hammerBuf=nb(a,.02);
+ music={};
+ musicGain.gain.linearRampToValueAtTime(.42,t+1.8);
+ stepIdx=0;loopIdx=0;nextT=t+.25;schedT=setInterval(sched,80);sched();
 }
 function stopMusic(){
- if(stepT){clearInterval(stepT);stepT=null;}
- const m=music;music=null;window.__ppMusicGain=null;
- try{if(musicGain&&ac){const t=ac.currentTime;musicGain.gain.cancelScheduledValues(t);musicGain.gain.setValueAtTime(Math.max(.0001,musicGain.gain.value),t);musicGain.gain.linearRampToValueAtTime(.0001,t+.7);}}catch(e){}
- if(m)setTimeout(function(){try{pad.forEach(function(x){x.o.stop()});m.lfo.stop();if(airSrc)airSrc.stop();}catch(e){}},800);}
-function setChord(i){if(!music||!ac)return;
- const a=ac,t=a.currentTime,ch=CHORDS[i%CHORDS.length];music.idx=i%CHORDS.length;
- const vals=[ch.bass,ch.v[0],ch.v[1],ch.v[2]];
- pad.forEach(function(x,k){const f=vals[k]||ch.v[0];try{x.o.frequency.cancelScheduledValues(t);x.o.frequency.setValueAtTime(x.o.frequency.value,t);x.o.frequency.exponentialRampToValueAtTime(f,t+1.5);}catch(e){}});}
+ if(schedT){clearInterval(schedT);schedT=null;}
+ music=null;window.__ppMusicGain=null;
+ try{if(musicGain&&ac){const t=ac.currentTime;musicGain.gain.cancelScheduledValues(t);musicGain.gain.setValueAtTime(Math.max(.0001,musicGain.gain.value),t);musicGain.gain.linearRampToValueAtTime(.0001,t+.8);}}catch(e){}
+}
+function setChord(i){}
 function duckMusic(v){duck=v;if(!on||!ac||!musicGain)return;const t=ac.currentTime;
- try{musicGain.gain.cancelScheduledValues(t);musicGain.gain.setValueAtTime(musicGain.gain.value,t);musicGain.gain.linearRampToValueAtTime(v?.16:.30,t+.6);}catch(e){}}
-function step(){if(!on||!ac||!music)return;
- const a=ac,t=a.currentTime,ch=CHORDS[(music.idx||0)%CHORDS.length];
- const pat=[ch.v[0],ch.v[1],ch.v[2],ch.v[1]];
- const f=pat[stepIdx%4]*(stepIdx%8===7?1.5:1);
- stepIdx++;
- const o=a.createOscillator();o.type='triangle';o.frequency.setValueAtTime(f,t);
- const o2=a.createOscillator();o2.type='sine';o2.frequency.setValueAtTime(f*2,t);
+ try{musicGain.gain.cancelScheduledValues(t);musicGain.gain.setValueAtTime(musicGain.gain.value,t);musicGain.gain.linearRampToValueAtTime(v?.25:.42,t+.6);}catch(e){}}
+function piano(f,vel,a,t,hold){
+ const o=a.createOscillator();o.setPeriodicWave(pw);o.frequency.setValueAtTime(f,t);
+ const lp=a.createBiquadFilter();lp.type='lowpass';lp.Q.value=.5;
+ lp.frequency.setValueAtTime(4200,t);lp.frequency.exponentialRampToValueAtTime(720,t+1.8);
  const g=a.createGain();g.gain.setValueAtTime(.0001,t);
- g.gain.exponentialRampToValueAtTime(duck?.12:.24,t+.02);
- g.gain.exponentialRampToValueAtTime(.0001,t+1.45);
- const g2=a.createGain();g2.gain.value=.30;
- o.connect(g);o2.connect(g2);g2.connect(g);g.connect(music.bus);
- o.start(t);o.stop(t+1.5);o2.start(t);o2.stop(t+1.5);
- if(stepIdx%4===0){const o3=a.createOscillator();o3.type='sine';o3.frequency.setValueAtTime(ch.bass,t);
-  const g3=a.createGain();g3.gain.setValueAtTime(.0001,t);g3.gain.exponentialRampToValueAtTime(duck?.09:.19,t+.02);g3.gain.exponentialRampToValueAtTime(.0001,t+1.1);
-  o3.connect(g3);g3.connect(music.bus);o3.start(t);o3.stop(t+1.15);}}
+ g.gain.exponentialRampToValueAtTime(vel,t+.015);
+ g.gain.exponentialRampToValueAtTime(vel*.28,t+.45);
+ g.gain.setTargetAtTime(.0001,t+.45,1.0);
+ o.connect(lp);lp.connect(g);g.connect(bus);
+ const n=a.createBufferSource();n.buffer=hammerBuf;
+ const bp=a.createBiquadFilter();bp.type='bandpass';bp.frequency.value=2400;bp.Q.value=.8;
+ const ng=a.createGain();ng.gain.setValueAtTime(vel*.075,t);ng.gain.exponentialRampToValueAtTime(.0001,t+.028);
+ n.connect(bp);bp.connect(ng);ng.connect(bus);
+ o.start(t);o.stop(t+(hold||3.6));n.start(t);
+}
+function stringNote(f,vel,a,t,dur){
+ const o1=a.createOscillator();o1.type='sawtooth';o1.frequency.setValueAtTime(f,t);o1.detune.value=-5;
+ const o2=a.createOscillator();o2.type='sawtooth';o2.frequency.setValueAtTime(f,t);o2.detune.value=7;
+ const lp=a.createBiquadFilter();lp.type='lowpass';lp.Q.value=.3;
+ lp.frequency.setValueAtTime(850,t);lp.frequency.linearRampToValueAtTime(1500,t+dur*.45);
+ const g=a.createGain();g.gain.setValueAtTime(.0001,t);
+ g.gain.linearRampToValueAtTime(vel,t+dur*.38);
+ g.gain.linearRampToValueAtTime(.0001,t+dur);
+ o1.connect(lp);o2.connect(lp);lp.connect(g);g.connect(bus);
+ o1.start(t);o1.stop(t+dur+.05);o2.start(t);o2.stop(t+dur+.05);
+}
+function scheduleStep(t){
+ const bar=Math.floor(stepIdx/8)%8,s=stepIdx%8,ch=CH[bar];
+ if(s===0){stringNote(ch.st[0],(duck?.012:.018),ac,t,3.0);stringNote(ch.st[1],(duck?.010:.014),ac,t,3.0);}
+ if(s%2===0){
+  const seq=[ch.v[0],ch.v[1],ch.v[2],ch.v[1]];
+  piano(seq[(s/2)%4],(s===0?(duck?.08:.12):(duck?.065:.10)),ac,t,3.0);
+  if(s===0)piano(ch.bass,(duck?.06:.09),ac,t,3.8);
+ }
+ if(s===0||s===4){
+  const ph=PHRASES[loopIdx%PHRASES.length],mi=ph[(bar*2+(s===4?1:0))%ph.length];
+  if(s===0&&bar%4===2){const gi=ph[(bar*2+ph.length-1)%ph.length];piano(gi,(duck?.05:.08),ac,t-.09,1.4);}
+  piano(mi,(duck?.11:.18),ac,t+.015,3.6);
+ }
+ stepIdx++;if(stepIdx%64===0)loopIdx++;
+}
+function sched(){if(!on||!ac||!music)return;while(nextT<ac.currentTime+.6){scheduleStep(nextT);nextT+=.395;}}
 const S1=`<div class="sbar"><span>9:41</span><span>MANUAL MODE</span></div>
 <div class="appbar"><span>Before PaiPinTong</span><span class="pill warn">SLOW</span></div>
 <div class="card"><span class="k">Tabs open</span><div class="tags"><span class="tag">Supplier site</span><span class="tag b">Spec sheet</span><span class="tag g">Price check</span><span class="tag">Copy draft</span><span class="tag b">Translate</span></div></div>
@@ -492,7 +516,7 @@ if(window.matchMedia('(prefers-reduced-motion: reduce)').matches){
  ltext.textContent=scenes[0].txt;bar.style.width='100%';
 }else{
  requestAnimationFrame(draw);
- snd.classList.add('empty');snd.innerHTML='<span>TAP FOR SOUND</span> <span class="ver">v3</span>';
+ snd.classList.add('empty');snd.innerHTML='<span>TAP FOR SOUND</span> <span class="ver">v6</span>';
  play(0);
  setTimeout(function(){try{const a=actx();if(a&&a.state==='running'&&!on)setOn(true);}catch(e){}},500);
 }
