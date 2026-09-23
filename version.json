@@ -2,17 +2,17 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.0.64",
-  "versionCode": 65,
+  "version": "1.0.65",
+  "versionCode": 66,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 6851515,
-  "sha256": "299A60672EFAF536AF9EF6668E0553C9548CF351B3061B722E3E759C20F36874",
+  "sizeBytes": 6852171,
+  "sha256": "58F5321B6DAE81D293F0400BA7ADFA866E9FEF50F10FD2D3122AF7909524DC71",
   "minAndroid": "7.0",
   "releasedAt": "2026-09-23",
   "notes": [
-    "Membership status now combines available credits, used credits, and the expiry date in one clear summary.",
-    "Interface hierarchy and layout are more consistent, compact, and easier to navigate.",
-    "Several screens have been polished for a smoother overall experience."
+    "Management screens now use a cleaner, consistent layout with clearer text hierarchy.",
+    "Fixed an issue where navigation could cover content while scrolling.",
+    "Improved spacing and readability across payment, order, and reward screens."
   ],
   "apkMirrors": [
     "https://cdn.jsdelivr.net/gh/mwpinaistudio/mwpinaistudio-website@main/downloads/paipintong.apk",
