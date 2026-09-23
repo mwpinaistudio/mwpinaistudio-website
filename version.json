@@ -2,17 +2,16 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.0.75",
-  "versionCode": 76,
+  "version": "1.0.76",
+  "versionCode": 77,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 6852823,
-  "sha256": "A8CC3EF7F3FD120AAFDB54F15D94B5083182662487FB3CADE2A7271E7A25EAB5",
+  "sizeBytes": 6853035,
+  "sha256": "0114592E340F160304AE10E68B3D47129D1A00DA76F5ACB960F4629AEA7EC0FC",
   "minAndroid": "7.0",
   "releasedAt": "2026-09-23",
   "notes": [
-    "Videos are now limited to 30MB to keep uploads and storage costs predictable.",
-    "Large video files do not increase AI credit usage because recognition remains duration-based.",
-    "Short product videos are still supported and use automatic frame analysis."
+    "The home screen now recommends using multiple photos for more detailed product recognition.",
+    "Video is optional; multiple photos usually provide lower credit usage and richer product details."
   ],
   "apkMirrors": [
     "https://cdn.jsdelivr.net/gh/mwpinaistudio/mwpinaistudio-website@main/downloads/paipintong.apk",
