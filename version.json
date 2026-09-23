@@ -2,17 +2,17 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.0.74",
-  "versionCode": 75,
+  "version": "1.0.75",
+  "versionCode": 76,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 6852719,
-  "sha256": "EAEE4C0A8999B373CC2C3F1FB73BF6C4AAA4CF215C95C44BDCDB9A5628AF86D2",
+  "sizeBytes": 6852823,
+  "sha256": "A8CC3EF7F3FD120AAFDB54F15D94B5083182662487FB3CADE2A7271E7A25EAB5",
   "minAndroid": "7.0",
   "releasedAt": "2026-09-23",
   "notes": [
-    "Video-only listings now use automatic frame analysis for more reliable recognition.",
-    "AI analysis failures no longer create empty product pages.",
-    "Uploaded videos are kept available for retry when analysis fails."
+    "Videos are now limited to 30MB to keep uploads and storage costs predictable.",
+    "Large video files do not increase AI credit usage because recognition remains duration-based.",
+    "Short product videos are still supported and use automatic frame analysis."
   ],
   "apkMirrors": [
     "https://cdn.jsdelivr.net/gh/mwpinaistudio/mwpinaistudio-website@main/downloads/paipintong.apk",
