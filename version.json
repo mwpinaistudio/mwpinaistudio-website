@@ -2,17 +2,17 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.0.70",
-  "versionCode": 71,
+  "version": "1.0.73",
+  "versionCode": 74,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 6852159,
-  "sha256": "824AB75ED06B00C6B998A2946E0289521AFC3F29D5923CB727D4586F950ED3CA",
+  "sizeBytes": 6852307,
+  "sha256": "FFA7D0335B5080B7AA1E912A74A64DE64AB159346ACA08ECCC9D44D502F88135",
   "minAndroid": "7.0",
   "releasedAt": "2026-09-23",
   "notes": [
-    "Membership credits and expiry are now displayed in one compact row.",
-    "Admin referral management typography now matches the other admin screens.",
-    "Improved layout consistency across the home and admin screens."
+    "Shopee-ready English titles are now limited to 100 UTF-8 bytes.",
+    "Chinese titles are limited to 45 characters.",
+    "Titles are shortened at keyword boundaries so they can be copied and pasted directly."
   ],
   "apkMirrors": [
     "https://cdn.jsdelivr.net/gh/mwpinaistudio/mwpinaistudio-website@main/downloads/paipintong.apk",
