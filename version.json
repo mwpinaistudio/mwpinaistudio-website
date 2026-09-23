@@ -2,16 +2,17 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.0.76",
-  "versionCode": 77,
+  "version": "1.0.77",
+  "versionCode": 78,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 6853035,
-  "sha256": "0114592E340F160304AE10E68B3D47129D1A00DA76F5ACB960F4629AEA7EC0FC",
+  "sizeBytes": 6855439,
+  "sha256": "AD21FE571A8E66CAAEA89B5B57944AC2575DB705969A677866FDD41F20E9A444",
   "minAndroid": "7.0",
   "releasedAt": "2026-09-23",
   "notes": [
-    "The home screen now recommends using multiple photos for more detailed product recognition.",
-    "Video is optional; multiple photos usually provide lower credit usage and richer product details."
+    "Added automatic retries and recovery for interrupted AI tasks.",
+    "Added a credit activity history for clearer usage tracking.",
+    "Improved diagnostics and automatic cleanup of unused media files."
   ],
   "apkMirrors": [
     "https://cdn.jsdelivr.net/gh/mwpinaistudio/mwpinaistudio-website@main/downloads/paipintong.apk",
