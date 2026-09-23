@@ -2,17 +2,18 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.0.66",
-  "versionCode": 67,
+  "version": "1.0.67",
+  "versionCode": 68,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 6852167,
-  "sha256": "3AEC13CEDCD984E628113534D316CA9D240229419FF3A1292A9BED0BC86990E3",
+  "sizeBytes": 6852163,
+  "sha256": "35545111E7C9D14AF68A30BDA9C6DE109C65D582CE3BCD933EADAF29FCDD275E",
   "minAndroid": "7.0",
   "releasedAt": "2026-09-23",
   "notes": [
-    "Short product titles are now rewritten for completeness instead of being cut off at the character limit.",
-    "Short titles keep the key marketplace keywords while staying concise and easy to scan.",
-    "Chinese and English short-title generation now follows a more complete e-commerce title structure."
+    "Fixed an issue where selecting local photos could restart the app on some older Android devices.",
+    "Improved handling of large gallery images for more reliable uploads.",
+    "Short product titles now remain complete and concise instead of being cut off.",
+    "Improved stability for image and title processing."
   ],
   "apkMirrors": [
     "https://cdn.jsdelivr.net/gh/mwpinaistudio/mwpinaistudio-website@main/downloads/paipintong.apk",
