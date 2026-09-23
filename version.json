@@ -2,18 +2,17 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.0.69",
-  "versionCode": 70,
+  "version": "1.0.70",
+  "versionCode": 71,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 6852055,
-  "sha256": "01B231D49189DBEE669B32E8FB3EC46A9B59B9BC384E42D14EF2CEB3349B3B2A",
+  "sizeBytes": 6852159,
+  "sha256": "824AB75ED06B00C6B998A2946E0289521AFC3F29D5923CB727D4586F950ED3CA",
   "minAndroid": "7.0",
   "releasedAt": "2026-09-23",
   "notes": [
-    "Full listing generation now costs 2 AI credits; one image plus full listing totals 3 credits.",
-    "Regenerating titles costs 1 AI credit.",
-    "Rewriting the description costs 1 AI credit.",
-    "Re-analyzing new media from the edit screen follows the same credit rules."
+    "Membership credits and expiry are now displayed in one compact row.",
+    "Admin referral management typography now matches the other admin screens.",
+    "Improved layout consistency across the home and admin screens."
   ],
   "apkMirrors": [
     "https://cdn.jsdelivr.net/gh/mwpinaistudio/mwpinaistudio-website@main/downloads/paipintong.apk",
