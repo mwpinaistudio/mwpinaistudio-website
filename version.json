@@ -2,17 +2,18 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.0.90",
-  "versionCode": 91,
+  "version": "1.0.91",
+  "versionCode": 92,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 6862051,
-  "sha256": "103E517016F01FF144EA8FBECBB41E7710E07026CE9890DF3B0DD894B07CCF7D",
+  "sizeBytes": 6863795,
+  "sha256": "68B8F75D3EF118344F1A5ED402498A4337AFB0A70DF2159C24FD314A78E6F97A",
   "minAndroid": "7.0",
   "releasedAt": "2026-09-24",
   "notes": [
-    "Added administrator MFA, role permissions, targeted announcements, and AI rate limiting.",
-    "Added product tags, favorites, recent use, sample product, and help center.",
-    "Added AI task cancellation, image moderation, role audit, and improved security."
+    "Merged Help, notifications, and About into one easier-to-use page.",
+    "Refined the administrator center with a clearer, more compact layout.",
+    "Added permanent cleanup controls for AI usage, cost, and credit activity records.",
+    "Fixed announcement publishing and audience targeting."
   ],
   "apkMirrors": [
     "https://cdn.jsdelivr.net/gh/mwpinaistudio/mwpinaistudio-website@main/downloads/paipintong.apk",
