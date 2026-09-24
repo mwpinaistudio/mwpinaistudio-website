@@ -2,18 +2,18 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.0.95",
-  "versionCode": 96,
+  "version": "1.0.96",
+  "versionCode": 97,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 6865191,
-  "sha256": "C0D84FA89863027A7EDD04CEFA51A402E7216B7F8470B6A445E94813C9A18EC3",
+  "sizeBytes": 6865295,
+  "sha256": "C42607BFB37BB1304E5906A938DE322F10EF97BACFE7221B48060D5BB4A5ED04",
   "minAndroid": "7.0",
   "releasedAt": "2026-09-24",
   "notes": [
-    "AI error messages now match the app language and no longer expose service provider details.",
-    "Credit activity now sits beside the used-credits line in the home quota card.",
+    "Aligned credit activity beside the available-credits title for a cleaner layout.",
+    "AI error messages now match the app language and never expose service provider details.",
     "Announcements play once after login beneath the home logo and disappear after one minute.",
-    "Unified Help, notifications, and app information into one Help & Notifications entry."
+    "Help, notifications, and app information now use one Help & Notifications entry."
   ],
   "apkMirrors": [
     "https://cdn.jsdelivr.net/gh/mwpinaistudio/mwpinaistudio-website@main/downloads/paipintong.apk",
