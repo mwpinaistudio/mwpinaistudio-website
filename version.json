@@ -2,18 +2,18 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.0.93",
-  "versionCode": 94,
+  "version": "1.0.94",
+  "versionCode": 95,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 6864291,
-  "sha256": "997BAB60CA207F9B3360EB8872294F65B7902B4442D8E039FBB385912EDFDFC9",
+  "sizeBytes": 6864727,
+  "sha256": "8FF0B76C12A52C7E7CB588996913D625BD5466767B57ABE9E0B8940387302E76",
   "minAndroid": "7.0",
   "releasedAt": "2026-09-24",
   "notes": [
-    "Announcements now scroll below the home logo, play once per login, and disappear after one minute.",
-    "Help and notifications now use one unified entry.",
-    "Refined the administrator center and added permanent cleanup controls for activity records.",
-    "Fixed announcement publishing and audience targeting."
+    "Moved credit activity into the home quota card as a compact expandable view.",
+    "Announcements play once after login beneath the home logo and disappear after one minute.",
+    "Unified Help, notifications, and app information into a single Help & Notifications entry.",
+    "Refined the administrator center and announcement publishing."
   ],
   "apkMirrors": [
     "https://cdn.jsdelivr.net/gh/mwpinaistudio/mwpinaistudio-website@main/downloads/paipintong.apk",
