@@ -2,17 +2,17 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.0.82",
-  "versionCode": 83,
+  "version": "1.0.83",
+  "versionCode": 84,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 6858083,
-  "sha256": "3FFB8B3B8FD1B8E704A6FB02387DB2DAD8B89AE00198B8137A1AC09501B83C79",
+  "sizeBytes": 6857895,
+  "sha256": "A93ECC2763A7DF3FD66767185981FE6E77B2382C90F2813DB023EDC9950AE695",
   "minAndroid": "7.0",
   "releasedAt": "2026-09-24",
   "notes": [
-    "Added AI task recovery, credit activity history, and improved diagnostics.",
-    "Added Shopee CSV export, batch editing, title quality checks, and version history.",
-    "Added AI cost dashboard, anomaly alerts, admin audit logs, and in-app announcements."
+    "Fixed Shopee CSV export with system sharing and clear feedback.",
+    "Removed the unused batch edit panel while keeping batch delete.",
+    "Improved reliability for export and offline sync."
   ],
   "apkMirrors": [
     "https://cdn.jsdelivr.net/gh/mwpinaistudio/mwpinaistudio-website@main/downloads/paipintong.apk",
