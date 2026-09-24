@@ -2,18 +2,18 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.0.96",
-  "versionCode": 97,
+  "version": "1.0.97",
+  "versionCode": 98,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 6865295,
-  "sha256": "C42607BFB37BB1304E5906A938DE322F10EF97BACFE7221B48060D5BB4A5ED04",
+  "sizeBytes": 6865483,
+  "sha256": "9919D3FE9ACE1AF57A5C56854F3C6B0F3C88CF2EA80734129CE9D880A87F60AA",
   "minAndroid": "7.0",
   "releasedAt": "2026-09-24",
   "notes": [
+    "Announcements now support separate Chinese and English content that changes with the app language.",
     "Aligned credit activity beside the available-credits title for a cleaner layout.",
-    "AI error messages now match the app language and never expose service provider details.",
-    "Announcements play once after login beneath the home logo and disappear after one minute.",
-    "Help, notifications, and app information now use one Help & Notifications entry."
+    "AI error messages follow the app language and never expose service provider details.",
+    "Announcements play once after login beneath the home logo and disappear after one minute."
   ],
   "apkMirrors": [
     "https://cdn.jsdelivr.net/gh/mwpinaistudio/mwpinaistudio-website@main/downloads/paipintong.apk",
