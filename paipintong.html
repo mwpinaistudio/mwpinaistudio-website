@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>PaiPinTong | AI Listing Assistant for E-commerce Sellers</title>
-  <meta name="description" content="PaiPinTong is an AI listing assistant for e-commerce sellers. Upload product photos or video and quickly prepare marketplace-ready titles, selling points, specifications, descriptions and keywords." />
+  <meta name="description" content="PaiPinTong turns product photos into editable, reusable e-commerce listing content, including titles, specifications, selling points, descriptions, packaging details and keywords." />
   <link rel="stylesheet" href="styles.css" />
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <link rel="manifest" href="site.webmanifest" />
@@ -23,28 +23,37 @@
     </nav>
 
     <main>
-      <section class="hero download-hero product-hero">
-        <div class="eyebrow">拍品通 · PaiPinTong · AI 电商上架助手</div>
-        <h1>一张商品图<br /><span>快速生成完整电商上架信息。</span></h1>
-        <p><strong>上传商品图片或视频，AI 自动整理：</strong><br />Upload product photos or video and let AI organise the listing information you need.</p>
-        <div class="hero-output-list bilingual-output-list">
-          <span><b>标题</b><small>Titles</small></span>
-          <span><b>规格属性</b><small>Specifications</small></span>
-          <span><b>卖点</b><small>Selling points</small></span>
-          <span><b>描述</b><small>Descriptions</small></span>
-          <span><b>包装信息</b><small>Packaging</small></span>
-          <span><b>关键词</b><small>Keywords</small></span>
+      <section class="hero download-hero product-hero product-hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow">PaiPinTong · AI e-commerce listing assistant</div>
+          <h1>Turn one product photo<br /><span>into complete listing content.</span></h1>
+          <p>Upload product photos or video and let AI prepare the listing information you need to move faster.</p>
+          <div class="hero-output-list">
+            <span>Titles</span><span>Specifications</span><span>Selling points</span><span>Descriptions</span><span>Packaging</span><span>Keywords</span>
+          </div>
+          <div class="download-actions">
+            <a class="button" href="#download">Try PaiPinTong Free</a>
+            <a class="button secondary" href="#demo">Watch 30-second demo</a>
+          </div>
+          <div class="badges">
+            <span class="badge" id="versionBadge">Version loading…</span>
+            <span class="badge" id="sizeBadge">APK loading…</span>
+            <span class="badge">Android 7.0+</span>
+            <span class="badge">Official direct APK</span>
+          </div>
         </div>
-        <div class="download-actions">
-          <a class="button" href="#download">免费体验 · Try Free</a>
-          <a class="button secondary" href="#demo">观看30秒演示 · Watch Demo</a>
-        </div>
-        <div class="badges">
-          <span class="badge" id="versionBadge">Version loading…</span>
-          <span class="badge" id="sizeBadge">APK loading…</span>
-          <span class="badge">Android 7.0+</span>
-          <span class="badge">Official direct APK</span>
-        </div>
+        <aside class="hero-output-preview" aria-label="Example listing output">
+          <div class="preview-head"><span>AI LISTING OUTPUT</span><em>Editable</em></div>
+          <div class="preview-source"><span>Product photo</span><b>→</b><strong>AI recognised</strong></div>
+          <div class="preview-result-grid">
+            <div><small>Title</small><strong>Portable Bluetooth Speaker</strong></div>
+            <div><small>Specifications</small><strong>Colour · Size · Material</strong></div>
+            <div><small>Selling points</small><strong>Clear sound · Compact</strong></div>
+            <div><small>Description</small><strong>Ready to edit</strong></div>
+            <div><small>Packaging</small><strong>Weight · Dimensions</strong></div>
+            <div><small>Keywords</small><strong>Speaker · Wireless · Portable</strong></div>
+          </div>
+        </aside>
       </section>
 
       <section class="panel demo-section" id="demo">
@@ -52,6 +61,20 @@
         <h2>See how PaiPinTong works</h2>
         <p>Product photos → AI recognition → generated listing information → ready-to-edit result.</p>
         <iframe class="demo-video-frame" src="demo.html?v=12" title="PaiPinTong feature demo" loading="lazy"></iframe>
+      </section>
+
+      <section class="panel process-panel">
+        <div class="eyebrow">How it works</div>
+        <h2>One product image can start a complete listing</h2>
+        <div class="process-flow">
+          <div class="process-step"><span>01</span><strong>Product photos</strong><small>Upload clear photos or a short product video.</small></div>
+          <div class="process-arrow">→</div>
+          <div class="process-step"><span>02</span><strong>AI recognition</strong><small>Read visible product details, labels and attributes.</small></div>
+          <div class="process-arrow">→</div>
+          <div class="process-step"><span>03</span><strong>Listing information</strong><small>Generate titles, properties, selling points and descriptions.</small></div>
+          <div class="process-arrow">→</div>
+          <div class="process-step"><span>04</span><strong>Edit and share</strong><small>Review, save and reuse the complete product file.</small></div>
+        </div>
       </section>
 
       <section class="panel compare-panel">
@@ -67,28 +90,14 @@
             <h3>With PaiPinTong</h3>
             <ol><li>Upload product photos or video</li><li>AI recognises visible information</li><li>Generate listing content</li><li>Review and edit</li><li>Save, copy or export</li></ol>
             <div class="listing-output-grid">
-              <span><b>商品标题</b><small>Titles</small></span>
-              <span><b>商品属性</b><small>Specifications</small></span>
-              <span><b>商品卖点</b><small>Selling points</small></span>
-              <span><b>商品描述</b><small>Descriptions</small></span>
-              <span><b>包装信息</b><small>Packaging</small></span>
-              <span><b>关键词</b><small>Keywords</small></span>
+              <span><b>Titles</b><small>Ready to edit</small></span>
+              <span><b>Specifications</b><small>Structured fields</small></span>
+              <span><b>Selling points</b><small>Conversion-focused</small></span>
+              <span><b>Descriptions</b><small>Marketplace-ready</small></span>
+              <span><b>Packaging</b><small>Weight & dimensions</small></span>
+              <span><b>Keywords</b><small>Search-friendly</small></span>
             </div>
           </div>
-        </div>
-      </section>
-
-      <section class="panel process-panel">
-        <div class="eyebrow">How it works</div>
-        <h2>One product image can start a complete listing</h2>
-        <div class="process-flow">
-          <div class="process-step"><span>01</span><strong>Product photos</strong><small>Upload clear photos or a short product video.</small></div>
-          <div class="process-arrow">→</div>
-          <div class="process-step"><span>02</span><strong>AI recognition</strong><small>Read visible product details, labels and attributes.</small></div>
-          <div class="process-arrow">→</div>
-          <div class="process-step"><span>03</span><strong>Listing information</strong><small>Generate titles, properties, selling points and descriptions.</small></div>
-          <div class="process-arrow">→</div>
-          <div class="process-step"><span>04</span><strong>Edit and share</strong><small>Review, save and reuse the complete product file.</small></div>
         </div>
       </section>
 
