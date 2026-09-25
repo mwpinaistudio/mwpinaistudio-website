@@ -2,17 +2,17 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.1.3",
-  "versionCode": 104,
+  "version": "1.1.4",
+  "versionCode": 105,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 6870820,
-  "sha256": "688C13EF514748E4CB1542D920418FF3FA2E8B7BCE9B2C91F75621A5856BF2FE",
+  "sizeBytes": 6870832,
+  "sha256": "51CAAD1974E9A56A8914166B1103DD87F543DB168DBCC76594F932B3CB8E3740",
   "minAndroid": "7.0",
   "releasedAt": "2026-09-25",
   "notes": [
-    "Fixed quota display so administrator daily limits appear immediately for users.",
+    "Fixed the credit request page so new users see the questionnaire instead of a false submitted state.",
     "Quota changes now replace old cycle grants and report failures instead of silently showing success.",
-    "Added a simple one-time test credit request questionnaire with administrator review.",
+    "Added one-time test credit request questions and administrator review.",
     "All uploaded product images support full-screen preview."
   ],
   "apkMirrors": [
