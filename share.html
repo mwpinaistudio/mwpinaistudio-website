@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
@@ -21,7 +21,7 @@
     var FUNCTION_URL = SUPABASE_URL + '/functions/v1/AI';
     var token = new URLSearchParams(location.search).get('t') || '';
     var data = null;
-    var lang = (navigator.language || 'en').toLowerCase().indexOf('zh') === 0 ? 'zh' : 'en';
+    var lang = 'en';
 
     function esc(value) {
       return String(value == null ? '' : value).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#39;');
@@ -29,11 +29,11 @@
 
     function text(snapshot, key) {
       var result = snapshot.result || {};
-      return lang === 'zh' ? (result[key + 'Zh'] || '') : (result[key + 'En'] || '');
+      return result[key + 'En'] || '';
     }
 
     function spec(snapshot) {
-      return (snapshot.result && (lang === 'zh' ? snapshot.result.specZh : snapshot.result.specEn)) || {};
+      return (snapshot.result && snapshot.result.specEn) || {};
     }
 
     function line(label, value) {
@@ -42,23 +42,23 @@
 
     function makeCopyText(snapshot) {
       var result = snapshot.result || {};
-      var titles = lang === 'zh' ? (result.titlesZh || []) : (result.titlesEn || []);
+      var titles = result.titlesEn || [];
       var s = spec(snapshot);
       return [
-        'PaiPinTong / 拍品通',
+        'PaiPinTong',
         line('SKU', snapshot.sku),
         '',
-        line(lang === 'zh' ? '标题' : 'Titles', (titles || []).join(' / ')),
+        line('Titles', (titles || []).join(' / ')),
         '',
-        line(lang === 'zh' ? '分类' : 'Category', text(snapshot, 'category')),
+        line('Category', text(snapshot, 'category')),
         '',
-        line(lang === 'zh' ? '规格' : 'Specifications', ''),
-        line(lang === 'zh' ? '品牌' : 'Brand', s.brand),
-        line(lang === 'zh' ? '保质期' : 'Shelf life', s.life),
-        line(lang === 'zh' ? '重量' : 'Weight', s.weight),
-        line(lang === 'zh' ? '容量' : 'Volume', s.volume),
-        line(lang === 'zh' ? '成分' : 'Ingredients', s.ingredients),
-        line(lang === 'zh' ? '数量' : 'Quantity', s.qty),
+        line('Specifications', ''),
+        line('Brand', s.brand),
+        line('Shelf life', s.life),
+        line('Weight', s.weight),
+        line('Volume', s.volume),
+        line('Ingredients', s.ingredients),
+        line('Quantity', s.qty),
         '',
         text(snapshot, 'desc'),
         '',
@@ -77,14 +77,10 @@
       var s = spec(snapshot);
       var titles = lang === 'zh' ? (result.titlesZh || []) : (result.titlesEn || []);
       var heading = titles[0] || snapshot.sku || 'PaiPinTong';
-      var labels = lang === 'zh' ? {
-        titles: '标题', category: '分类', specs: '规格', description: '商品描述', packing: '包装与物流', price: '市场价格参考', media: '图片与视频', copyAll: '复制全部资料', download: '下载'
-      } : {
-        titles: 'Titles', category: 'Category', specs: 'Specifications', description: 'Description', packing: 'Packing & Shipping', price: 'Market Price Reference', media: 'Images & Video', copyAll: 'Copy all information', download: 'Download'
-      };
+      var labels = { titles: 'Titles', category: 'Category', specs: 'Specifications', description: 'Description', packing: 'Packing & Shipping', price: 'Market Price Reference', media: 'Images & Video', copyAll: 'Copy all information', download: 'Download' };
       var titlesText = (titles || []).map(function(item, index) { return (index + 1) + '. ' + (item || '-'); }).join('\n');
-      var specsText = [line(lang === 'zh' ? '品牌' : 'Brand', s.brand), line(lang === 'zh' ? '保质期' : 'Shelf life', s.life), line(lang === 'zh' ? '重量' : 'Weight', s.weight), line(lang === 'zh' ? '容量' : 'Volume', s.volume), line(lang === 'zh' ? '成分' : 'Ingredients', s.ingredients), line(lang === 'zh' ? '数量' : 'Quantity', s.qty)].join('\n');
-      var packingText = [line(lang === 'zh' ? '包装重量' : 'Package weight', lang === 'zh' ? (result.packageWeightZh || result.packageWeight) : (result.packageWeightEn || result.packageWeight)), line(lang === 'zh' ? '包装尺寸' : 'Package size', lang === 'zh' ? (result.packageSizeZh || result.packageSize) : (result.packageSizeEn || result.packageSize))].join('\n');
+      var specsText = [line('Brand', s.brand), line('Shelf life', s.life), line('Weight', s.weight), line('Volume', s.volume), line('Ingredients', s.ingredients), line('Quantity', s.qty)].join('\n');
+      var packingText = [line('Package weight', result.packageWeightEn || result.packageWeight), line('Package size', result.packageSizeEn || result.packageSize)].join('\n');
       var mediaHtml = (data.media || []).map(function(item) {
         var url = item.url || '';
         var name = esc(item.name || '');
@@ -92,12 +88,11 @@
         if (item.kind === 'video') return '<figure class="video-item"><video src="' + esc(url) + '" controls playsinline></video><figcaption><span>' + name + '</span>' + download + '</figcaption></figure>';
         return '<figure><img src="' + esc(url) + '" alt="' + name + '" /><figcaption><span>' + name + '</span>' + download + '</figcaption></figure>';
       }).join('');
-      document.getElementById('content').innerHTML = '<div class="top"><div><div class="brand">PaiPinTong / 拍品通</div><div class="sku">SKU: ' + esc(snapshot.sku || '-') + '</div></div><button class="lang" id="lang-button">' + (lang === 'zh' ? 'English' : '中文') + '</button></div><section class="hero"><h1>' + esc(heading) + '</h1><p>' + esc(text(snapshot, 'desc').slice(0, 220)) + '</p><button class="copy-all" id="copy-all">' + esc(labels.copyAll) + '</button></section>' + section('titles', labels.titles, titlesText) + section('category', labels.category, text(snapshot, 'category')) + section('specs', labels.specs, specsText) + section('description', labels.description, text(snapshot, 'desc')) + section('packing', labels.packing, packingText) + section('price', labels.price, text(snapshot, 'price')) + '<section class="media-card"><h2>' + esc(labels.media) + '</h2>' + (mediaHtml ? '<div class="media-grid">' + mediaHtml + '</div>' : '<p>-</p>') + '</section>';
+      document.getElementById('content').innerHTML = '<div class="top"><div><div class="brand">PaiPinTong</div><div class="sku">SKU: ' + esc(snapshot.sku || '-') + '</div></div></div><section class="hero"><h1>' + esc(heading) + '</h1><p>' + esc(text(snapshot, 'desc').slice(0, 220)) + '</p><button class="copy-all" id="copy-all">' + esc(labels.copyAll) + '</button></section>' + section('titles', labels.titles, titlesText) + section('category', labels.category, text(snapshot, 'category')) + section('specs', labels.specs, specsText) + section('description', labels.description, text(snapshot, 'desc')) + section('packing', labels.packing, packingText) + section('price', labels.price, text(snapshot, 'price')) + '<section class="media-card"><h2>' + esc(labels.media) + '</h2>' + (mediaHtml ? '<div class="media-grid">' + mediaHtml + '</div>' : '<p>-</p>') + '</section>';
       document.getElementById('loading').classList.add('hidden');
       document.getElementById('content').classList.remove('hidden');
-      document.getElementById('lang-button').addEventListener('click', function() { lang = lang === 'zh' ? 'en' : 'zh'; render(); });
-      document.getElementById('copy-all').addEventListener('click', function() { navigator.clipboard.writeText(makeCopyText(snapshot)).then(function() { alert(lang === 'zh' ? '已复制' : 'Copied'); }); });
-      document.querySelectorAll('[data-copy]').forEach(function(button) { button.addEventListener('click', function() { var el = document.getElementById(button.dataset.copy); navigator.clipboard.writeText(el ? el.innerText : '').then(function() { alert(lang === 'zh' ? '已复制' : 'Copied'); }); }); });
+      document.getElementById('copy-all').addEventListener('click', function() { navigator.clipboard.writeText(makeCopyText(snapshot)).then(function() { alert('Copied'); }); });
+      document.querySelectorAll('[data-copy]').forEach(function(button) { button.addEventListener('click', function() { var el = document.getElementById(button.dataset.copy); navigator.clipboard.writeText(el ? el.innerText : '').then(function() { alert('Copied'); }); }); });
     }
 
     async function load() {
