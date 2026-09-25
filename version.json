@@ -2,18 +2,18 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.0.97",
-  "versionCode": 98,
+  "version": "1.0.98",
+  "versionCode": 99,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 6865483,
-  "sha256": "9919D3FE9ACE1AF57A5C56854F3C6B0F3C88CF2EA80734129CE9D880A87F60AA",
+  "sizeBytes": 6868884,
+  "sha256": "EC6BEA022A7068E4A916D5151318AC8449828F70115397264447A3D04937F123",
   "minAndroid": "7.0",
-  "releasedAt": "2026-09-24",
+  "releasedAt": "2026-09-25",
   "notes": [
-    "Announcements now support separate Chinese and English content that changes with the app language.",
-    "Aligned credit activity beside the available-credits title for a cleaner layout.",
-    "AI error messages follow the app language and never expose service provider details.",
-    "Announcements play once after login beneath the home logo and disappear after one minute."
+    "During the closed pilot, pricing and in-app payment entry points are hidden. Contact support to request test credits.",
+    "Added separate Chinese and English announcement content that follows the app language.",
+    "Improved AI error handling with localized messages and no service-provider details.",
+    "Refined the home credit card and help center."
   ],
   "apkMirrors": [
     "https://cdn.jsdelivr.net/gh/mwpinaistudio/mwpinaistudio-website@main/downloads/paipintong.apk",
