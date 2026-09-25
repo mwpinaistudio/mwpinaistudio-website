@@ -2,18 +2,18 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.1.6",
-  "versionCode": 107,
+  "version": "1.1.7",
+  "versionCode": 108,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 6871492,
-  "sha256": "0EA6AB0A01DCA2278F7E67663FD604739F97EF5A8DE4EB28C86057B3A9F6D047",
+  "sizeBytes": 6871560,
+  "sha256": "9AD57C41BFBEE13A1413B99747CED33562BF7E9943E0C7F622CDD7CB166C3855",
   "minAndroid": "7.0",
   "releasedAt": "2026-09-25",
   "notes": [
-    "Customer credit activity now shows only the current day and clears automatically the next day.",
-    "Administrators can delete test credit requests with double confirmation.",
-    "Administrators can choose a 1, 3, 7, 14 or 30-day test period before granting credits.",
-    "Credit request grants are adjustable instead of automatically granting a full month."
+    "Administrators now enter a total grant amount and validity period separately.",
+    "The total grant amount is no longer multiplied by the number of days.",
+    "Customer credit activity shows only the current day and clears the next day.",
+    "Credit requests can be deleted with double confirmation."
   ],
   "apkMirrors": [
     "https://cdn.jsdelivr.net/gh/mwpinaistudio/mwpinaistudio-website@main/downloads/paipintong.apk",
