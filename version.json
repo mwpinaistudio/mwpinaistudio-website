@@ -5,8 +5,8 @@
   "version": "1.0.98",
   "versionCode": 99,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 6868884,
-  "sha256": "EC6BEA022A7068E4A916D5151318AC8449828F70115397264447A3D04937F123",
+  "sizeBytes": 6868916,
+  "sha256": "CA1906F8045D4BF57549214FABD67A150DE7A326D047CACA372F2697477006E4",
   "minAndroid": "7.0",
   "releasedAt": "2026-09-25",
   "notes": [
