@@ -2,18 +2,18 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.1.8",
-  "versionCode": 109,
+  "version": "1.1.9",
+  "versionCode": 110,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 6871556,
-  "sha256": "691C9D2F7E21AC8C1C4F699858E5573B539722B48EE2432725AB74987CD6E8C3",
+  "sizeBytes": 6872552,
+  "sha256": "2A4D193C8A35A9B9E9001EF4BA35B660A4E9B9D897D3CD04A2A11FA7CAD36F86",
   "minAndroid": "7.0",
   "releasedAt": "2026-09-25",
   "notes": [
-    "Announcement publishing now uses one input and translates automatically between Chinese and English.",
-    "Administrators enter a total grant amount and separate validity period without automatic multiplication.",
-    "Customer credit activity shows only the current day and clears automatically the next day.",
-    "Credit requests can be deleted with double confirmation."
+    "Announcements can be edited and re-published instead of being deleted and rewritten.",
+    "Edited announcements play again on the home page notice bar.",
+    "Home page notices are delivered more reliably, including right after publishing.",
+    "Admin console cleanup permanently removes usage, AI cost and credit ledger records and reports how many rows were cleared."
   ],
   "apkMirrors": [
     "https://cdn.jsdelivr.net/gh/mwpinaistudio/mwpinaistudio-website@main/downloads/paipintong.apk",
