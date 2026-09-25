@@ -1,10 +1,10 @@
 <!doctype html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Download PaiPinTong | MW PinAI Studio</title>
-  <meta name="description" content="Download the official PaiPinTong Android APK from MW PinAI Studio." />
+  <title>拍品通 | 用 AI 把商品图片变成上架信息</title>
+  <meta name="description" content="拍品通是一款面向电商卖家的 AI 上架助手。上传商品图片或视频，快速整理标题、卖点、规格、描述、包装信息和完整分享页面。" />
   <link rel="stylesheet" href="styles.css" />
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <link rel="manifest" href="site.webmanifest" />
@@ -23,94 +23,106 @@
     </nav>
 
     <main>
-      <section class="hero download-hero">
-        <div class="eyebrow">Official Android download</div>
-        <h1>PaiPinTong<br /><span>拍品通</span></h1>
-        <p>An Android app for organizing product photos and videos, preparing bilingual listing information, managing product records, and sharing complete product files.</p>
+      <section class="hero download-hero product-hero">
+        <div class="eyebrow">AI listing assistant for e-commerce sellers</div>
+        <h1>把商品图片<br /><span>变成可直接上架的信息。</span></h1>
+        <p>上传商品图片或视频，拍品通帮你整理商品标题、卖点、规格、描述、包装信息和完整分享页面。少做重复复制粘贴，把时间留给选品和销售。</p>
         <div class="download-actions">
-          <a class="button" href="downloads/paipintong.apk" download>Download APK</a>
-          <a class="button secondary" href="#install">Installation guide</a>
+          <a class="button" href="#demo">免费体验拍品通</a>
+          <a class="button secondary" href="#download">Android APK 下载</a>
         </div>
         <div class="badges">
-          <span class="badge">Version 1.0.62</span>
+          <span class="badge" id="versionBadge">Version loading…</span>
+          <span class="badge" id="sizeBadge">APK loading…</span>
           <span class="badge">Android 7.0+</span>
-          <span class="badge">6.8 MB</span>
-          <span class="badge">Direct APK</span>
+          <span class="badge">Official direct APK</span>
         </div>
       </section>
 
-
-      <section class="panel demo-section">
-        <div class="eyebrow">APP FEATURE DEMO</div>
-        <h2>See PaiPinTong in Action</h2>
+      <section class="panel demo-section" id="demo">
+        <div class="eyebrow">30-second demo</div>
+        <h2>30 秒看懂拍品通怎么用</h2>
+        <p>从添加商品图片开始，到获得可编辑、可分享的完整商品信息。</p>
         <iframe class="demo-video-frame" src="demo.html?v=12" title="拍品通功能演示" loading="lazy"></iframe>
       </section>
 
-      <section class="grid">
+      <section class="panel download-panel" id="download">
+        <div class="eyebrow">Official Android APK</div>
+        <h2>下载拍品通</h2>
+        <p>当前通过官网直接提供官方 Android 安装包。安装前请确认本页版本号，只从本页下载 APK。</p>
+        <div class="download-actions download-panel-actions">
+          <a class="button" href="downloads/paipintong.apk" download>Android APK 下载</a>
+          <a class="button secondary" href="#install">查看安装说明</a>
+        </div>
+        <p class="muted">SHA-256 checksum</p>
+        <code class="checksum" id="checksum">Loading checksum…</code>
+      </section>
+
+      <section class="grid product-value-grid">
         <article class="card">
-          <h2>Product media</h2>
-          <p>Choose product photos and a video, reorder images, and keep the media attached to each product record.</p>
+          <div class="card-number">01</div>
+          <h2>从商品图片开始</h2>
+          <p>支持商品图片和视频。优先使用多张清晰图片，通常能获得更完整的商品识别结果。</p>
         </article>
         <article class="card">
-          <h2>AI-assisted listing</h2>
-          <p>Prepare product titles, specifications, descriptions, packaging details, price references, and cost calculations. Always review AI output before use.</p>
+          <div class="card-number">02</div>
+          <h2>AI 整理上架信息</h2>
+          <p>生成标题、规格、卖点、商品描述、包装信息和价格参考，结果可在保存前继续编辑。</p>
         </article>
         <article class="card">
-          <h2>Complete sharing</h2>
-          <p>Share one complete HTML product file containing text, images, and video instead of sending media one image at a time.</p>
+          <div class="card-number">03</div>
+          <h2>保存、分享、复用</h2>
+          <p>把文字、图片和视频整理成一个完整商品文件，方便保存、分享给团队或继续修改。</p>
         </article>
+      </section>
+
+      <section class="panel" id="why-direct">
+        <div class="eyebrow">Official distribution</div>
+        <h2>Why is PaiPinTong currently distributed from this website?</h2>
+        <p>PaiPinTong is currently distributed directly from the official website while the Google Play developer verification process is being resolved. The official APK, version information, privacy policy and installation instructions are provided on this website.</p>
+        <div class="notice">请只从本官网下载安装包。官方版本、版本说明、隐私政策和安装步骤都在这里统一提供。</div>
       </section>
 
       <section class="panel" id="install">
         <div class="eyebrow">Installation</div>
         <h2>How to install on Android</h2>
         <ol class="steps">
-          <li>Tap <strong>Download APK</strong> on this page.</li>
+          <li>Tap <strong>Android APK 下载</strong> on this page.</li>
           <li>Open the downloaded file from your browser downloads or Files app.</li>
           <li>If Android asks, allow your browser or file manager to install unknown apps.</li>
           <li>Tap <strong>Install</strong>, then open PaiPinTong.</li>
           <li>Create or sign in to your PaiPinTong account.</li>
         </ol>
-        <div class="notice">
-          Only download the APK from this official page. If another website asks you to pay or provides a modified APK, delete that file and download again from this page.
-        </div>
-      </section>
-
-      <section class="panel" id="update-help">
-        <div class="eyebrow">Update help</div>
-        <h2>If the APK downloads but does not open</h2>
-        <ol class="steps">
-          <li>First check the version on this page. Do not install an APK from an unknown source.</li>
-          <li>Open your browser downloads or the Files app and delete any old or incomplete <strong>paipintong.apk</strong>.</li>
-          <li>Return to this official page, tap <strong>Download APK</strong> again and wait until the download is fully complete.</li>
-          <li>Tap the downloaded APK. If Android asks, allow install permission for your browser or file manager.</li>
-          <li>If the install screen still does not appear, delete the downloaded file and repeat the download once more.</li>
-        </ol>
         <div class="notice">For a smoother update, avoid third-party download managers. Download directly from this page. If the normal download stays at 0%, use the backup download link below.</div>
         <p><a class="button secondary" href="https://cdn.jsdelivr.net/gh/mwpinaistudio/mwpinaistudio-website@main/downloads/paipintong.apk" download>Backup download</a></p>
       </section>
 
-      <section class="panel">
-        <div class="eyebrow">Release 1.0.62</div>
+      <section class="panel" id="updates">
+        <div class="eyebrow">Release <span id="releaseVersion">…</span></div>
         <h2>Latest features</h2>
-        <ul class="release-list">
-          <li>Added administrator referral relationship and reward management.</li>
-          <li>Administrators can freeze referral relationships and revoke unused rewards.</li>
-          <li>Added referral reward search, status filters, and pagination.</li>
-          <li>Added audit fields for blocked relationships and revoked rewards.</li>
+        <ul class="release-list" id="releaseNotes">
+          <li>Loading release information…</li>
         </ul>
       </section>
 
-      <section class="panel">
+      <section class="panel" id="questions">
         <div class="eyebrow">Questions</div>
         <h2>Common questions</h2>
         <details>
-          <summary>Why is this not on Google Play?</summary>
-          <p>The app is currently distributed directly from the official website while the developer verification process is being resolved.</p>
+          <summary>Why is PaiPinTong not on Google Play yet?</summary>
+          <p>PaiPinTong is currently distributed directly from the official website while the Google Play developer verification process is being resolved. The official APK, version information, privacy policy and installation instructions are provided on this website.</p>
         </details>
         <details>
           <summary>How do I update the app?</summary>
           <p>Download the latest APK from this page and install it over the previous version. Your account data remains in the cloud.</p>
+        </details>
+        <details>
+          <summary>How do I request test credits?</summary>
+          <p>During the closed pilot, pricing and in-app payment entry points are hidden. Open the app and use the “联系客服申请测试额度” entry, or contact support from the official website.</p>
+        </details>
+        <details>
+          <summary>Do I still need to check AI output?</summary>
+          <p>Yes. AI-generated titles, descriptions, specifications and price references are reference material. Review and adjust them before publishing any product.</p>
         </details>
         <details>
           <summary>Does the app collect my media?</summary>
@@ -124,6 +136,26 @@
       <span><a href="version.html">Version</a> · <a href="support.html">Support</a> · <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a></span>
     </footer>
   </div>
-  <script>document.getElementById('year').textContent = new Date().getFullYear()</script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear()
+    fetch('version.json?ts=' + Date.now(), { cache: 'no-store' })
+      .then((response) => response.json())
+      .then((data) => {
+        document.getElementById('versionBadge').textContent = 'Version ' + data.version
+        document.getElementById('sizeBadge').textContent = (Number(data.sizeBytes || 0) / 1024 / 1024).toFixed(1) + ' MB'
+        document.getElementById('releaseVersion').textContent = data.version
+        document.getElementById('checksum').textContent = data.sha256 || 'Not available'
+        const notes = Array.isArray(data.notes) ? data.notes : []
+        document.getElementById('releaseNotes').innerHTML = notes.length
+          ? notes.map((note) => '<li>' + String(note).replace(/[&<>"']/g, (char) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[char])) + '</li>').join('')
+          : '<li>No release notes available.</li>'
+      })
+      .catch(() => {
+        document.getElementById('versionBadge').textContent = 'Official version'
+        document.getElementById('sizeBadge').textContent = 'Official APK'
+        document.getElementById('checksum').textContent = 'Download from this official page.'
+        document.getElementById('releaseNotes').innerHTML = '<li>See the version page for the latest release information.</li>'
+      })
+  </script>
 </body>
 </html>

@@ -44,3 +44,19 @@ details p{margin:10px 0 0}
   .download-actions .button{width:100%;justify-content:center}
 }
 .version-card-head{display:flex;justify-content:space-between;align-items:flex-start;gap:16px}.version-card-head h2{margin-bottom:4px}.version-badge{color:#06111d;background:linear-gradient(135deg,#5df2d6,#4b9fff);border:0;font-weight:900}.version-meta{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin:18px 0 22px}.version-meta>div{display:grid;gap:4px;padding:12px;border:1px solid var(--line);border-radius:14px;background:rgba(4,14,27,.45)}.version-meta small{color:#7f9bb0;font-size:11px;text-transform:uppercase;letter-spacing:1px}.version-meta strong{color:#eaf3ff;font-size:14px;overflow-wrap:anywhere}.legal h3{margin:22px 0 8px;color:#eaf3ff;font-size:17px}@media(max-width:760px){.version-card-head{display:block}.version-badge{display:inline-flex;margin-top:10px}.version-meta{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* PaiPinTong product positioning upgrade */
+.product-hero{max-width:920px}
+.product-hero h1{font-size:clamp(40px,7.4vw,82px);line-height:1.06;letter-spacing:-3px;margin:18px 0 22px}
+.product-hero p{font-size:18px;line-height:1.75;color:#afc9dc;max-width:760px}
+.product-value-grid{padding-top:0}
+.card-number{color:var(--cyan);font-size:12px;font-weight:900;letter-spacing:2px;margin-bottom:14px}
+.download-panel{scroll-margin-top:24px}
+.download-panel-actions{margin-top:18px}
+.demo-section{scroll-margin-top:24px}
+#why-direct,#install,#updates,#questions{scroll-margin-top:24px}
+@media(max-width:760px){
+  .product-hero h1{font-size:clamp(36px,11vw,58px);letter-spacing:-1.8px}
+  .product-hero p{font-size:16px}
+  .download-panel-actions .button{width:100%;justify-content:center}
+}
