@@ -117,3 +117,14 @@ details p{margin:10px 0 0}
 .release-info-grid{margin-top:20px}.release-info-grid>div{background:rgba(4,14,27,.62)}
 @media(max-width:900px){.product-hero-grid{grid-template-columns:1fr;padding-top:48px}.hero-output-preview{max-width:620px}.capability-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}.audience-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
 @media(max-width:620px){.product-hero-grid{gap:24px}.preview-result-grid{grid-template-columns:1fr}.capability-grid,.audience-grid{grid-template-columns:1fr!important}.hero-output-preview{padding:15px}}
+
+/* Compact product homepage */
+.compact-section{padding:24px}
+.home-step-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:18px}
+.home-step-grid article{position:relative;padding:18px;border:1px solid var(--line);border-radius:18px;background:rgba(6,20,36,.45)}
+.home-step-grid article>span{display:inline-block;margin-bottom:12px;color:var(--cyan);font-size:11px;font-weight:900;letter-spacing:2px}
+.home-step-grid strong{display:block;color:#eaf3ff;font-size:15px;line-height:1.4}.home-step-grid p{margin:8px 0 0;color:#9bb8ce;font-size:13px;line-height:1.6}
+.home-feature-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:18px}.home-feature-grid .card{margin:0}.home-feature-grid h3{margin:0 0 8px;font-size:16px;color:#eaf3ff}
+.compact-download{margin-bottom:30px}.download-note{margin-top:16px;color:#8ea9bd;font-size:12px;line-height:1.65}
+.compact-install{margin-top:16px;border:1px solid var(--line);border-radius:14px;padding:14px}.compact-install summary{font-weight:800}.compact-install .steps{margin-top:12px}
+@media(max-width:760px){.home-step-grid,.home-feature-grid{grid-template-columns:1fr}.compact-section,.compact-download{padding:20px}}
