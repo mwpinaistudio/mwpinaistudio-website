@@ -128,3 +128,23 @@ details p{margin:10px 0 0}
 .compact-download{margin-bottom:30px}.download-note{margin-top:16px;color:#8ea9bd;font-size:12px;line-height:1.65}
 .compact-install{margin-top:16px;border:1px solid var(--line);border-radius:14px;padding:14px}.compact-install summary{font-weight:800}.compact-install .steps{margin-top:12px}
 @media(max-width:760px){.home-step-grid,.home-feature-grid{grid-template-columns:1fr}.compact-section,.compact-download{padding:20px}}
+
+/* Typography and layout refinement pass */
+.product-hero-grid{grid-template-columns:minmax(0,1.18fr) minmax(300px,.82fr);gap:28px;padding-top:46px;padding-bottom:42px;align-items:center}
+.product-hero h1{font-size:clamp(36px,4.6vw,58px);line-height:1.06;letter-spacing:-2.4px;font-weight:850;margin:14px 0 18px;max-width:640px}
+.product-hero p{font-size:17px;line-height:1.65;max-width:640px;margin-top:0;margin-bottom:0}
+.hero-output-list{margin-top:16px;gap:7px}
+.hero-output-list span{padding:7px 10px;font-size:11.5px}
+.product-hero .download-actions{margin-top:22px;gap:10px}
+.product-hero .badges{margin-top:16px}
+.hero-output-preview{padding:18px;border-radius:22px}
+.preview-result-grid>div{padding:10px}
+.panel h2{font-size:22px;line-height:1.34;letter-spacing:-.3px}
+.demo-section{padding:22px;margin-top:20px}
+.demo-video-frame{max-height:560px;min-height:420px}
+.home-step-grid article{padding:16px}
+.home-feature-grid .card{padding:18px}
+.download-panel h2{font-size:26px}
+@media(max-width:900px){.product-hero-grid{grid-template-columns:1fr;gap:24px;padding-top:38px;padding-bottom:34px}.product-hero h1{font-size:clamp(34px,7vw,52px)}.hero-output-preview{max-width:100%}}
+@media(max-width:760px){.demo-video-frame{min-height:520px;max-height:680px}.panel h2{font-size:20px}}
+@media(max-width:520px){.product-hero h1{font-size:34px;letter-spacing:-1.5px}.hero-output-list span{padding:6px 9px;font-size:11px}.demo-section{padding:16px}.home-step-grid,.home-feature-grid{gap:10px}}
