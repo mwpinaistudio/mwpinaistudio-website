@@ -2,18 +2,18 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.0.99",
-  "versionCode": 100,
+  "version": "1.1.0",
+  "versionCode": 101,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 6868408,
-  "sha256": "5147E0EABAB8E4619EB52059ABDB5FE7F1DC5FDC260893A37D37F7F57E6C9C3A",
+  "sizeBytes": 6868848,
+  "sha256": "FB9F432B1D46C24BD943E5CE04E016408ADC669AE5E412752A13A21417AD56A7",
   "minAndroid": "7.0",
   "releasedAt": "2026-09-25",
   "notes": [
-    "Simplified the home experience and hid membership status labels during the closed pilot.",
+    "All uploaded product images can now be opened in a full-screen preview.",
+    "Membership status labels remain hidden during the closed pilot.",
     "Pricing and in-app payment entry points remain hidden. Contact support to request test credits.",
-    "Improved AI error handling with localized messages and no service-provider details.",
-    "Announcements support separate Chinese and English content that follows the app language."
+    "Improved the product landing page layout and release trust information."
   ],
   "apkMirrors": [
     "https://cdn.jsdelivr.net/gh/mwpinaistudio/mwpinaistudio-website@main/downloads/paipintong.apk",
