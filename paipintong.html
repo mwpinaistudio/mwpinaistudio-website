@@ -24,12 +24,15 @@
 
     <main>
       <section class="hero download-hero product-hero">
-        <div class="eyebrow">PaiPinTong · AI listing assistant</div>
-        <h1>Turn product photos<br /><span>into marketplace-ready listings.</span></h1>
-        <p>Upload one or more product photos and let PaiPinTong prepare titles, properties, selling points, descriptions, specifications and keywords for your e-commerce workflow.</p>
+        <div class="eyebrow">PaiPinTong · AI e-commerce listing assistant</div>
+        <h1>Turn one product photo<br /><span>into complete listing content.</span></h1>
+        <p>Upload product photos or video and let AI organise the information you need to prepare a marketplace listing:</p>
+        <div class="hero-output-list">
+          <span>Titles</span><span>Specifications</span><span>Selling points</span><span>Descriptions</span><span>Packaging</span><span>Keywords</span>
+        </div>
         <div class="download-actions">
-          <a class="button" href="#demo">Try PaiPinTong Free</a>
-          <a class="button secondary" href="#demo">View demo</a>
+          <a class="button" href="#download">Try PaiPinTong Free</a>
+          <a class="button secondary" href="#demo">Watch 30-second demo</a>
         </div>
         <div class="badges">
           <span class="badge" id="versionBadge">Version loading…</span>
@@ -44,6 +47,22 @@
         <h2>See how PaiPinTong works</h2>
         <p>Product photos → AI recognition → generated listing information → ready-to-edit result.</p>
         <iframe class="demo-video-frame" src="demo.html?v=12" title="PaiPinTong feature demo" loading="lazy"></iframe>
+      </section>
+
+      <section class="panel compare-panel">
+        <div class="eyebrow">Before / after</div>
+        <h2>Less repetitive listing work, more time for selling</h2>
+        <div class="compare-grid">
+          <div class="compare-column before">
+            <h3>Before</h3>
+            <ol><li>Start with product photos</li><li>Inspect visible details manually</li><li>Search product information</li><li>Write titles and selling points</li><li>Fill specifications</li><li>Write descriptions and keywords</li><li>Copy information to the marketplace</li></ol>
+          </div>
+          <div class="compare-arrow">→</div>
+          <div class="compare-column after">
+            <h3>With PaiPinTong</h3>
+            <ol><li>Upload product photos or video</li><li>AI recognises visible information</li><li>Generate listing content</li><li>Review and edit</li><li>Save, copy or export</li></ol>
+          </div>
+        </div>
       </section>
 
       <section class="panel process-panel">
@@ -91,6 +110,11 @@
         <div class="download-actions download-panel-actions">
           <a class="button" href="downloads/paipintong.apk" download>Download Android APK</a>
           <a class="button secondary" href="#install">Installation FAQ</a>
+        </div>
+        <div class="release-info-grid">
+          <div><small>Version</small><strong id="downloadVersion">Loading…</strong></div>
+          <div><small>Android</small><strong>7.0+</strong></div>
+          <div><small>File size</small><strong id="downloadSize">Loading…</strong></div>
         </div>
         <p class="muted">SHA-256 checksum</p>
         <code class="checksum" id="checksum">Loading checksum…</code>
@@ -146,6 +170,8 @@
       .then((data) => {
         document.getElementById('versionBadge').textContent = 'Version ' + data.version
         document.getElementById('sizeBadge').textContent = (Number(data.sizeBytes || 0) / 1024 / 1024).toFixed(1) + ' MB'
+        document.getElementById('downloadVersion').textContent = data.version
+        document.getElementById('downloadSize').textContent = (Number(data.sizeBytes || 0) / 1024 / 1024).toFixed(1) + ' MB'
         document.getElementById('releaseVersion').textContent = data.version
         document.getElementById('checksum').textContent = data.sha256 || 'Not available'
         const notes = Array.isArray(data.notes) ? data.notes : []
@@ -156,6 +182,8 @@
       .catch(() => {
         document.getElementById('versionBadge').textContent = 'Official version'
         document.getElementById('sizeBadge').textContent = 'Official APK'
+        document.getElementById('downloadVersion').textContent = 'Official'
+        document.getElementById('downloadSize').textContent = 'See version page'
         document.getElementById('checksum').textContent = 'Download from this official page.'
         document.getElementById('releaseNotes').innerHTML = '<li>See the version page for the latest release information.</li>'
       })
