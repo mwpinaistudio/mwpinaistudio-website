@@ -89,3 +89,13 @@ details p{margin:10px 0 0}
 .compare-column.after{border-color:rgba(93,242,214,.34);background:rgba(14,58,67,.34)}
 .compare-arrow{display:grid;place-items:center;color:var(--cyan);font-size:26px}
 @media(max-width:700px){.release-info-grid{grid-template-columns:1fr}.compare-grid{grid-template-columns:1fr}.compare-arrow{transform:rotate(90deg)}}
+
+
+/* Bilingual hero and output visual */
+.bilingual-output-list span{display:grid;gap:2px;padding:8px 11px}
+.bilingual-output-list b{font-size:12px}
+.bilingual-output-list small{color:#7f9bb0;font-size:9px;font-weight:650}
+.listing-output-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px;margin-top:14px}
+.listing-output-grid span{display:grid;gap:2px;padding:9px 10px;border:1px solid rgba(93,242,214,.2);border-radius:12px;background:rgba(5,24,32,.5)}
+.listing-output-grid b{font-size:11px}.listing-output-grid small{color:#7f9bb0;font-size:9px}
+@media(max-width:520px){.listing-output-grid{grid-template-columns:1fr}}
