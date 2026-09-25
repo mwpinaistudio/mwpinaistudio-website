@@ -2,18 +2,18 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.1.5",
-  "versionCode": 106,
+  "version": "1.1.6",
+  "versionCode": 107,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 6871248,
-  "sha256": "D126A00BAB6F312979A85A7EA448B54C8B240CE56EBE83C0211EDA615E89167C",
+  "sizeBytes": 6871492,
+  "sha256": "0EA6AB0A01DCA2278F7E67663FD604739F97EF5A8DE4EB28C86057B3A9F6D047",
   "minAndroid": "7.0",
   "releasedAt": "2026-09-25",
   "notes": [
-    "Administrators can now set a custom daily credit amount and test period before approving a request.",
-    "The default manual grant period is now 7 days instead of a full month.",
-    "Fixed the credit request page so new users see the questionnaire instead of a false submitted state.",
-    "Quota changes replace old cycle grants and report failures instead of silently showing success."
+    "Customer credit activity now shows only the current day and clears automatically the next day.",
+    "Administrators can delete test credit requests with double confirmation.",
+    "Administrators can choose a 1, 3, 7, 14 or 30-day test period before granting credits.",
+    "Credit request grants are adjustable instead of automatically granting a full month."
   ],
   "apkMirrors": [
     "https://cdn.jsdelivr.net/gh/mwpinaistudio/mwpinaistudio-website@main/downloads/paipintong.apk",
