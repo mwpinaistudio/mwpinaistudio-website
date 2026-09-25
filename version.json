@@ -2,18 +2,18 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.1.1",
-  "versionCode": 102,
+  "version": "1.1.2",
+  "versionCode": 103,
   "apk": "downloads/paipintong.apk",
   "sizeBytes": 6870820,
-  "sha256": "62012C88C2F75E49B5B407AF93B277E15F13FA7BA398513B6DD755BC5A92B04F",
+  "sha256": "DA8916B30F556210A45733555A1D5D827836C7BE83B403CA33E70A44669A0CBD",
   "minAndroid": "7.0",
   "releasedAt": "2026-09-25",
   "notes": [
+    "Fixed quota display so administrator daily limits appear immediately for users.",
+    "Quota changes now report period-credit grant failures instead of silently showing success.",
     "Added a simple one-time test credit request questionnaire with administrator review.",
-    "Administrators can grant a daily credit amount for a 30-day test period.",
-    "All uploaded product images now support full-screen preview.",
-    "Pricing and in-app payment entry points remain hidden during the closed pilot."
+    "All uploaded product images support full-screen preview."
   ],
   "apkMirrors": [
     "https://cdn.jsdelivr.net/gh/mwpinaistudio/mwpinaistudio-website@main/downloads/paipintong.apk",
