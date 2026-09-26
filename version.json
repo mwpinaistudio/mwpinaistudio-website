@@ -2,18 +2,19 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.6.0",
-  "versionCode": 132,
+  "version": "1.6.2",
+  "versionCode": 134,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 13121588,
-  "sha256": "90C121FF179847339DAAED73543A777404B2FB8A7103B68FB37D23BA2E9FC30F",
+  "sizeBytes": 13122884,
+  "sha256": "7B04C99E23EB2DBE8C53A65513DBCDB911259FF19B2DB3D1550D5B849C860974",
   "minAndroid": "7.0",
   "releasedAt": "2026-09-26",
   "notes": [
-    "AI copy is now reused inside the nine images: each image automatically shows the content it needs.",
-    "Feature points, brand, material, weight, usage, category and packaging are placed automatically with clean layout.",
-    "The studio checks whether AI recognition has been run and guides you to run it first.",
-    "You can still generate without copy, and every text box stays fully editable afterwards."
+    "AI recognition is now available inside the Product Image Studio, so you can stay in one place.",
+    "After recognition the studio shows a clear next step: generate the nine images with the copy already filled in.",
+    "The product page also offers a one-tap jump: use the recognition result to generate nine product images.",
+    "Credit cost is shown before running recognition (about 3 credits) together with your remaining balance.",
+    "Credits are deducted by the same server rules as the home page recognition."
   ],
   "apkMirrors": [
     "https://cdn.jsdelivr.net/gh/mwpinaistudio/mwpinaistudio-website@main/downloads/paipintong.apk",
