@@ -2,18 +2,17 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.4.6",
-  "versionCode": 124,
+  "version": "1.4.7",
+  "versionCode": 125,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 13119376,
-  "sha256": "2E6247BEFFF0A79998567E36C8864C8BA3D7CA5276F6C655E8887BBE5B1E0A5F",
+  "sizeBytes": 13119496,
+  "sha256": "BD8B7079523FFEA67487F2A7AA95FC49B5C228CDAAA6C0F268852EB00069FD82",
   "minAndroid": "7.0",
   "releasedAt": "2026-09-26",
   "notes": [
-    "All four corner circles scale the product or text layer.",
-    "Double-tap a text box to edit its wording directly on the canvas.",
-    "When a layer is selected you now get a plus button to duplicate it and a bin button to delete it.",
-    "Panels no longer cover the artwork: the canvas resizes above the open panel."
+    "Duplicate and delete buttons moved into a floating bar below the selection, far away from the four corner resize circles.",
+    "Rotate stays as a single large round arrow above the selection.",
+    "Fewer mistaps when resizing: the corner circles now have their own clear area."
   ],
   "apkMirrors": [
     "https://cdn.jsdelivr.net/gh/mwpinaistudio/mwpinaistudio-website@main/downloads/paipintong.apk",
