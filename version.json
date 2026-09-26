@@ -2,17 +2,17 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.6.6",
-  "versionCode": 138,
+  "version": "1.6.7",
+  "versionCode": 139,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 13380386,
-  "sha256": "439AA8C39CAD5586B49AD82A3B477425B6113BB78B81E544E44118D09449FDF7",
+  "sizeBytes": 13381166,
+  "sha256": "B1CA0B4405FE4886521D18463E291CC23A9B1F00374D1F103409D2729BF04FE9",
   "minAndroid": "7.0",
   "releasedAt": "2026-09-26",
   "notes": [
-    "AI recognition now returns separate product length, width and height values.",
-    "The size chart image uses those exact measurements instead of guessing from text.",
-    "Studio recognition results are saved to your product library right away."
+    "Stronger background removal: softer anti-aliased edges instead of a hard cut line.",
+    "New shadow removal slider clears the grey shadow under the product.",
+    "Edge softness and edge trim sliders fine-tune the outline, plus a recommended-settings button."
   ],
   "apkMirrors": [
     "https://cdn.jsdelivr.net/gh/mwpinaistudio/mwpinaistudio-website@main/downloads/paipintong.apk",
