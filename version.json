@@ -2,16 +2,16 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.5.2",
-  "versionCode": 130,
+  "version": "1.5.3",
+  "versionCode": 131,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 13120552,
-  "sha256": "900A6271D4F09C392A00FC83A6DC42D37F60D082CB60371625DBB61B93ABABF6",
+  "sizeBytes": 13120696,
+  "sha256": "D981B49488527DFC6473733E38F1DEF94DC664C8228D3CB74F2281DA0CC9C065",
   "minAndroid": "7.0",
   "releasedAt": "2026-09-26",
   "notes": [
-    "Selection bar tidy-up: delete on the left, duplicate on the right.",
-    "Delete and duplicate icons are smaller than the rotate control, so the rotate handle stays the main target."
+    "Text selection frame now wraps the text exactly, using real text measurement instead of an estimate.",
+    "The frame grows and shrinks with the text size, and follows horizontal or vertical writing."
   ],
   "apkMirrors": [
     "https://cdn.jsdelivr.net/gh/mwpinaistudio/mwpinaistudio-website@main/downloads/paipintong.apk",
