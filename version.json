@@ -2,19 +2,16 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.6.2",
-  "versionCode": 134,
+  "version": "1.6.3",
+  "versionCode": 135,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 13122884,
-  "sha256": "7B04C99E23EB2DBE8C53A65513DBCDB911259FF19B2DB3D1550D5B849C860974",
+  "sizeBytes": 13122668,
+  "sha256": "6E61D785805FF928AB8292CD855410A94F700C626E18A1DC11BB520D1838251C",
   "minAndroid": "7.0",
   "releasedAt": "2026-09-26",
   "notes": [
-    "AI recognition is now available inside the Product Image Studio, so you can stay in one place.",
-    "After recognition the studio shows a clear next step: generate the nine images with the copy already filled in.",
-    "The product page also offers a one-tap jump: use the recognition result to generate nine product images.",
-    "Credit cost is shown before running recognition (about 3 credits) together with your remaining balance.",
-    "Credits are deducted by the same server rules as the home page recognition."
+    "The studio now only shows what AI recognition will cost, without a credit balance that could be misleading.",
+    "AI recognition inside the studio still charges the same server-side credits as the home page."
   ],
   "apkMirrors": [
     "https://cdn.jsdelivr.net/gh/mwpinaistudio/mwpinaistudio-website@main/downloads/paipintong.apk",
