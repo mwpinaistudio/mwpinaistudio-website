@@ -2,18 +2,18 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.3.1",
-  "versionCode": 117,
+  "version": "1.4.0",
+  "versionCode": 118,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 13115680,
-  "sha256": "0E09C6D96CADBDBC9DBEDD685D264D66BF64B66A2624F754F6254A55EA28DE6E",
+  "sizeBytes": 13117512,
+  "sha256": "0C36084A222F6F62FD1FB54FCD3D20137E1874C2086B8085C902279C410C30D1",
   "minAndroid": "7.0",
   "releasedAt": "2026-09-26",
   "notes": [
-    "Clearer credit messages: insufficient credits now say so instead of a rate limit warning.",
-    "Insufficient credits are no longer retried, so the app stops faster and tells you exactly what to do.",
-    "Unfinished AI tasks no longer pile up: only the most recent attempt is kept and stale tasks clear automatically.",
-    "Discarding an unfinished task now removes all remaining task records at once."
+    "Doodle brush: draw freehand on any image with adjustable colour, thickness and an eraser.",
+    "Mosaic brush: blur sensitive areas such as logos, faces or price tags with adjustable block size.",
+    "Doodle and mosaic are stored as separate layers, so they can be hidden, reordered or deleted at any time.",
+    "Editor now covers adjustments, filters, crop, rotate, undo, compare, text, stickers, doodle and mosaic."
   ],
   "apkMirrors": [
     "https://cdn.jsdelivr.net/gh/mwpinaistudio/mwpinaistudio-website@main/downloads/paipintong.apk",
