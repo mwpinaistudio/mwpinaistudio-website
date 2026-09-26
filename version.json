@@ -2,19 +2,16 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.5.1",
-  "versionCode": 129,
+  "version": "1.5.2",
+  "versionCode": 130,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 13120548,
-  "sha256": "7688ACF7175014A83A03D930ECEE0C0F1306ED4DB84931FA900B7AA72E98918F",
+  "sizeBytes": 13120552,
+  "sha256": "900A6271D4F09C392A00FC83A6DC42D37F60D082CB60371625DBB61B93ABABF6",
   "minAndroid": "7.0",
   "releasedAt": "2026-09-26",
   "notes": [
-    "New marketplace crop presets: 1:1 (1000/1080/1500), 3:4, 4:5, 16:9 and 750x1000 detail size.",
-    "One tap crops your photo to the marketplace ratio without stretching or distorting the product.",
-    "Images are compressed automatically on export to stay under 2MB, keeping quality and proportions.",
-    "The same size can be applied to all nine images at once.",
-    "Compare with the original is now a simple tap, and one reset button restores the initial look."
+    "Selection bar tidy-up: delete on the left, duplicate on the right.",
+    "Delete and duplicate icons are smaller than the rotate control, so the rotate handle stays the main target."
   ],
   "apkMirrors": [
     "https://cdn.jsdelivr.net/gh/mwpinaistudio/mwpinaistudio-website@main/downloads/paipintong.apk",
