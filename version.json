@@ -2,17 +2,17 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.7.4",
-  "versionCode": 144,
+  "version": "1.7.5",
+  "versionCode": 145,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 24992586,
-  "sha256": "ADBA3C92A936B62AD31B5E498BF8E2AD93EAEDB0ED5185B964C2F84EEA769699",
+  "sizeBytes": 24992714,
+  "sha256": "8A875563E6F0EA13029418768E630D53853D1D35644A3D680B99687664F041B5",
   "minAndroid": "7.0",
   "releasedAt": "2026-09-26",
   "notes": [
-    "Restored drafts keep the product photo, so studio buttons stay active after returning.",
-    "AI recognition automatically retries once when it is interrupted.",
-    "Small delay added after the AI cutout so the next action starts cleanly."
+    "Selection frame and action buttons now follow the crop zoom and rotation, so they always sit on the layer.",
+    "Tapping any empty area of the canvas clears the selection and hides the copy/rotate/delete buttons.",
+    "Dragging while zoomed now moves the layer exactly with your finger."
   ],
   "apkMirrors": [
     "https://cdn.jsdelivr.net/gh/mwpinaistudio/mwpinaistudio-website@main/downloads/paipintong.apk",
