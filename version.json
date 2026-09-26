@@ -2,17 +2,18 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.6.7",
-  "versionCode": 139,
+  "version": "1.7.0",
+  "versionCode": 140,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 13381166,
-  "sha256": "B1CA0B4405FE4886521D18463E291CC23A9B1F00374D1F103409D2729BF04FE9",
+  "sizeBytes": 28116786,
+  "sha256": "E61E4BB3DF045D477548C72EF54EB16916644CD903DF0B74BE945177B6D03DC8",
   "minAndroid": "7.0",
   "releasedAt": "2026-09-26",
   "notes": [
-    "Stronger background removal: softer anti-aliased edges instead of a hard cut line.",
-    "New shadow removal slider clears the grey shadow under the product.",
-    "Edge softness and edge trim sliders fine-tune the outline, plus a recommended-settings button."
+    "Offline AI background removal: cut out products from almost any photo, not just studio backgrounds.",
+    "The AI cutout runs fully on the phone - no credits used, no internet needed.",
+    "Quick cutout stays available for white or light backgrounds, with shadow removal and edge controls.",
+    "Erase and restore brushes still work on top of the AI result for final touch-ups."
   ],
   "apkMirrors": [
     "https://cdn.jsdelivr.net/gh/mwpinaistudio/mwpinaistudio-website@main/downloads/paipintong.apk",
