@@ -2,18 +2,19 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.6.4",
-  "versionCode": 136,
+  "version": "1.6.5",
+  "versionCode": 137,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 13379354,
-  "sha256": "85DE70EA2882BC4367D589C52D090A0E74AB90A1057786EBA48CDD2804C5C2F6",
+  "sizeBytes": 13380318,
+  "sha256": "9361DB8D8B4A2963C60CBC46D4E60FA40F821D42308623D07FC8723682C05907",
   "minAndroid": "7.0",
   "releasedAt": "2026-09-26",
   "notes": [
-    "Background rings and circles removed so nothing covers the product.",
-    "New countertop scene set: marble, wood, concrete, black stone, glass, steel, linen and pastel tables.",
-    "Products now sit naturally on the tabletop surface instead of floating in front of a scene.",
-    "Nine-image generation uses the countertop scenes for angle, detail, usage, lifestyle and packaging shots."
+    "AI recognition inside the studio now saves the product to your library, exactly like the home page flow.",
+    "Meaningless values such as \"no brand\" or \"not applicable\" are filtered out of generated images.",
+    "Size chart image now draws real length/height guide lines with the recognised measurements.",
+    "How-to-use image lists the actual steps, and the lifestyle image shows a real benefit line instead of just a category.",
+    "Packaging image now shows what is in the box together with package weight and size."
   ],
   "apkMirrors": [
     "https://cdn.jsdelivr.net/gh/mwpinaistudio/mwpinaistudio-website@main/downloads/paipintong.apk",
