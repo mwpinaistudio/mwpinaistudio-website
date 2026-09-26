@@ -2,18 +2,19 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.5.0",
-  "versionCode": 128,
+  "version": "1.5.1",
+  "versionCode": 129,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 13119700,
-  "sha256": "DB7F5BA329CA93850A624088AFFDCA43DD619A9EEA95A1B87CCFA9AB435FA6C3",
+  "sizeBytes": 13120548,
+  "sha256": "7688ACF7175014A83A03D930ECEE0C0F1306ED4DB84931FA900B7AA72E98918F",
   "minAndroid": "7.0",
   "releasedAt": "2026-09-26",
   "notes": [
-    "Compare with the original now works as a simple tap: tap to see the original, tap again to go back.",
-    "One reset button restores the current image to how it looked right after generation.",
-    "Duplicate, rotate and delete sit in a single floating bar above the selection.",
-    "The canvas always keeps its square shape, so text never looks stretched."
+    "New marketplace crop presets: 1:1 (1000/1080/1500), 3:4, 4:5, 16:9 and 750x1000 detail size.",
+    "One tap crops your photo to the marketplace ratio without stretching or distorting the product.",
+    "Images are compressed automatically on export to stay under 2MB, keeping quality and proportions.",
+    "The same size can be applied to all nine images at once.",
+    "Compare with the original is now a simple tap, and one reset button restores the initial look."
   ],
   "apkMirrors": [
     "https://cdn.jsdelivr.net/gh/mwpinaistudio/mwpinaistudio-website@main/downloads/paipintong.apk",
