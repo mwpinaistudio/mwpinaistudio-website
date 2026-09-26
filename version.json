@@ -2,17 +2,18 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.4.8",
-  "versionCode": 126,
+  "version": "1.5.0",
+  "versionCode": 128,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 13119524,
-  "sha256": "68DF8FA121D888A34A92C65031B6E22B538C7CEE06919678EBF6C103DBB2D7F3",
+  "sizeBytes": 13119700,
+  "sha256": "DB7F5BA329CA93850A624088AFFDCA43DD619A9EEA95A1B87CCFA9AB435FA6C3",
   "minAndroid": "7.0",
   "releasedAt": "2026-09-26",
   "notes": [
-    "Fixed text distortion when a panel opens: the canvas always keeps its square shape.",
-    "Duplicate, rotate and delete are now one tidy floating bar above the selection.",
-    "The four corner circles stay clear of the action bar, so resizing is accurate."
+    "Compare with the original now works as a simple tap: tap to see the original, tap again to go back.",
+    "One reset button restores the current image to how it looked right after generation.",
+    "Duplicate, rotate and delete sit in a single floating bar above the selection.",
+    "The canvas always keeps its square shape, so text never looks stretched."
   ],
   "apkMirrors": [
     "https://cdn.jsdelivr.net/gh/mwpinaistudio/mwpinaistudio-website@main/downloads/paipintong.apk",
