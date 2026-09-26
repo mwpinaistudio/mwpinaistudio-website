@@ -2,18 +2,18 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.4.0",
-  "versionCode": 118,
+  "version": "1.4.3",
+  "versionCode": 121,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 13117512,
-  "sha256": "0C36084A222F6F62FD1FB54FCD3D20137E1874C2086B8085C902279C410C30D1",
+  "sizeBytes": 13117844,
+  "sha256": "D81E5BEF87E9C4C882A94918A391CEA359CE57345A469365BD973AC415C1AE7F",
   "minAndroid": "7.0",
   "releasedAt": "2026-09-26",
   "notes": [
-    "Doodle brush: draw freehand on any image with adjustable colour, thickness and an eraser.",
-    "Mosaic brush: blur sensitive areas such as logos, faces or price tags with adjustable block size.",
-    "Doodle and mosaic are stored as separate layers, so they can be hidden, reordered or deleted at any time.",
-    "Editor now covers adjustments, filters, crop, rotate, undo, compare, text, stickers, doodle and mosaic."
+    "Larger editing handles that are easy to tap on a phone.",
+    "All four corner dots now scale the product, not just one corner.",
+    "The rotate control is now a big circular arrow badge, clearly different from the scale dots.",
+    "Doodle and mosaic brushes, adjustments, filters, crop and undo are all included."
   ],
   "apkMirrors": [
     "https://cdn.jsdelivr.net/gh/mwpinaistudio/mwpinaistudio-website@main/downloads/paipintong.apk",
