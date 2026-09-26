@@ -2,18 +2,19 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.4.3",
-  "versionCode": 121,
+  "version": "1.4.5",
+  "versionCode": 123,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 13117844,
-  "sha256": "D81E5BEF87E9C4C882A94918A391CEA359CE57345A469365BD973AC415C1AE7F",
+  "sizeBytes": 13118740,
+  "sha256": "BBD6B42B1F6B52A0C4D23036A8C725C288CB089C423E22064B59FD24DD7F705F",
   "minAndroid": "7.0",
   "releasedAt": "2026-09-26",
   "notes": [
-    "Larger editing handles that are easy to tap on a phone.",
-    "All four corner dots now scale the product, not just one corner.",
-    "The rotate control is now a big circular arrow badge, clearly different from the scale dots.",
-    "Doodle and mosaic brushes, adjustments, filters, crop and undo are all included."
+    "Drafts are saved automatically and unfinished projects reopen where you left off.",
+    "Text layers now scale with the corner handles and rotate with the big rotate badge.",
+    "Text editing adds duplicate, quick size buttons and one-tap colour swatches.",
+    "Product cut-outs and any layer can be duplicated in one tap to show multiple units.",
+    "Layers panel supports multi-select to duplicate or delete several layers at once."
   ],
   "apkMirrors": [
     "https://cdn.jsdelivr.net/gh/mwpinaistudio/mwpinaistudio-website@main/downloads/paipintong.apk",
