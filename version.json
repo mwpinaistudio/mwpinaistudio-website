@@ -2,20 +2,20 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.2.0",
-  "versionCode": 111,
+  "version": "1.2.1",
+  "versionCode": 112,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 13107632,
-  "sha256": "94CE148AD38833D6BF7F161E4234EA6100E16215477BF5E6640B665071FC5213",
+  "sizeBytes": 13108572,
+  "sha256": "3095C2C17735B31CBFEB69D92CD14028835A21888DFD14C9177036C3693325A2",
   "minAndroid": "7.0",
   "releasedAt": "2026-09-26",
   "notes": [
-    "New Product Image Studio: turn one product photo into nine marketplace-ready images.",
-    "Move, scale and rotate the cut-out product, text, logo and stickers freely on every image.",
+    "New Product Image Studio: design nine marketplace-ready images from one product photo or from scratch.",
+    "Move, scale and rotate the cut-out product, title text, logo and stickers freely on each image.",
     "Text supports multiple fonts, bold, colour, outline, gradient, glow, shadow and vertical writing.",
     "Automatic background removal with erase and restore brushes for clean edges.",
-    "Complete built-in background library: solid colours, clean surfaces, premium display stages and holiday templates.",
-    "One-tap export of all nine images to the local gallery."
+    "Complete background library included: solid colours, premium display stages, home scenes and holiday templates.",
+    "Save all nine images locally, or upload them straight back to the product photos in one tap."
   ],
   "apkMirrors": [
     "https://cdn.jsdelivr.net/gh/mwpinaistudio/mwpinaistudio-website@main/downloads/paipintong.apk",
