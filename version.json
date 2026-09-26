@@ -2,20 +2,18 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.3.0",
-  "versionCode": 116,
+  "version": "1.3.1",
+  "versionCode": 117,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 13115564,
-  "sha256": "8AF3F4DFD67196DA0D521182DE4D7DB3A03AAFDEA34657DA347DAC27F9A7DFCA",
+  "sizeBytes": 13115680,
+  "sha256": "0E09C6D96CADBDBC9DBEDD685D264D66BF64B66A2624F754F6254A55EA28DE6E",
   "minAndroid": "7.0",
   "releasedAt": "2026-09-26",
   "notes": [
-    "Photo editor upgrades inside the Product Image Studio.",
-    "Brightness, contrast, saturation, warmth and sharpness sliders with live preview.",
-    "Sixteen one-tap filters, from clean studio looks to vivid, film, mono and seasonal tones.",
-    "Undo and redo for every edit step, plus hold-to-compare with the original image.",
-    "Crop and rotate tools: rotate in 90 degree steps, zoom and reposition the frame.",
-    "Apply the current adjustments to all nine images at once."
+    "Clearer credit messages: insufficient credits now say so instead of a rate limit warning.",
+    "Insufficient credits are no longer retried, so the app stops faster and tells you exactly what to do.",
+    "Unfinished AI tasks no longer pile up: only the most recent attempt is kept and stale tasks clear automatically.",
+    "Discarding an unfinished task now removes all remaining task records at once."
   ],
   "apkMirrors": [
     "https://cdn.jsdelivr.net/gh/mwpinaistudio/mwpinaistudio-website@main/downloads/paipintong.apk",
