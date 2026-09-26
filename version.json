@@ -2,18 +2,17 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.7.1",
-  "versionCode": 141,
+  "version": "1.7.2",
+  "versionCode": 142,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 28117450,
-  "sha256": "26E9F06E19A52765507BA3697BBB835BCFED7C174C3F8C86D16F2FFAA4C07128",
+  "sizeBytes": 28117618,
+  "sha256": "C8D9C8E356EF8F4F5E2F757CD611CE7CE97843C337C16A4F07C3E9A4DA2C753C",
   "minAndroid": "7.0",
   "releasedAt": "2026-09-26",
   "notes": [
-    "Two cutout modes: instant offline AI cutout, and a higher quality HD model.",
-    "The HD model is downloaded once (42MB) and then runs offline with no credits used.",
-    "Better edges on real-life photos, packaging, bottles and small products.",
-    "Quick cutout for studio backgrounds still available with shadow and edge controls."
+    "Cutout fixes: the offline AI runtime now loads with the correct asset paths.",
+    "If the AI cutout fails it automatically falls back to the quick cutout and shows the real reason.",
+    "HD model is now cached on the phone instead of downloading again on every use."
   ],
   "apkMirrors": [
     "https://cdn.jsdelivr.net/gh/mwpinaistudio/mwpinaistudio-website@main/downloads/paipintong.apk",
