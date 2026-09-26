@@ -2,16 +2,18 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.6.3",
-  "versionCode": 135,
+  "version": "1.6.4",
+  "versionCode": 136,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 13122668,
-  "sha256": "6E61D785805FF928AB8292CD855410A94F700C626E18A1DC11BB520D1838251C",
+  "sizeBytes": 13379354,
+  "sha256": "85DE70EA2882BC4367D589C52D090A0E74AB90A1057786EBA48CDD2804C5C2F6",
   "minAndroid": "7.0",
   "releasedAt": "2026-09-26",
   "notes": [
-    "The studio now only shows what AI recognition will cost, without a credit balance that could be misleading.",
-    "AI recognition inside the studio still charges the same server-side credits as the home page."
+    "Background rings and circles removed so nothing covers the product.",
+    "New countertop scene set: marble, wood, concrete, black stone, glass, steel, linen and pastel tables.",
+    "Products now sit naturally on the tabletop surface instead of floating in front of a scene.",
+    "Nine-image generation uses the countertop scenes for angle, detail, usage, lifestyle and packaging shots."
   ],
   "apkMirrors": [
     "https://cdn.jsdelivr.net/gh/mwpinaistudio/mwpinaistudio-website@main/downloads/paipintong.apk",
