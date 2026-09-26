@@ -2,19 +2,17 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.6.5",
-  "versionCode": 137,
+  "version": "1.6.6",
+  "versionCode": 138,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 13380318,
-  "sha256": "9361DB8D8B4A2963C60CBC46D4E60FA40F821D42308623D07FC8723682C05907",
+  "sizeBytes": 13380386,
+  "sha256": "439AA8C39CAD5586B49AD82A3B477425B6113BB78B81E544E44118D09449FDF7",
   "minAndroid": "7.0",
   "releasedAt": "2026-09-26",
   "notes": [
-    "AI recognition inside the studio now saves the product to your library, exactly like the home page flow.",
-    "Meaningless values such as \"no brand\" or \"not applicable\" are filtered out of generated images.",
-    "Size chart image now draws real length/height guide lines with the recognised measurements.",
-    "How-to-use image lists the actual steps, and the lifestyle image shows a real benefit line instead of just a category.",
-    "Packaging image now shows what is in the box together with package weight and size."
+    "AI recognition now returns separate product length, width and height values.",
+    "The size chart image uses those exact measurements instead of guessing from text.",
+    "Studio recognition results are saved to your product library right away."
   ],
   "apkMirrors": [
     "https://cdn.jsdelivr.net/gh/mwpinaistudio/mwpinaistudio-website@main/downloads/paipintong.apk",
