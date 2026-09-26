@@ -2,16 +2,18 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.5.3",
-  "versionCode": 131,
+  "version": "1.6.0",
+  "versionCode": 132,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 13120696,
-  "sha256": "D981B49488527DFC6473733E38F1DEF94DC664C8228D3CB74F2281DA0CC9C065",
+  "sizeBytes": 13121588,
+  "sha256": "90C121FF179847339DAAED73543A777404B2FB8A7103B68FB37D23BA2E9FC30F",
   "minAndroid": "7.0",
   "releasedAt": "2026-09-26",
   "notes": [
-    "Text selection frame now wraps the text exactly, using real text measurement instead of an estimate.",
-    "The frame grows and shrinks with the text size, and follows horizontal or vertical writing."
+    "AI copy is now reused inside the nine images: each image automatically shows the content it needs.",
+    "Feature points, brand, material, weight, usage, category and packaging are placed automatically with clean layout.",
+    "The studio checks whether AI recognition has been run and guides you to run it first.",
+    "You can still generate without copy, and every text box stays fully editable afterwards."
   ],
   "apkMirrors": [
     "https://cdn.jsdelivr.net/gh/mwpinaistudio/mwpinaistudio-website@main/downloads/paipintong.apk",
