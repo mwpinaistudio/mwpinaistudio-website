@@ -2,17 +2,18 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.8.2",
-  "versionCode": 152,
+  "version": "1.8.3",
+  "versionCode": 153,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 25397083,
-  "sha256": "DA3053FAE5F1B0519419591387C268821E57CBE0948122B7A476035035C91D1E",
+  "sizeBytes": 25397223,
+  "sha256": "6136D9B4E9B1CFAE528989B560604BB20B715C317E4525E38523AA95C9C122CA",
   "minAndroid": "7.0",
   "releasedAt": "2026-09-28",
   "notes": [
-    "Any text can now switch between Chinese and English, including titles you add or edit yourself.",
-    "When a translation is missing the app translates it on the fly, then remembers both languages.",
-    "Editing a text updates that language and keeps the other one ready to switch."
+    "Language switching now translates the current text in place, instead of swapping between two stored versions.",
+    "Works on any text: titles you add, text you edit, or generated copy.",
+    "The translation cache is keyed to the exact text, so switching back is instant and editing re-translates the new wording.",
+    "Clearer message when the translation endpoint has not been deployed yet."
   ],
   "apkMirrors": [
     "https://cdn.jsdelivr.net/gh/mwpinaistudio/mwpinaistudio-website@main/downloads/paipintong.apk",
