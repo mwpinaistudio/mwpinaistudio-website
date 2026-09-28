@@ -2,17 +2,16 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.8.0",
-  "versionCode": 150,
+  "version": "1.8.1",
+  "versionCode": 151,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 25396943,
-  "sha256": "0CAF612581CAAB1FB69F58536BEF5D525C22BB04778EB52F020E90CFE5C54647",
+  "sizeBytes": 25396951,
+  "sha256": "FC226E6C968D58F67BC8A2240797AFE37413D89D0BAD53036250DFE5916A3E8C",
   "minAndroid": "7.0",
   "releasedAt": "2026-09-28",
   "notes": [
-    "Selection now clears itself automatically after a few seconds without interaction.",
-    "The deselect chip on the canvas still clears the selection instantly.",
-    "Text wraps automatically so English copy is never clipped."
+    "Fixed the Deselect chip so it is actually visible on the canvas corner.",
+    "Selection still clears automatically after a few seconds of no interaction."
   ],
   "apkMirrors": [
     "https://cdn.jsdelivr.net/gh/mwpinaistudio/mwpinaistudio-website@main/downloads/paipintong.apk",
