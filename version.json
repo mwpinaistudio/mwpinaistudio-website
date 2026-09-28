@@ -2,17 +2,18 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.8.4",
-  "versionCode": 154,
+  "version": "1.8.5",
+  "versionCode": 155,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 25398251,
-  "sha256": "8246FBDD69EA0857E7A47C150209B5EC3F7C92732E5E030F96FF189FE0A8A2E8",
+  "sizeBytes": 25399055,
+  "sha256": "3D3950DD3783F2498B1054F2BD8BAE09567D75F51049AECC2BE2DDF90D05433B",
   "minAndroid": "7.0",
   "releasedAt": "2026-09-28",
   "notes": [
-    "Common phrases translate instantly with a built-in dictionary and use no tokens.",
-    "Daily translation calls are capped per user, and administrators can adjust the cap.",
-    "Any title you add or edit can still be translated live when it is not a common phrase."
+    "Products now get a soft contact shadow automatically, so they sit on the scenery instead of floating.",
+    "Cut-outs are auto-trimmed and centred, giving every image a consistent product scale.",
+    "Each generation picks one visual theme for all nine images, so the set looks like one series while still varying between runs.",
+    "Unified typography and spacing rules keep the layout consistent."
   ],
   "apkMirrors": [
     "https://cdn.jsdelivr.net/gh/mwpinaistudio/mwpinaistudio-website@main/downloads/paipintong.apk",
