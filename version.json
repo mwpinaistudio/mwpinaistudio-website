@@ -2,18 +2,17 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.9.2",
-  "versionCode": 158,
+  "version": "1.9.3",
+  "versionCode": 159,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 25405075,
-  "sha256": "A025DA9D956F8EF4EC322A27FF589104BB5EC3EA267CE4549A8A964AD86C0187",
+  "sizeBytes": 25515649,
+  "sha256": "3A4308B9C5ABDF9BADA5E0362C090A977D5078CE73C994856E89536F032AA657",
   "minAndroid": "7.0",
   "releasedAt": "2026-09-28",
   "notes": [
-    "A new design engine turns one product photo into nine marketplace-ready visuals with a clearer purpose for every image.",
-    "Each image now focuses on one task: main visual, key benefit, detail, feature, dimensions, scene, extra angles, package or service.",
-    "Product facts are checked before layout so duplicated or conflicting information is less likely to appear.",
-    "Layouts are selected from the product information instead of placing text in the same fixed position every time."
+    "Added a flagship main-image mode with a premium photography background and stronger product integration.",
+    "Product contact shadow, floor reflection and ambient light now work together for a more commercial e-commerce hero image.",
+    "The first image in the nine-image set now has a dedicated advertising layout while remaining fully editable in the studio."
   ],
   "apkMirrors": [
     "https://cdn.jsdelivr.net/gh/mwpinaistudio/mwpinaistudio-website@main/downloads/paipintong.apk",
