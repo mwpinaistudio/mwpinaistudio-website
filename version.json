@@ -2,18 +2,18 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.8.5",
-  "versionCode": 155,
+  "version": "1.9.0",
+  "versionCode": 156,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 25399055,
-  "sha256": "3D3950DD3783F2498B1054F2BD8BAE09567D75F51049AECC2BE2DDF90D05433B",
+  "sizeBytes": 25400583,
+  "sha256": "4A5B173700F28EC2A7CBD1EC9260E95ACC5D21EAF2F34AA6A2CCD007D848B986",
   "minAndroid": "7.0",
   "releasedAt": "2026-09-28",
   "notes": [
-    "Products now get a soft contact shadow automatically, so they sit on the scenery instead of floating.",
-    "Cut-outs are auto-trimmed and centred, giving every image a consistent product scale.",
-    "Each generation picks one visual theme for all nine images, so the set looks like one series while still varying between runs.",
-    "Unified typography and spacing rules keep the layout consistent."
+    "New layout template library: each of the nine images now has several professional layout variants.",
+    "Layouts include split columns, spec cards, numbered steps, dimension lines, trust badges and close-up framing.",
+    "Each generation combines a visual theme with random layouts, so the set stays consistent while every run looks different.",
+    "Text is placed by design rules rather than fixed coordinates, so different product shapes still lay out cleanly."
   ],
   "apkMirrors": [
     "https://cdn.jsdelivr.net/gh/mwpinaistudio/mwpinaistudio-website@main/downloads/paipintong.apk",
