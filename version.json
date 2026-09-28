@@ -2,16 +2,17 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.8.1",
-  "versionCode": 151,
+  "version": "1.8.2",
+  "versionCode": 152,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 25396951,
-  "sha256": "FC226E6C968D58F67BC8A2240797AFE37413D89D0BAD53036250DFE5916A3E8C",
+  "sizeBytes": 25397083,
+  "sha256": "DA3053FAE5F1B0519419591387C268821E57CBE0948122B7A476035035C91D1E",
   "minAndroid": "7.0",
   "releasedAt": "2026-09-28",
   "notes": [
-    "Fixed the Deselect chip so it is actually visible on the canvas corner.",
-    "Selection still clears automatically after a few seconds of no interaction."
+    "Any text can now switch between Chinese and English, including titles you add or edit yourself.",
+    "When a translation is missing the app translates it on the fly, then remembers both languages.",
+    "Editing a text updates that language and keeps the other one ready to switch."
   ],
   "apkMirrors": [
     "https://cdn.jsdelivr.net/gh/mwpinaistudio/mwpinaistudio-website@main/downloads/paipintong.apk",
