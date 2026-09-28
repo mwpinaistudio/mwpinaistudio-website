@@ -2,17 +2,17 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.9.7",
-  "versionCode": 163,
+  "version": "1.9.8",
+  "versionCode": 164,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 25517057,
-  "sha256": "4BC50AE23EFB04402A73131D83C7A0631EA19007AEFCA70D1CB3E0D8DEC5E0F6",
+  "sizeBytes": 25517837,
+  "sha256": "4A2F13B77DC9075455F2D78C8753AF3349931CA086B382A3A0C8AB08B9BDADCE",
   "minAndroid": "7.0",
   "releasedAt": "2026-09-28",
   "notes": [
-    "Fixed an issue that could make the nine-image generation freeze when only a small number of selling points were available.",
-    "The flagship layout commander continues to separate product and text zones before rendering.",
-    "Premium background photography, contact shadow, floor reflection and window-light composition remain available."
+    "Saved product recognition can now be reused when the same image is uploaded to the image studio again.",
+    "Reusing a saved recognition result skips the AI recognition request and does not deduct credits.",
+    "Fixed the nine-image generation freeze caused by an unbounded fallback loop."
   ],
   "apkMirrors": [
     "https://cdn.jsdelivr.net/gh/mwpinaistudio/mwpinaistudio-website@main/downloads/paipintong.apk",
