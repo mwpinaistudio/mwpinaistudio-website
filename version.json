@@ -2,17 +2,17 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.7.6",
-  "versionCode": 146,
+  "version": "1.7.7",
+  "versionCode": 147,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 25395823,
-  "sha256": "870769F3989E2E838D97EF3B64BEB57E67418D94BF43BF75CAC622DDE65E4CC4",
+  "sizeBytes": 25396291,
+  "sha256": "3AA542A1DBCAC2162074B2A2374619C334C41619243407897FCBF1CA5521C3E7",
   "minAndroid": "7.0",
-  "releasedAt": "2026-09-26",
+  "releasedAt": "2026-09-28",
   "notes": [
-    "Save to gallery now writes straight into your phone album, no extra share step.",
-    "If a direct save is not possible the app falls back to the system share sheet.",
-    "Cancelling a share no longer shows a \"save failed\" message."
+    "Language switch on the selection bar: tap the 中/EN chip to switch the image text between Chinese and English.",
+    "Generated images store both languages, so you can switch back and forth freely while editing.",
+    "Action buttons are spaced further apart to avoid mistaps."
   ],
   "apkMirrors": [
     "https://cdn.jsdelivr.net/gh/mwpinaistudio/mwpinaistudio-website@main/downloads/paipintong.apk",
