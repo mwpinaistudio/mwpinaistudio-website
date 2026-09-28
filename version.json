@@ -2,17 +2,18 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.9.1",
-  "versionCode": 157,
+  "version": "1.9.2",
+  "versionCode": 158,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 25402899,
-  "sha256": "17407FFA6D3E66F4EA77D5B9DDA8EDA8ECFC0854FF90F0776B5ED5C1F9E81830",
+  "sizeBytes": 25405075,
+  "sha256": "A025DA9D956F8EF4EC322A27FF589104BB5EC3EA267CE4549A8A964AD86C0187",
   "minAndroid": "7.0",
   "releasedAt": "2026-09-28",
   "notes": [
-    "Semantic visuals: recognised specs become design elements instead of plain text.",
-    "Capacity and weight become large hero numbers, materials get callout lines, colours become swatches, and services become badge rows.",
-    "One message per image, following e-commerce design practice."
+    "A new design engine turns one product photo into nine marketplace-ready visuals with a clearer purpose for every image.",
+    "Each image now focuses on one task: main visual, key benefit, detail, feature, dimensions, scene, extra angles, package or service.",
+    "Product facts are checked before layout so duplicated or conflicting information is less likely to appear.",
+    "Layouts are selected from the product information instead of placing text in the same fixed position every time."
   ],
   "apkMirrors": [
     "https://cdn.jsdelivr.net/gh/mwpinaistudio/mwpinaistudio-website@main/downloads/paipintong.apk",
