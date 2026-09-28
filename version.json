@@ -2,17 +2,17 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.7.9",
-  "versionCode": 149,
+  "version": "1.8.0",
+  "versionCode": 150,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 25396799,
-  "sha256": "BB18553302A24F21807A65A702261F0FAC0AF6FD7D2B7C2988986BAFB87BC98C",
+  "sizeBytes": 25396943,
+  "sha256": "0CAF612581CAAB1FB69F58536BEF5D525C22BB04778EB52F020E90CFE5C54647",
   "minAndroid": "7.0",
   "releasedAt": "2026-09-28",
   "notes": [
-    "Text now wraps automatically, so longer English copy is never cut off.",
-    "Removed the diagonal line under the rotate control for a cleaner look.",
-    "Added a Deselect chip on the canvas so you can always clear the selection, even when the image is zoomed in."
+    "Selection now clears itself automatically after a few seconds without interaction.",
+    "The deselect chip on the canvas still clears the selection instantly.",
+    "Text wraps automatically so English copy is never clipped."
   ],
   "apkMirrors": [
     "https://cdn.jsdelivr.net/gh/mwpinaistudio/mwpinaistudio-website@main/downloads/paipintong.apk",
