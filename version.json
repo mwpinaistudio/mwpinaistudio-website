@@ -2,18 +2,17 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.8.3",
-  "versionCode": 153,
+  "version": "1.8.4",
+  "versionCode": 154,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 25397223,
-  "sha256": "6136D9B4E9B1CFAE528989B560604BB20B715C317E4525E38523AA95C9C122CA",
+  "sizeBytes": 25398251,
+  "sha256": "8246FBDD69EA0857E7A47C150209B5EC3F7C92732E5E030F96FF189FE0A8A2E8",
   "minAndroid": "7.0",
   "releasedAt": "2026-09-28",
   "notes": [
-    "Language switching now translates the current text in place, instead of swapping between two stored versions.",
-    "Works on any text: titles you add, text you edit, or generated copy.",
-    "The translation cache is keyed to the exact text, so switching back is instant and editing re-translates the new wording.",
-    "Clearer message when the translation endpoint has not been deployed yet."
+    "Common phrases translate instantly with a built-in dictionary and use no tokens.",
+    "Daily translation calls are capped per user, and administrators can adjust the cap.",
+    "Any title you add or edit can still be translated live when it is not a common phrase."
   ],
   "apkMirrors": [
     "https://cdn.jsdelivr.net/gh/mwpinaistudio/mwpinaistudio-website@main/downloads/paipintong.apk",
