@@ -2,18 +2,17 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.9.0",
-  "versionCode": 156,
+  "version": "1.9.1",
+  "versionCode": 157,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 25400583,
-  "sha256": "4A5B173700F28EC2A7CBD1EC9260E95ACC5D21EAF2F34AA6A2CCD007D848B986",
+  "sizeBytes": 25402899,
+  "sha256": "17407FFA6D3E66F4EA77D5B9DDA8EDA8ECFC0854FF90F0776B5ED5C1F9E81830",
   "minAndroid": "7.0",
   "releasedAt": "2026-09-28",
   "notes": [
-    "New layout template library: each of the nine images now has several professional layout variants.",
-    "Layouts include split columns, spec cards, numbered steps, dimension lines, trust badges and close-up framing.",
-    "Each generation combines a visual theme with random layouts, so the set stays consistent while every run looks different.",
-    "Text is placed by design rules rather than fixed coordinates, so different product shapes still lay out cleanly."
+    "Semantic visuals: recognised specs become design elements instead of plain text.",
+    "Capacity and weight become large hero numbers, materials get callout lines, colours become swatches, and services become badge rows.",
+    "One message per image, following e-commerce design practice."
   ],
   "apkMirrors": [
     "https://cdn.jsdelivr.net/gh/mwpinaistudio/mwpinaistudio-website@main/downloads/paipintong.apk",
