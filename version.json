@@ -2,17 +2,17 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.9.9",
-  "versionCode": 165,
+  "version": "1.9.10",
+  "versionCode": 166,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 25517989,
-  "sha256": "B4BF87799446C97154509C005575AAE2A9456D7C25673B58A554765E856BFCAE",
+  "sizeBytes": 25518017,
+  "sha256": "F1CD3908BE80876AE9A0BAAFC3CB6C30E7757D90258F3A883BBF96C4A4750CBF",
   "minAndroid": "7.0",
   "releasedAt": "2026-09-28",
   "notes": [
-    "Improved visual hierarchy so supporting data does not overpower the product image.",
-    "Added automatic text-to-text overlap checks and reflow before output.",
-    "Saved recognition reuse and the nine-image generation freeze fix are included."
+    "The Chinese/English switch now appears only for text layers.",
+    "Product images, logos, stickers, shapes and other non-text assets no longer show a translation control.",
+    "Saved recognition reuse, visual hierarchy checks and the nine-image generation freeze fix are included."
   ],
   "apkMirrors": [
     "https://cdn.jsdelivr.net/gh/mwpinaistudio/mwpinaistudio-website@main/downloads/paipintong.apk",
