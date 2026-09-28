@@ -2,17 +2,17 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.9.6",
-  "versionCode": 162,
+  "version": "1.9.7",
+  "versionCode": 163,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 25517061,
-  "sha256": "534367CC51D6027A83020F7244ABE833F05554D5A6144E633BFCA6B268484B95",
+  "sizeBytes": 25517057,
+  "sha256": "4BC50AE23EFB04402A73131D83C7A0631EA19007AEFCA70D1CB3E0D8DEC5E0F6",
   "minAndroid": "7.0",
   "releasedAt": "2026-09-28",
   "notes": [
-    "Added a layout commander that chooses between copy-left and copy-right compositions based on product shape and the background safe zones.",
-    "Text and product zones are checked before rendering so titles and selling points are less likely to overlap the product.",
-    "The flagship main image still uses the premium photography background, product shadow, floor reflection and window-light geometry."
+    "Fixed an issue that could make the nine-image generation freeze when only a small number of selling points were available.",
+    "The flagship layout commander continues to separate product and text zones before rendering.",
+    "Premium background photography, contact shadow, floor reflection and window-light composition remain available."
   ],
   "apkMirrors": [
     "https://cdn.jsdelivr.net/gh/mwpinaistudio/mwpinaistudio-website@main/downloads/paipintong.apk",
