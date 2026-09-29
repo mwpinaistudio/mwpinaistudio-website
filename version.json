@@ -2,18 +2,17 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.9.12",
-  "versionCode": 168,
+  "version": "1.9.13",
+  "versionCode": 169,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 26248942,
-  "sha256": "0FA2E819FF7E4943D865C117CCDC7EF407F51E722F621C6AB41B2443FB2CA08F",
+  "sizeBytes": 25518953,
+  "sha256": "3EA91C4B84AF06B25EB9FC7ADB0B9F7A2361177B46F39C4DC437AE40549DB86F",
   "minAndroid": "7.0",
   "releasedAt": "2026-09-29",
   "notes": [
-    "Added a series-wide quality gate for all nine generated images.",
-    "Text-to-text, text-to-product and badge-to-text collisions are detected and repaired automatically.",
-    "Duplicate text content is removed within each image, and unsafe decorative layers are rejected before output.",
-    "The flagship main image keeps measured title spacing and table-aligned product placement."
+    "Text, badges and their supporting lines now behave as linked components instead of being moved independently.",
+    "Removed the duplicate-text hiding rule that could leave an empty check mark or blank selling-point row.",
+    "Text panels and specification containers now size themselves around their actual content."
   ],
   "apkMirrors": [
     "https://cdn.jsdelivr.net/gh/mwpinaistudio/mwpinaistudio-website@main/downloads/paipintong.apk",
