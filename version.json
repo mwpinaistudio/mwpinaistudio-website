@@ -2,17 +2,17 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.9.10",
-  "versionCode": 166,
+  "version": "1.9.11",
+  "versionCode": 167,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 25518017,
-  "sha256": "F1CD3908BE80876AE9A0BAAFC3CB6C30E7757D90258F3A883BBF96C4A4750CBF",
+  "sizeBytes": 25518169,
+  "sha256": "56F1A9210BB9D622549194B653CF3E3F8F8117A1DB8724E93353344A0103A85D",
   "minAndroid": "7.0",
-  "releasedAt": "2026-09-28",
+  "releasedAt": "2026-09-29",
   "notes": [
-    "The Chinese/English switch now appears only for text layers.",
-    "Product images, logos, stickers, shapes and other non-text assets no longer show a translation control.",
-    "Saved recognition reuse, visual hierarchy checks and the nine-image generation freeze fix are included."
+    "The flagship layout now spaces titles, subtitles and selling points according to their measured text height.",
+    "Check marks and selling-point text use separate safe zones so they cannot overlap.",
+    "The product is placed on the detected table line instead of floating above the background."
   ],
   "apkMirrors": [
     "https://cdn.jsdelivr.net/gh/mwpinaistudio/mwpinaistudio-website@main/downloads/paipintong.apk",
