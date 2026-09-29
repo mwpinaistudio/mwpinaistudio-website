@@ -2,17 +2,18 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.9.13",
-  "versionCode": 169,
+  "version": "1.9.14",
+  "versionCode": 170,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 25518953,
-  "sha256": "3EA91C4B84AF06B25EB9FC7ADB0B9F7A2361177B46F39C4DC437AE40549DB86F",
+  "sizeBytes": 25519213,
+  "sha256": "49C7B6C18A717F872372261EB7D6C516700A0088B953C18A52BE00022EEF7CB9",
   "minAndroid": "7.0",
   "releasedAt": "2026-09-29",
   "notes": [
-    "Text, badges and their supporting lines now behave as linked components instead of being moved independently.",
-    "Removed the duplicate-text hiding rule that could leave an empty check mark or blank selling-point row.",
-    "Text panels and specification containers now size themselves around their actual content."
+    "The nine-image generator now chooses a new series style for every run.",
+    "All nine images keep one visual theme while using different backgrounds and compositions.",
+    "Product category and image content now influence which background and layout are selected.",
+    "The generate screen now includes a Shuffle set action for repeated random variations."
   ],
   "apkMirrors": [
     "https://cdn.jsdelivr.net/gh/mwpinaistudio/mwpinaistudio-website@main/downloads/paipintong.apk",
