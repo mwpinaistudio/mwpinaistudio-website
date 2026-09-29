@@ -2,18 +2,18 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.9.14",
-  "versionCode": 170,
+  "version": "1.9.15",
+  "versionCode": 171,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 25519213,
-  "sha256": "49C7B6C18A717F872372261EB7D6C516700A0088B953C18A52BE00022EEF7CB9",
+  "sizeBytes": 25521141,
+  "sha256": "6E2B2608814D7A5116A6D5D09CFCCB9394CB9E1663FF436C1126DA27954D1395",
   "minAndroid": "7.0",
   "releasedAt": "2026-09-29",
   "notes": [
-    "The nine-image generator now chooses a new series style for every run.",
-    "All nine images keep one visual theme while using different backgrounds and compositions.",
-    "Product category and image content now influence which background and layout are selected.",
-    "The generate screen now includes a Shuffle set action for repeated random variations."
+    "You can now shuffle any single image without changing the other eight.",
+    "Text panels resize automatically so long or translated copy stays inside the frame.",
+    "Text contrast is checked automatically on light and dark backgrounds for easier reading.",
+    "The dimensions image now shows clear length, width and height values from the product details."
   ],
   "apkMirrors": [
     "https://cdn.jsdelivr.net/gh/mwpinaistudio/mwpinaistudio-website@main/downloads/paipintong.apk",
