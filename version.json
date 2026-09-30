@@ -2,18 +2,18 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.9.23",
-  "versionCode": 179,
+  "version": "1.9.24",
+  "versionCode": 180,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 23743723,
-  "sha256": "AB15A2FE1F7D013BE24FF2C67FB4583456907EAA0F4CDCBC890588B4C8A0975B",
+  "sizeBytes": 23744051,
+  "sha256": "6420F2E034E1665DEA72E0EB5A57FEA9BD38EB6FD91DBF567A4A8DFA566CD135",
   "minAndroid": "7.0",
   "releasedAt": "2026-09-30",
   "notes": [
-    "AI cutout controls were simplified and automatic defaults are now used.",
-    "The duplicated Generate 9 Images button was removed.",
-    "All nine images now share one background library that supports adding, deleting, and restoring backgrounds.",
-    "Text editing now focuses on font weight and size, and generated titles are no longer cut short."
+    "Double-tapping text now opens the text editor and focuses the content immediately.",
+    "Chinese and English text switching now reuses the original cached translation instead of shortening the text.",
+    "Show original / Show edited now compares against the original generated image.",
+    "Image adjustments use reliable pixel processing, and crop preview now reflects the selected output ratio."
   ],
   "apkMirrors": [
     "https://cdn.jsdelivr.net/gh/mwpinaistudio/mwpinaistudio-website@main/downloads/paipintong.apk",
