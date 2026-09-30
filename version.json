@@ -2,17 +2,18 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.9.20",
-  "versionCode": 176,
+  "version": "1.9.21",
+  "versionCode": 177,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 23711275,
-  "sha256": "9650E47A929697673F65948AB56DF3556EEDA118C385CFCB3857E143970CFC84",
+  "sizeBytes": 23743315,
+  "sha256": "6B670B9B83BE5603394ECA022474ED54C77DC04CFE901798D59F1DAD5F061AF6",
   "minAndroid": "7.0",
   "releasedAt": "2026-09-30",
   "notes": [
-    "Fixed a rare case where admin send/publish actions could stay grey and unclickable after a slow request.",
-    "Added request timeouts and moved background refresh out of the button lock so actions recover automatically.",
-    "Text editing remains in a docked panel below the canvas with live font and style preview."
+    "Added five exact Shopee PH main-image background templates: pure white, light neutral gray, warm cream, pale cool blue, and pale mint.",
+    "Main-image backgrounds are now selected automatically by product type and remain editable after generation.",
+    "The first image is limited to clean solid backgrounds; scene, texture, podium, and gradient backgrounds stay in images 2–9.",
+    "Main-image products now receive an optional very light bottom shadow for a cleaner, less cut-out look."
   ],
   "apkMirrors": [
     "https://cdn.jsdelivr.net/gh/mwpinaistudio/mwpinaistudio-website@main/downloads/paipintong.apk",
