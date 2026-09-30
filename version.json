@@ -2,18 +2,18 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.9.16",
-  "versionCode": 172,
+  "version": "1.9.17",
+  "versionCode": 173,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 25520293,
-  "sha256": "AD4D42FD3505B0B371B9E4430353B329224F127908B9A64F82E7C0A053AF65BA",
+  "sizeBytes": 25520929,
+  "sha256": "4E3422408F7C454F1F31AEF215FAC5B5B34972DE8F8BBFC835809FA600680CC4",
   "minAndroid": "7.0",
   "releasedAt": "2026-09-30",
   "notes": [
-    "The first main image now uses clean Shopee-style product and title templates.",
-    "Five main-image layouts are supported: bottom title, top title, left/right split, centered single-line title, and corner title.",
-    "Main images export at 800 x 800 with safe margins and a clean solid background.",
-    "Generated product and title layers remain fully editable in the image studio."
+    "The first image now uses a fixed Shopee PH main-image template system instead of random composition.",
+    "Five clean templates are supported: product top, title top, left product/right title, centered product with one-line title, and corner title.",
+    "The app recommends a template from the product category, and you can switch templates before or after generation.",
+    "Main images export at 800 x 800 as JPG quality 84 with safe margins, solid backgrounds, and editable product/title layers."
   ],
   "apkMirrors": [
     "https://cdn.jsdelivr.net/gh/mwpinaistudio/mwpinaistudio-website@main/downloads/paipintong.apk",
