@@ -2,17 +2,18 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.9.22",
-  "versionCode": 178,
+  "version": "1.9.23",
+  "versionCode": 179,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 23743439,
-  "sha256": "444A94ED6E3C68008198648CC54A87BBBA65A8E2E0712AB691990637A2707F5D",
+  "sizeBytes": 23743723,
+  "sha256": "AB15A2FE1F7D013BE24FF2C67FB4583456907EAA0F4CDCBC890588B4C8A0975B",
   "minAndroid": "7.0",
   "releasedAt": "2026-09-30",
   "notes": [
-    "The app now checks for updates every five minutes and whenever it returns to the foreground.",
-    "New version prompts no longer depend only on a fresh app launch.",
-    "The five clean Shopee PH solid-background templates remain available for the first image."
+    "AI cutout controls were simplified and automatic defaults are now used.",
+    "The duplicated Generate 9 Images button was removed.",
+    "All nine images now share one background library that supports adding, deleting, and restoring backgrounds.",
+    "Text editing now focuses on font weight and size, and generated titles are no longer cut short."
   ],
   "apkMirrors": [
     "https://cdn.jsdelivr.net/gh/mwpinaistudio/mwpinaistudio-website@main/downloads/paipintong.apk",
