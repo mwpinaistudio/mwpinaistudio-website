@@ -2,18 +2,17 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.9.21",
-  "versionCode": 177,
+  "version": "1.9.22",
+  "versionCode": 178,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 23743315,
-  "sha256": "6B670B9B83BE5603394ECA022474ED54C77DC04CFE901798D59F1DAD5F061AF6",
+  "sizeBytes": 23743439,
+  "sha256": "444A94ED6E3C68008198648CC54A87BBBA65A8E2E0712AB691990637A2707F5D",
   "minAndroid": "7.0",
   "releasedAt": "2026-09-30",
   "notes": [
-    "Added five exact Shopee PH main-image background templates: pure white, light neutral gray, warm cream, pale cool blue, and pale mint.",
-    "Main-image backgrounds are now selected automatically by product type and remain editable after generation.",
-    "The first image is limited to clean solid backgrounds; scene, texture, podium, and gradient backgrounds stay in images 2–9.",
-    "Main-image products now receive an optional very light bottom shadow for a cleaner, less cut-out look."
+    "The app now checks for updates every five minutes and whenever it returns to the foreground.",
+    "New version prompts no longer depend only on a fresh app launch.",
+    "The five clean Shopee PH solid-background templates remain available for the first image."
   ],
   "apkMirrors": [
     "https://cdn.jsdelivr.net/gh/mwpinaistudio/mwpinaistudio-website@main/downloads/paipintong.apk",
