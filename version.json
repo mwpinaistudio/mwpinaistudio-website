@@ -2,18 +2,17 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.9.24",
-  "versionCode": 180,
+  "version": "1.9.25",
+  "versionCode": 181,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 23744051,
-  "sha256": "6420F2E034E1665DEA72E0EB5A57FEA9BD38EB6FD91DBF567A4A8DFA566CD135",
+  "sizeBytes": 23744187,
+  "sha256": "C49B55382EB84DB1DE8BF6B38FA00C80144D127D98809304C42ECFEA8E40699C",
   "minAndroid": "7.0",
   "releasedAt": "2026-09-30",
   "notes": [
-    "Double-tapping text now opens the text editor and focuses the content immediately.",
-    "Chinese and English text switching now reuses the original cached translation instead of shortening the text.",
-    "Show original / Show edited now compares against the original generated image.",
-    "Image adjustments use reliable pixel processing, and crop preview now reflects the selected output ratio."
+    "Background delete controls are now hidden until you long-press a background.",
+    "Deleting a backdrop still removes it from the shared library used by all nine images.",
+    "Double-tap text editing, translation caching, original comparison, crop preview, and image adjustments remain included."
   ],
   "apkMirrors": [
     "https://cdn.jsdelivr.net/gh/mwpinaistudio/mwpinaistudio-website@main/downloads/paipintong.apk",
