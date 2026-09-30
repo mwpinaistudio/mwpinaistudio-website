@@ -2,18 +2,18 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.9.15",
-  "versionCode": 171,
+  "version": "1.9.16",
+  "versionCode": 172,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 25521141,
-  "sha256": "6E2B2608814D7A5116A6D5D09CFCCB9394CB9E1663FF436C1126DA27954D1395",
+  "sizeBytes": 25520293,
+  "sha256": "AD4D42FD3505B0B371B9E4430353B329224F127908B9A64F82E7C0A053AF65BA",
   "minAndroid": "7.0",
-  "releasedAt": "2026-09-29",
+  "releasedAt": "2026-09-30",
   "notes": [
-    "You can now shuffle any single image without changing the other eight.",
-    "Text panels resize automatically so long or translated copy stays inside the frame.",
-    "Text contrast is checked automatically on light and dark backgrounds for easier reading.",
-    "The dimensions image now shows clear length, width and height values from the product details."
+    "The first main image now uses clean Shopee-style product and title templates.",
+    "Five main-image layouts are supported: bottom title, top title, left/right split, centered single-line title, and corner title.",
+    "Main images export at 800 x 800 with safe margins and a clean solid background.",
+    "Generated product and title layers remain fully editable in the image studio."
   ],
   "apkMirrors": [
     "https://cdn.jsdelivr.net/gh/mwpinaistudio/mwpinaistudio-website@main/downloads/paipintong.apk",
