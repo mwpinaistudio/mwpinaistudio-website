@@ -2,18 +2,18 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.9.18",
-  "versionCode": 174,
+  "version": "1.9.19",
+  "versionCode": 175,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 23711051,
-  "sha256": "E39124D51B8E08AF58ECB7399DF0464A7CE3DCB65EAC1DB24122037EA70D7D7F",
+  "sizeBytes": 23711143,
+  "sha256": "B72DEE578D486BA36AE69730E89B565729D24DBCEAD75A59B53860449BC349F2",
   "minAndroid": "7.0",
   "releasedAt": "2026-09-30",
   "notes": [
-    "The main-image background library is now limited to clean Shopee PH-safe white, light gray, and very pale neutral options.",
-    "Twenty-eight background assets containing a visible center horizontal line were removed.",
-    "Main-image titles now use Montserrat with cleaner regular/medium styling instead of heavy or decorative fonts.",
-    "Main-image type sizes and spacing now follow the Shopee PH readability rules for small mobile thumbnails."
+    "Text editing now appears in a docked panel below the canvas and no longer covers the artwork.",
+    "Font selection uses a compact tappable font strip with live preview instead of a blocking dropdown.",
+    "Dragging a text layer automatically closes text-edit mode so the canvas stays clear.",
+    "The text tool is more compact for faster edits to size, color, stroke, rotation, and style."
   ],
   "apkMirrors": [
     "https://cdn.jsdelivr.net/gh/mwpinaistudio/mwpinaistudio-website@main/downloads/paipintong.apk",
