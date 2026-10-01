@@ -2,15 +2,17 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.9.35",
-  "versionCode": 191,
+  "version": "1.9.36",
+  "versionCode": 192,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 23745175,
-  "sha256": "91DC92626B159DA66956FCF7C8A2A09D6523EBB38C0D34269BBB78C6F72C24C5",
+  "sizeBytes": 23745195,
+  "sha256": "6BEFB35AAC67B401DECC8F2019D27120A15AD600486F3604435342AFCED5A916",
   "minAndroid": "7.0",
   "releasedAt": "2026-10-01",
   "notes": [
-    "Removed the row of 1-9 thumbnails at the bottom of the image editor. Use the previous / next arrows at the top to move between the nine images."
+    "Fixed the text editor closing on its own. Touching a label, a slider row, the panel padding or simply dragging the panel to scroll no longer cancels the text selection.",
+    "The text editor panel now scrolls smoothly, so every control is reachable.",
+    "Tapping empty space to deselect only works in the empty margin around the canvas, so it can no longer interrupt editing."
   ],
   "apkMirrors": [
     "https://cdn.jsdelivr.net/gh/mwpinaistudio/mwpinaistudio-website@main/downloads/paipintong.apk",
