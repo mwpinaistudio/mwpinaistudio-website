@@ -2,16 +2,15 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.9.37",
-  "versionCode": 193,
+  "version": "1.9.38",
+  "versionCode": 194,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 23741891,
-  "sha256": "C604961D06C5BF33CAA462B5C9B1DF943DF553ADBEA6E9ADC550B34AE04A1439",
+  "sizeBytes": 23741879,
+  "sha256": "6D2B2E11EA0931AA1553B2697896EADDC2DA0260B3789AC791B6A0633E42C762",
   "minAndroid": "7.0",
   "releasedAt": "2026-10-01",
   "notes": [
-    "The image editor toolbar now keeps only the tools you use: Backgrounds, Crop, Text, Elements and Layers.",
-    "Automatic AI cutout on the setup screen is unchanged and still runs as before."
+    "The text colour palette and the text effect buttons now sit directly under the text box, so they are visible straight away without scrolling the panel."
   ],
   "apkMirrors": [
     "https://cdn.jsdelivr.net/gh/mwpinaistudio/mwpinaistudio-website@main/downloads/paipintong.apk",
