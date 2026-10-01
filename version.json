@@ -2,16 +2,16 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.9.40",
-  "versionCode": 196,
+  "version": "1.9.41",
+  "versionCode": 197,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 23742131,
-  "sha256": "D72EA0E3591840E4182B181308890F781A4D1A29DDA2F2996FDEFFFD455D89A8",
+  "sizeBytes": 23741971,
+  "sha256": "64076E7C6D3E977C892521E71E6EFAE59CAD45800C8B8B9A355F27879E38CB60",
   "minAndroid": "7.0",
   "releasedAt": "2026-10-01",
   "notes": [
-    "Tool panels no longer cover the canvas. The canvas now shrinks to fit and the panel sits underneath it, so you can watch the artwork change while you adjust any setting.",
-    "No more closing a panel to check the result - text, background, crop, elements and layers all preview live while the panel stays open."
+    "The canvas now keeps its full size. It no longer shrinks when you open a tool panel.",
+    "Tool panels still sit underneath the canvas instead of covering it, and the page scrolls when there is not enough room."
   ],
   "apkMirrors": [
     "https://cdn.jsdelivr.net/gh/mwpinaistudio/mwpinaistudio-website@main/downloads/paipintong.apk",
