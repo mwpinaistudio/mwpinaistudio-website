@@ -2,15 +2,18 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.9.44",
-  "versionCode": 200,
+  "version": "1.9.45",
+  "versionCode": 201,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 23742691,
-  "sha256": "A2B158AE963090A5E5B38B9451C0068F96D6C824D4A7D6A2B1EDBCB36F395CB0",
+  "sizeBytes": 28853480,
+  "sha256": "C9133126D0D7823D285B22F843F8A2264E5B1D6A9B6662DFCBC5DC2757EE6874",
   "minAndroid": "7.0",
   "releasedAt": "2026-10-01",
   "notes": [
-    "The category chips in the background library now wrap onto a second line instead of running off the side of the screen, so every category is visible in Backgrounds, Scenes and Holidays."
+    "Nine new artistic fonts are built in, including Chinese brush and cartoon styles plus seven display fonts for headlines.",
+    "Ten new light solid colours and seven light premium podium backgrounds were added. Thirteen festival backgrounds now carry the festival name, for example Christmas, Halloween, Chinese New Year and Mid-Autumn.",
+    "The Elements tool now has a built-in sticker library with six categories, so decorations can be dropped straight onto the image.",
+    "The editor panel now fits the screen and scrolls properly, so the rotation slider at the bottom is always reachable."
   ],
   "apkMirrors": [
     "https://cdn.jsdelivr.net/gh/mwpinaistudio/mwpinaistudio-website@main/downloads/paipintong.apk",
