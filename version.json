@@ -2,16 +2,15 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.9.30",
-  "versionCode": 186,
+  "version": "1.9.31",
+  "versionCode": 187,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 23746663,
-  "sha256": "9D7FEBB85A68640B0C6F658A782FEC578760B97F6E192C74AD14D17290220DF6",
+  "sizeBytes": 23745195,
+  "sha256": "64FA09C122CD95627AD5B3BFC214E55B84B18BE516A805413AB71C858E09EC65",
   "minAndroid": "7.0",
   "releasedAt": "2026-10-01",
   "notes": [
-    "The image-studio text editor was rebuilt as a dock below the canvas with Style, Colour, Effect and Layout tabs, so it never covers the picture you are editing.",
-    "Background deletion now runs through a clear Manage mode with an explicit delete button and a confirmation, with long-press as a shortcut. If something fails you now get a message instead of a frozen screen."
+    "Reverted the 1.9.30 image-studio redesign and restored the previous studio home page, layout and text editor."
   ],
   "apkMirrors": [
     "https://cdn.jsdelivr.net/gh/mwpinaistudio/mwpinaistudio-website@main/downloads/paipintong.apk",
