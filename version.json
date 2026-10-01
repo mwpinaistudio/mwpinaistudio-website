@@ -2,16 +2,15 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.9.41",
-  "versionCode": 197,
+  "version": "1.9.42",
+  "versionCode": 198,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 23741971,
-  "sha256": "64076E7C6D3E977C892521E71E6EFAE59CAD45800C8B8B9A355F27879E38CB60",
+  "sizeBytes": 23742435,
+  "sha256": "30AD0772184F5AD0B346957D63E944AF1BCE4E529D2331FA1397DB47F4E8E890",
   "minAndroid": "7.0",
   "releasedAt": "2026-10-01",
   "notes": [
-    "The canvas now keeps its full size. It no longer shrinks when you open a tool panel.",
-    "Tool panels still sit underneath the canvas instead of covering it, and the page scrolls when there is not enough room."
+    "The round colour button in the text colour row is now an eyedropper. Tap it, then tap anywhere on the canvas to pick that exact colour from your image."
   ],
   "apkMirrors": [
     "https://cdn.jsdelivr.net/gh/mwpinaistudio/mwpinaistudio-website@main/downloads/paipintong.apk",
