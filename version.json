@@ -2,17 +2,17 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.9.25",
-  "versionCode": 181,
+  "version": "1.9.26",
+  "versionCode": 182,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 23744187,
-  "sha256": "C49B55382EB84DB1DE8BF6B38FA00C80144D127D98809304C42ECFEA8E40699C",
+  "sizeBytes": 23744367,
+  "sha256": "BC68673EA824D6ECCF7020C9C2E85CC5F298DC23420098449BA7458EE22055F4",
   "minAndroid": "7.0",
-  "releasedAt": "2026-09-30",
+  "releasedAt": "2026-10-01",
   "notes": [
-    "Background delete controls are now hidden until you long-press a background.",
-    "Deleting a backdrop still removes it from the shared library used by all nine images.",
-    "Double-tap text editing, translation caching, original comparison, crop preview, and image adjustments remain included."
+    "Restored the original text color swatches and text effect options near the duplicate text controls.",
+    "Background delete controls now appear only after a touch long press and still require confirmation.",
+    "The Adjust & Filters panel has extra bottom spacing and scrolling room so brightness, contrast, and saturation controls are no longer covered."
   ],
   "apkMirrors": [
     "https://cdn.jsdelivr.net/gh/mwpinaistudio/mwpinaistudio-website@main/downloads/paipintong.apk",
