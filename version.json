@@ -2,17 +2,17 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.9.27",
-  "versionCode": 183,
+  "version": "1.9.28",
+  "versionCode": 184,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 23744511,
-  "sha256": "98E0C7AEE1ACF8F653BD03F8397EDEEAAA66972BC34BBC876110A71970F65BBC",
+  "sizeBytes": 23744595,
+  "sha256": "242E1F196D6FD04705FBA8F5B4DD27F006275573590313B3B1E5AD4B0F7824A6",
   "minAndroid": "7.0",
   "releasedAt": "2026-10-01",
   "notes": [
-    "Background delete controls now appear only after a touch long press, with no unnecessary re-render.",
-    "Double-tapping the first image title no longer risks switching to another image.",
-    "The Adjust & Filters panel has enough bottom clearance for all brightness, contrast, and saturation sliders."
+    "Added a quick deselect action when tapping blank space outside the canvas.",
+    "Background deletion now uses a stable long-press interaction without freezing the image editor.",
+    "The Adjust & Filters panel is fully scrollable and keeps all adjustment controls above the bottom edge."
   ],
   "apkMirrors": [
     "https://cdn.jsdelivr.net/gh/mwpinaistudio/mwpinaistudio-website@main/downloads/paipintong.apk",
