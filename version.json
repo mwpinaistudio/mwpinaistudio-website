@@ -2,17 +2,16 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.9.36",
-  "versionCode": 192,
+  "version": "1.9.37",
+  "versionCode": 193,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 23745195,
-  "sha256": "6BEFB35AAC67B401DECC8F2019D27120A15AD600486F3604435342AFCED5A916",
+  "sizeBytes": 23741891,
+  "sha256": "C604961D06C5BF33CAA462B5C9B1DF943DF553ADBEA6E9ADC550B34AE04A1439",
   "minAndroid": "7.0",
   "releasedAt": "2026-10-01",
   "notes": [
-    "Fixed the text editor closing on its own. Touching a label, a slider row, the panel padding or simply dragging the panel to scroll no longer cancels the text selection.",
-    "The text editor panel now scrolls smoothly, so every control is reachable.",
-    "Tapping empty space to deselect only works in the empty margin around the canvas, so it can no longer interrupt editing."
+    "The image editor toolbar now keeps only the tools you use: Backgrounds, Crop, Text, Elements and Layers.",
+    "Automatic AI cutout on the setup screen is unchanged and still runs as before."
   ],
   "apkMirrors": [
     "https://cdn.jsdelivr.net/gh/mwpinaistudio/mwpinaistudio-website@main/downloads/paipintong.apk",
