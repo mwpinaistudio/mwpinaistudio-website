@@ -2,17 +2,16 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.9.33",
-  "versionCode": 189,
+  "version": "1.9.34",
+  "versionCode": 190,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 23745271,
-  "sha256": "B877AB46FAD34F3F1821BCAC4687100AD3A51C1243E9D5D9E1EFDF04DBA06241",
+  "sizeBytes": 23745263,
+  "sha256": "EDF3055DEF7BE923A86ED80D99472B646882F3621B1FCA3A4B2356F9A621FFDE",
   "minAndroid": "7.0",
   "releasedAt": "2026-10-01",
   "notes": [
-    "Removed the Show original / compare button from the image studio.",
-    "Removed the Add this image to product photos button from the image studio.",
-    "Fixed a problem that stopped some products from being deleted: deleting now always succeeds even if cleaning up the cloud copy fails."
+    "Fixed a freeze that could happen when deleting a background that was already used by one of the nine images.",
+    "Deleting a background now updates the screen instantly and saves in the background, so a slow save can never lock the editor again."
   ],
   "apkMirrors": [
     "https://cdn.jsdelivr.net/gh/mwpinaistudio/mwpinaistudio-website@main/downloads/paipintong.apk",
