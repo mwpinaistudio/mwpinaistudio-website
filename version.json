@@ -2,16 +2,15 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.9.34",
-  "versionCode": 190,
+  "version": "1.9.35",
+  "versionCode": 191,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 23745263,
-  "sha256": "EDF3055DEF7BE923A86ED80D99472B646882F3621B1FCA3A4B2356F9A621FFDE",
+  "sizeBytes": 23745175,
+  "sha256": "91DC92626B159DA66956FCF7C8A2A09D6523EBB38C0D34269BBB78C6F72C24C5",
   "minAndroid": "7.0",
   "releasedAt": "2026-10-01",
   "notes": [
-    "Fixed a freeze that could happen when deleting a background that was already used by one of the nine images.",
-    "Deleting a background now updates the screen instantly and saves in the background, so a slow save can never lock the editor again."
+    "Removed the row of 1-9 thumbnails at the bottom of the image editor. Use the previous / next arrows at the top to move between the nine images."
   ],
   "apkMirrors": [
     "https://cdn.jsdelivr.net/gh/mwpinaistudio/mwpinaistudio-website@main/downloads/paipintong.apk",
