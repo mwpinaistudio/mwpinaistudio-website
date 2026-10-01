@@ -2,16 +2,15 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.9.43",
-  "versionCode": 199,
+  "version": "1.9.44",
+  "versionCode": 200,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 23742699,
-  "sha256": "CFE7CB1B66C7265EF06062410F71948EE5AAD597540B97BB65D2AC723A717992",
+  "sizeBytes": 23742691,
+  "sha256": "A2B158AE963090A5E5B38B9451C0068F96D6C824D4A7D6A2B1EDBCB36F395CB0",
   "minAndroid": "7.0",
   "releasedAt": "2026-10-01",
   "notes": [
-    "The colour picker now shows a marker with the sampled colour and its hex value, and follows your finger.",
-    "The text colour updates live while you drag the picker across the image, so you can see the result before you let go."
+    "The category chips in the background library now wrap onto a second line instead of running off the side of the screen, so every category is visible in Backgrounds, Scenes and Holidays."
   ],
   "apkMirrors": [
     "https://cdn.jsdelivr.net/gh/mwpinaistudio/mwpinaistudio-website@main/downloads/paipintong.apk",
