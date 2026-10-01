@@ -2,15 +2,16 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.9.42",
-  "versionCode": 198,
+  "version": "1.9.43",
+  "versionCode": 199,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 23742435,
-  "sha256": "30AD0772184F5AD0B346957D63E944AF1BCE4E529D2331FA1397DB47F4E8E890",
+  "sizeBytes": 23742699,
+  "sha256": "CFE7CB1B66C7265EF06062410F71948EE5AAD597540B97BB65D2AC723A717992",
   "minAndroid": "7.0",
   "releasedAt": "2026-10-01",
   "notes": [
-    "The round colour button in the text colour row is now an eyedropper. Tap it, then tap anywhere on the canvas to pick that exact colour from your image."
+    "The colour picker now shows a marker with the sampled colour and its hex value, and follows your finger.",
+    "The text colour updates live while you drag the picker across the image, so you can see the result before you let go."
   ],
   "apkMirrors": [
     "https://cdn.jsdelivr.net/gh/mwpinaistudio/mwpinaistudio-website@main/downloads/paipintong.apk",
