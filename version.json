@@ -2,17 +2,16 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.9.28",
-  "versionCode": 184,
+  "version": "1.9.29",
+  "versionCode": 185,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 23744595,
-  "sha256": "242E1F196D6FD04705FBA8F5B4DD27F006275573590313B3B1E5AD4B0F7824A6",
+  "sizeBytes": 23745195,
+  "sha256": "22688EE40D1E390F52AE265FFCFA7DA9374A408214FD76CC78ADA77F8668056D",
   "minAndroid": "7.0",
   "releasedAt": "2026-10-01",
   "notes": [
-    "Added a quick deselect action when tapping blank space outside the canvas.",
-    "Background deletion now uses a stable long-press interaction without freezing the image editor.",
-    "The Adjust & Filters panel is fully scrollable and keeps all adjustment controls above the bottom edge."
+    "Background deletion is stable again: long-press a background, then delete or cancel without the editor freezing or blocking the background list.",
+    "Restored the text colour palette and text effects (bold, outline, gradient, glow, 3D and shadow) in the image studio text editor."
   ],
   "apkMirrors": [
     "https://cdn.jsdelivr.net/gh/mwpinaistudio/mwpinaistudio-website@main/downloads/paipintong.apk",
