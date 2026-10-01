@@ -2,16 +2,17 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.9.32",
-  "versionCode": 188,
+  "version": "1.9.33",
+  "versionCode": 189,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 23745591,
-  "sha256": "B9912E0C9A69DB95EB3FF14964F8EF9425A88F29FF5BBA502D10C70A8E0965F7",
+  "sizeBytes": 23745271,
+  "sha256": "B877AB46FAD34F3F1821BCAC4687100AD3A51C1243E9D5D9E1EFDF04DBA06241",
   "minAndroid": "7.0",
   "releasedAt": "2026-10-01",
   "notes": [
-    "The text editor now stays open the whole time you are editing a text layer. It no longer closes by itself after a few seconds, so you can keep watching the canvas while you change the font, size, colour and effects.",
-    "Background deletion is now a normal Manage mode: turn it on, and every background thumbnail shows a delete button with a confirmation step. It no longer depends on a long-press and no longer freezes the editor."
+    "Removed the Show original / compare button from the image studio.",
+    "Removed the Add this image to product photos button from the image studio.",
+    "Fixed a problem that stopped some products from being deleted: deleting now always succeeds even if cleaning up the cloud copy fails."
   ],
   "apkMirrors": [
     "https://cdn.jsdelivr.net/gh/mwpinaistudio/mwpinaistudio-website@main/downloads/paipintong.apk",
