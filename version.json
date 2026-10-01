@@ -2,15 +2,16 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.9.38",
-  "versionCode": 194,
+  "version": "1.9.39",
+  "versionCode": 195,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 23741879,
-  "sha256": "6D2B2E11EA0931AA1553B2697896EADDC2DA0260B3789AC791B6A0633E42C762",
+  "sizeBytes": 23742003,
+  "sha256": "853040099774FB4432618DCAC0A910F669FACB525D2A4D3AA9BD8C7A998D6261",
   "minAndroid": "7.0",
   "releasedAt": "2026-10-01",
   "notes": [
-    "The text colour palette and the text effect buttons now sit directly under the text box, so they are visible straight away without scrolling the panel."
+    "The main-image template picker on image 1 is now a collapsible dropdown. It stays open until you close it, so more templates can be added later.",
+    "The canvas and the artwork sit slightly higher on screen, leaving more room below."
   ],
   "apkMirrors": [
     "https://cdn.jsdelivr.net/gh/mwpinaistudio/mwpinaistudio-website@main/downloads/paipintong.apk",
