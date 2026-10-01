@@ -2,15 +2,16 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.9.31",
-  "versionCode": 187,
+  "version": "1.9.32",
+  "versionCode": 188,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 23745195,
-  "sha256": "64FA09C122CD95627AD5B3BFC214E55B84B18BE516A805413AB71C858E09EC65",
+  "sizeBytes": 23745591,
+  "sha256": "B9912E0C9A69DB95EB3FF14964F8EF9425A88F29FF5BBA502D10C70A8E0965F7",
   "minAndroid": "7.0",
   "releasedAt": "2026-10-01",
   "notes": [
-    "Reverted the 1.9.30 image-studio redesign and restored the previous studio home page, layout and text editor."
+    "The text editor now stays open the whole time you are editing a text layer. It no longer closes by itself after a few seconds, so you can keep watching the canvas while you change the font, size, colour and effects.",
+    "Background deletion is now a normal Manage mode: turn it on, and every background thumbnail shows a delete button with a confirmation step. It no longer depends on a long-press and no longer freezes the editor."
   ],
   "apkMirrors": [
     "https://cdn.jsdelivr.net/gh/mwpinaistudio/mwpinaistudio-website@main/downloads/paipintong.apk",
