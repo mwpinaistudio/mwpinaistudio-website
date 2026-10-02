@@ -2,17 +2,16 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.9.49",
-  "versionCode": 205,
+  "version": "1.9.50",
+  "versionCode": 206,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 28886441,
-  "sha256": "FBFCCF58AC139397CEB82B46452EC9D25B09B1391A0BBDFFBC69D684A14939D1",
+  "sizeBytes": 28886837,
+  "sha256": "26CA67FDFE12D72D521B4F66343F71175CD7DD3ADF3A941B45813726C8CF49BC",
   "minAndroid": "7.0",
   "releasedAt": "2026-10-02",
   "notes": [
-    "Text layers can now have their own background block, so red text can sit on a white plate or white text on a red plate.",
-    "Added background fill colours, background padding, corner radius, underline and uppercase to the text panel.",
-    "The selection box and the resize handles now take the text background into account."
+    "The sticker library grew from 6 to 12 categories: faces, people, animals, characters, festival, shopping, home, beauty, sport, nature, food and marks.",
+    "New people and animal characters, plus friendly generic hero, mage, ninja, robot and alien archetypes for comic-style decoration."
   ],
   "apkMirrors": [
     "https://cdn.jsdelivr.net/gh/mwpinaistudio/mwpinaistudio-website@main/downloads/paipintong.apk",
