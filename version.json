@@ -2,16 +2,17 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.9.48",
-  "versionCode": 204,
+  "version": "1.9.49",
+  "versionCode": 205,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 28885761,
-  "sha256": "2B598E69185A1AFED30A81F43F671C9C4456EC4B57A3A3AAE0FEB50AF0768EC4",
+  "sizeBytes": 28886441,
+  "sha256": "FBFCCF58AC139397CEB82B46452EC9D25B09B1391A0BBDFFBC69D684A14939D1",
   "minAndroid": "7.0",
   "releasedAt": "2026-10-02",
   "notes": [
-    "Added twelve festive illustration backgrounds: Christmas with a tree, snowman, Santa hat and snowfall, Halloween with pumpkins, bats and a moon, Chinese New Year with lanterns and gold clouds, Mid-Autumn with a moon and rabbit, plus Valentine, Children's Day, New Year, Easter, Thanksgiving, Dragon Boat, Mother's Day and Father's Day.",
-    "Every festive element sits around the edge of the canvas, so the middle stays clear for your product."
+    "Text layers can now have their own background block, so red text can sit on a white plate or white text on a red plate.",
+    "Added background fill colours, background padding, corner radius, underline and uppercase to the text panel.",
+    "The selection box and the resize handles now take the text background into account."
   ],
   "apkMirrors": [
     "https://cdn.jsdelivr.net/gh/mwpinaistudio/mwpinaistudio-website@main/downloads/paipintong.apk",
