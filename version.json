@@ -2,18 +2,17 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.9.55",
-  "versionCode": 211,
+  "version": "1.9.56",
+  "versionCode": 212,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 28968484,
-  "sha256": "E23DF7E9E930DA0198DC153D0D9BA49DE5866FA486F21EABF58519CCFDC750ED",
+  "sizeBytes": 28968440,
+  "sha256": "56ACE4EC72FBC35D8ACE612F9066DE2BEA86E7FB856D8C3CF4A44C8F626B72E4",
   "minAndroid": "7.0",
   "releasedAt": "2026-10-02",
   "notes": [
-    "Removed the elongated I-shaped marker from the lines.",
-    "Line markers now go on the canvas in black first, then you select one and tap a colour to recolour it, the same way letters, numbers and badges work.",
-    "Symbol icons increased from 8 to 16.",
-    "List templates increased to 15, adding English benefit, step, specification, package, feature and care layouts."
+    "Removed the line colour row that did nothing. Line markers are always added in black.",
+    "To recolour a line, select it on the canvas: the colour swatches now appear at the very top of the Elements panel, so they are always visible.",
+    "Added the missing black version of every marker shape so the black preview and insert always work."
   ],
   "apkMirrors": [
     "https://cdn.jsdelivr.net/gh/mwpinaistudio/mwpinaistudio-website@main/downloads/paipintong.apk",
