@@ -2,17 +2,17 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.9.52",
-  "versionCode": 208,
+  "version": "1.9.53",
+  "versionCode": 209,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 28910146,
-  "sha256": "9CCA3E18C124BD96A866B6AFBE9438DD34FE57FA828322599297186E0FBC2D4A",
+  "sizeBytes": 28943244,
+  "sha256": "396DC46EE638091FE44A29FBCD7F7E410E12ECBBA8E9091FAC9F17C5DDB724E4",
   "minAndroid": "7.0",
   "releasedAt": "2026-10-02",
   "notes": [
-    "New annotation markers in the Elements tool: thin, thick and dashed rules, left, right and double arrow lines, dot-and-line and check-and-line pointers, each in a dark and a white version.",
-    "A to Z round letter badges for labelling parts of a product photo.",
-    "Eighteen promo badges including SALE, HOT, NEW, 折扣, 热卖, 秒杀, 包邮, 新品, 现货, 限量, 买一送一, 优惠券, 品质保证, 正品, 爆款, 免运费, ON SALE and 等待发货."
+    "Lines and markers: 19 shapes in 8 colours, including rules, dashed lines, left, right, double, up and down arrows, dot and check pointers, dimension lines, wave underline, highlighter bar, frames and ovals.",
+    "Letters A-Z, numbers 1-30, 44 promo badges and symbol icons are now editable text badges, so the text, the letter colour and the background colour can all be changed and the block always fits the text.",
+    "Removed the Title + subtitle button."
   ],
   "apkMirrors": [
     "https://cdn.jsdelivr.net/gh/mwpinaistudio/mwpinaistudio-website@main/downloads/paipintong.apk",
