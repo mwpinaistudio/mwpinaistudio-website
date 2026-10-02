@@ -2,16 +2,19 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.9.50",
-  "versionCode": 206,
+  "version": "1.9.51",
+  "versionCode": 207,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 28886837,
-  "sha256": "26CA67FDFE12D72D521B4F66343F71175CD7DD3ADF3A941B45813726C8CF49BC",
+  "sizeBytes": 28887869,
+  "sha256": "7A2734D49D8CD68A45688EF67BA50DD4C54E3C40EE46F728007B921323271A94",
   "minAndroid": "7.0",
   "releasedAt": "2026-10-02",
   "notes": [
-    "The sticker library grew from 6 to 12 categories: faces, people, animals, characters, festival, shopping, home, beauty, sport, nature, food and marks.",
-    "New people and animal characters, plus friendly generic hero, mage, ninja, robot and alien archetypes for comic-style decoration."
+    "Text styles: seven one-tap presets including red tag, white tag, gold gradient, black outline, neon glow, sale tag and elegant thin.",
+    "Text background: adjustable opacity, and a new price-tag shape with a pointed end.",
+    "Text shadow can now be positioned and blurred with three sliders.",
+    "Outline colour and width are always available instead of only with the outline style.",
+    "New Title + subtitle button creates a matched main title and smaller subtitle in one tap."
   ],
   "apkMirrors": [
     "https://cdn.jsdelivr.net/gh/mwpinaistudio/mwpinaistudio-website@main/downloads/paipintong.apk",
