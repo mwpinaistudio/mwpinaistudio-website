@@ -2,19 +2,17 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.9.46",
-  "versionCode": 202,
+  "version": "1.9.47",
+  "versionCode": 203,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 28884190,
-  "sha256": "B1294F990FB5FF7C585FD4066CBA80E9ECF570C396D984241DCF5F9389E96796",
+  "sizeBytes": 28875883,
+  "sha256": "DBA49736994B13E82B7BA094AE5D4B6EFBE012B49211949BCDB81A3F1E77D959",
   "minAndroid": "7.0",
   "releasedAt": "2026-10-02",
   "notes": [
-    "Fixed the corner resize handles on the main image title: they can no longer be pushed off the canvas, and a corner is no longer stolen by the floating duplicate / delete buttons.",
-    "Every background category now has at least ten images, including new light scenes for Studio Light, Home, Outdoor, Nature, Sport, Leisure and Retail.",
-    "Festival backgrounds were rebuilt: the title now sits in the upper area so the product has the centre, and each one carries real festive elements (trees, lanterns, pumpkins, balloons and more).",
-    "The deselect button that covered the canvas was removed.",
-    "The text panel now has angle presets (-15/-5/+5/+15/+90 and reset), 16 colours and 16 effect and format buttons."
+    "Fixed the corner resize handles for good: the hit area used an unscaled text size while the handles were drawn from the scaled size, so after the first resize a corner tap was treated as a move instead of a resize.",
+    "The colour picker now shows a Done button so it can always be closed.",
+    "Removed the festival backgrounds that had the festival name printed on them."
   ],
   "apkMirrors": [
     "https://cdn.jsdelivr.net/gh/mwpinaistudio/mwpinaistudio-website@main/downloads/paipintong.apk",
