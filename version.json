@@ -2,19 +2,17 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.9.51",
-  "versionCode": 207,
+  "version": "1.9.52",
+  "versionCode": 208,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 28887869,
-  "sha256": "7A2734D49D8CD68A45688EF67BA50DD4C54E3C40EE46F728007B921323271A94",
+  "sizeBytes": 28910146,
+  "sha256": "9CCA3E18C124BD96A866B6AFBE9438DD34FE57FA828322599297186E0FBC2D4A",
   "minAndroid": "7.0",
   "releasedAt": "2026-10-02",
   "notes": [
-    "Text styles: seven one-tap presets including red tag, white tag, gold gradient, black outline, neon glow, sale tag and elegant thin.",
-    "Text background: adjustable opacity, and a new price-tag shape with a pointed end.",
-    "Text shadow can now be positioned and blurred with three sliders.",
-    "Outline colour and width are always available instead of only with the outline style.",
-    "New Title + subtitle button creates a matched main title and smaller subtitle in one tap."
+    "New annotation markers in the Elements tool: thin, thick and dashed rules, left, right and double arrow lines, dot-and-line and check-and-line pointers, each in a dark and a white version.",
+    "A to Z round letter badges for labelling parts of a product photo.",
+    "Eighteen promo badges including SALE, HOT, NEW, 折扣, 热卖, 秒杀, 包邮, 新品, 现货, 限量, 买一送一, 优惠券, 品质保证, 正品, 爆款, 免运费, ON SALE and 等待发货."
   ],
   "apkMirrors": [
     "https://cdn.jsdelivr.net/gh/mwpinaistudio/mwpinaistudio-website@main/downloads/paipintong.apk",
