@@ -2,18 +2,19 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.9.45",
-  "versionCode": 201,
+  "version": "1.9.46",
+  "versionCode": 202,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 28853480,
-  "sha256": "C9133126D0D7823D285B22F843F8A2264E5B1D6A9B6662DFCBC5DC2757EE6874",
+  "sizeBytes": 28884190,
+  "sha256": "B1294F990FB5FF7C585FD4066CBA80E9ECF570C396D984241DCF5F9389E96796",
   "minAndroid": "7.0",
-  "releasedAt": "2026-10-01",
+  "releasedAt": "2026-10-02",
   "notes": [
-    "Nine new artistic fonts are built in, including Chinese brush and cartoon styles plus seven display fonts for headlines.",
-    "Ten new light solid colours and seven light premium podium backgrounds were added. Thirteen festival backgrounds now carry the festival name, for example Christmas, Halloween, Chinese New Year and Mid-Autumn.",
-    "The Elements tool now has a built-in sticker library with six categories, so decorations can be dropped straight onto the image.",
-    "The editor panel now fits the screen and scrolls properly, so the rotation slider at the bottom is always reachable."
+    "Fixed the corner resize handles on the main image title: they can no longer be pushed off the canvas, and a corner is no longer stolen by the floating duplicate / delete buttons.",
+    "Every background category now has at least ten images, including new light scenes for Studio Light, Home, Outdoor, Nature, Sport, Leisure and Retail.",
+    "Festival backgrounds were rebuilt: the title now sits in the upper area so the product has the centre, and each one carries real festive elements (trees, lanterns, pumpkins, balloons and more).",
+    "The deselect button that covered the canvas was removed.",
+    "The text panel now has angle presets (-15/-5/+5/+15/+90 and reset), 16 colours and 16 effect and format buttons."
   ],
   "apkMirrors": [
     "https://cdn.jsdelivr.net/gh/mwpinaistudio/mwpinaistudio-website@main/downloads/paipintong.apk",
