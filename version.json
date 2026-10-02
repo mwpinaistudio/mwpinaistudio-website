@@ -2,15 +2,15 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.9.58",
-  "versionCode": 214,
+  "version": "1.9.59",
+  "versionCode": 215,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 28968772,
-  "sha256": "C02D22E0530B8DD268CEE511718222D76507282A8BF1CB0D7A68555737113053",
+  "sizeBytes": 28968824,
+  "sha256": "F3120226EEDE7588C802B1285137CCE8E0288A23698E6B6C9BCF8BFB44B1C21C",
   "minAndroid": "7.0",
   "releasedAt": "2026-10-02",
   "notes": [
-    "Fixed overlapping layers: dragging now always moves the layer you selected. Tapping the same spot again still cycles to the layer underneath, but the switch now happens on release, so it can never move a different layer."
+    "Fixed tiny stickers growing when you try to drag them. The corner resize grip no longer covers the whole sticker once it is small, so dragging a shrunk sticker always moves it. Use pinch or the size slider to enlarge it again."
   ],
   "apkMirrors": [
     "https://cdn.jsdelivr.net/gh/mwpinaistudio/mwpinaistudio-website@main/downloads/paipintong.apk",
