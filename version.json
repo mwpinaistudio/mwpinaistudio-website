@@ -2,17 +2,16 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.9.47",
-  "versionCode": 203,
+  "version": "1.9.48",
+  "versionCode": 204,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 28875883,
-  "sha256": "DBA49736994B13E82B7BA094AE5D4B6EFBE012B49211949BCDB81A3F1E77D959",
+  "sizeBytes": 28885761,
+  "sha256": "2B598E69185A1AFED30A81F43F671C9C4456EC4B57A3A3AAE0FEB50AF0768EC4",
   "minAndroid": "7.0",
   "releasedAt": "2026-10-02",
   "notes": [
-    "Fixed the corner resize handles for good: the hit area used an unscaled text size while the handles were drawn from the scaled size, so after the first resize a corner tap was treated as a move instead of a resize.",
-    "The colour picker now shows a Done button so it can always be closed.",
-    "Removed the festival backgrounds that had the festival name printed on them."
+    "Added twelve festive illustration backgrounds: Christmas with a tree, snowman, Santa hat and snowfall, Halloween with pumpkins, bats and a moon, Chinese New Year with lanterns and gold clouds, Mid-Autumn with a moon and rabbit, plus Valentine, Children's Day, New Year, Easter, Thanksgiving, Dragon Boat, Mother's Day and Father's Day.",
+    "Every festive element sits around the edge of the canvas, so the middle stays clear for your product."
   ],
   "apkMirrors": [
     "https://cdn.jsdelivr.net/gh/mwpinaistudio/mwpinaistudio-website@main/downloads/paipintong.apk",
