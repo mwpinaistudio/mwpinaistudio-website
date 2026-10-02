@@ -2,17 +2,16 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.9.53",
-  "versionCode": 209,
+  "version": "1.9.54",
+  "versionCode": 210,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 28943244,
-  "sha256": "396DC46EE638091FE44A29FBCD7F7E410E12ECBBA8E9091FAC9F17C5DDB724E4",
+  "sizeBytes": 28970487,
+  "sha256": "1043BC6039E09F03EDACE8EB6B272A223E3A65B708606B59115660F5446A92FE",
   "minAndroid": "7.0",
   "releasedAt": "2026-10-02",
   "notes": [
-    "Lines and markers: 19 shapes in 8 colours, including rules, dashed lines, left, right, double, up and down arrows, dot and check pointers, dimension lines, wave underline, highlighter bar, frames and ovals.",
-    "Letters A-Z, numbers 1-30, 44 promo badges and symbol icons are now editable text badges, so the text, the letter colour and the background colour can all be changed and the block always fits the text.",
-    "Removed the Title + subtitle button."
+    "28 marker shapes in 8 colours: added speech bubbles (outline and filled), stamp rings, hand-drawn arrows and underline, a ruler with tick marks, and a checklist frame.",
+    "New editable list templates: three and four bullet benefits, three and four numbered steps, a specification list and a numbered points block."
   ],
   "apkMirrors": [
     "https://cdn.jsdelivr.net/gh/mwpinaistudio/mwpinaistudio-website@main/downloads/paipintong.apk",
