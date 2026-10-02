@@ -2,16 +2,18 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.9.54",
-  "versionCode": 210,
+  "version": "1.9.55",
+  "versionCode": 211,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 28970487,
-  "sha256": "1043BC6039E09F03EDACE8EB6B272A223E3A65B708606B59115660F5446A92FE",
+  "sizeBytes": 28968484,
+  "sha256": "E23DF7E9E930DA0198DC153D0D9BA49DE5866FA486F21EABF58519CCFDC750ED",
   "minAndroid": "7.0",
   "releasedAt": "2026-10-02",
   "notes": [
-    "28 marker shapes in 8 colours: added speech bubbles (outline and filled), stamp rings, hand-drawn arrows and underline, a ruler with tick marks, and a checklist frame.",
-    "New editable list templates: three and four bullet benefits, three and four numbered steps, a specification list and a numbered points block."
+    "Removed the elongated I-shaped marker from the lines.",
+    "Line markers now go on the canvas in black first, then you select one and tap a colour to recolour it, the same way letters, numbers and badges work.",
+    "Symbol icons increased from 8 to 16.",
+    "List templates increased to 15, adding English benefit, step, specification, package, feature and care layouts."
   ],
   "apkMirrors": [
     "https://cdn.jsdelivr.net/gh/mwpinaistudio/mwpinaistudio-website@main/downloads/paipintong.apk",
