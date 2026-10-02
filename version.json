@@ -2,17 +2,19 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.9.56",
-  "versionCode": 212,
+  "version": "1.9.57",
+  "versionCode": 213,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 28968440,
-  "sha256": "56ACE4EC72FBC35D8ACE612F9066DE2BEA86E7FB856D8C3CF4A44C8F626B72E4",
+  "sizeBytes": 28968612,
+  "sha256": "23B5AC1F431B4E6EBEE71DF039A490EFDC75D29EC7610D6CAB14D78FF05EFEBC",
   "minAndroid": "7.0",
   "releasedAt": "2026-10-02",
   "notes": [
-    "Removed the line colour row that did nothing. Line markers are always added in black.",
-    "To recolour a line, select it on the canvas: the colour swatches now appear at the very top of the Elements panel, so they are always visible.",
-    "Added the missing black version of every marker shape so the black preview and insert always work."
+    "Letter A-Z and number badges now use a true circular background.",
+    "Numbers reduced to 1-9, the range that is actually used for steps, benefits and the nine image set. Any other number can be typed into a badge.",
+    "Overlapping stickers, text and markers: tapping the same spot again cycles to the layer underneath, so everything is reachable.",
+    "Small layers now keep a minimum touch area, so shrunken stickers stay easy to grab.",
+    "Rotation is safer: tapping the rotate handle resets the angle to 0, and holding it for about a second starts rotating."
   ],
   "apkMirrors": [
     "https://cdn.jsdelivr.net/gh/mwpinaistudio/mwpinaistudio-website@main/downloads/paipintong.apk",
