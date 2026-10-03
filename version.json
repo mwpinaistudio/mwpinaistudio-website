@@ -2,19 +2,18 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.9.74",
-  "versionCode": 230,
+  "version": "1.9.75",
+  "versionCode": 231,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 36490076,
-  "sha256": "0903E98A085ACED708F94A123575CFE98ECEF6C92215336A72EDE3FCCB1A1A64",
+  "sizeBytes": 36489384,
+  "sha256": "43ABD68B118E36C99FF7ED96087B4AB99C010661EDFD570D444552063B901DD3",
   "minAndroid": "7.0",
   "releasedAt": "2026-10-03",
   "notes": [
-    "Added one-click unified style across all nine images: shared layout, text effect and background tone.",
-    "Added favorites for layouts and text effects; favorites move to the top of their lists.",
-    "Added random-scope controls so users can choose whether layout, background and text effects are randomized.",
-    "Added ten-step per-image history with one-click restore.",
-    "Random batch generation now skips fully locked images and avoids repeating text effects where possible."
+    "Simplified the studio home by removing unused random-layout, random-background, random-effect, lock-all and unlock-all buttons.",
+    "Removed layout/effect favourites and upload actions; saving now goes to local storage/gallery only.",
+    "Kept unified style and per-image locks that are still useful.",
+    "Added smart copy deduplication across the nine images: repeated selling points are replaced with unused AI text when available."
   ],
   "apkMirrors": [
     "https://cdn.jsdelivr.net/gh/mwpinaistudio/mwpinaistudio-website@main/downloads/paipintong.apk",
