@@ -2,18 +2,17 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.9.68",
-  "versionCode": 224,
+  "version": "1.9.69",
+  "versionCode": 225,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 36487712,
-  "sha256": "FC1C6687000A81792FA662B53693FEB11811D8AC8C3338E3B71020E8418B2621",
+  "sizeBytes": 36488060,
+  "sha256": "D77D77FC79F3BA86A6EF35899B9ACCBB19B134D8ADC1C6E9417EB7A863595072",
   "minAndroid": "7.0",
   "releasedAt": "2026-10-03",
   "notes": [
-    "Removed automatic random prop placement from the nine-image templates; props are now added manually by the user.",
-    "Removed the one-tap two-prop pairing section.",
-    "Merged all props into one category, removed duplicate types, and arranged them in a uniform size grid without distortion.",
-    "Fixed the pointer state so long-pressing a prop no longer freezes the canvas."
+    "AI-recognised titles and text are now preserved when switching main-image templates; templates only change position, size and layout.",
+    "Removed the generic replacement wording such as “商品展示” from generated task plans.",
+    "Quality checks now reflow or shrink text on collision instead of hiding or deleting it, preserving all AI text content."
   ],
   "apkMirrors": [
     "https://cdn.jsdelivr.net/gh/mwpinaistudio/mwpinaistudio-website@main/downloads/paipintong.apk",
