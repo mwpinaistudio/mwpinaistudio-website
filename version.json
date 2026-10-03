@@ -2,17 +2,17 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.9.63",
-  "versionCode": 219,
+  "version": "1.9.64",
+  "versionCode": 220,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 28974793,
-  "sha256": "558F7E6934B155AD39BFFAEC663446DA2F8585D4ACA99960E5F0FE06975E6097",
+  "sizeBytes": 30325749,
+  "sha256": "A7E59FF521A412B6B4D0A18DD341447C09C46D9D79D12BCC744D26C5220CCAC6",
   "minAndroid": "7.0",
   "releasedAt": "2026-10-03",
   "notes": [
-    "Replaced the previous prop library with the minimal spec-based set: flat spoon, binder clip, thin candle, wash cloth, flat cup, thin branch and small dish, all drawn to the supplied coordinates and colours.",
-    "Added a thin notebook and a small wood dish in the same flat style so all five pairing suggestions are complete.",
-    "Added five one-tap prop combos that drop two props into the bottom corners, with a note to keep one or two props per image."
+    "Replaced the previous flat prop set with six transparent photographic props extracted from the supplied reference image, preserving real texture, lighting and soft edges.",
+    "The prop library now uses high-resolution PNG cutouts instead of simple flat SVG drawings.",
+    "Updated the three one-tap prop pairings to use the new photographic props and kept the existing drag, resize and rotate workflow."
   ],
   "apkMirrors": [
     "https://cdn.jsdelivr.net/gh/mwpinaistudio/mwpinaistudio-website@main/downloads/paipintong.apk",
