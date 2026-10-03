@@ -2,18 +2,19 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.9.73",
-  "versionCode": 229,
+  "version": "1.9.74",
+  "versionCode": 230,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 36488920,
-  "sha256": "8AC440CFEAF94714CC4EAE687402917EE5A4ADEFAE733EC269A0E55C85A5ACAE",
+  "sizeBytes": 36490076,
+  "sha256": "0903E98A085ACED708F94A123575CFE98ECEF6C92215336A72EDE3FCCB1A1A64",
   "minAndroid": "7.0",
   "releasedAt": "2026-10-03",
   "notes": [
-    "Added text-style locking so random batch generation can keep a finished image unchanged.",
-    "Added seven new four-character text effect presets for a total of fourteen combinations.",
-    "Text effects can now be shuffled independently while preserving the AI text content.",
-    "Added lock-all and unlock-all controls; batch regeneration skips fully locked images."
+    "Added one-click unified style across all nine images: shared layout, text effect and background tone.",
+    "Added favorites for layouts and text effects; favorites move to the top of their lists.",
+    "Added random-scope controls so users can choose whether layout, background and text effects are randomized.",
+    "Added ten-step per-image history with one-click restore.",
+    "Random batch generation now skips fully locked images and avoids repeating text effects where possible."
   ],
   "apkMirrors": [
     "https://cdn.jsdelivr.net/gh/mwpinaistudio/mwpinaistudio-website@main/downloads/paipintong.apk",
