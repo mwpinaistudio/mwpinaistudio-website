@@ -2,17 +2,17 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.9.66",
-  "versionCode": 222,
+  "version": "1.9.67",
+  "versionCode": 223,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 36488740,
-  "sha256": "FA7DEE97A7DF2FF927533631992A091B5B49FF521882143CA2E465DA2B47FE34",
+  "sizeBytes": 36490208,
+  "sha256": "89CCD8AD09718A2769F078F72B5C966E76B1BE6535084EBBDFCF6372F974D63D",
   "minAndroid": "7.0",
   "releasedAt": "2026-10-03",
   "notes": [
-    "Fixed the Android update check so a changed version name also triggers the update prompt, and made update dismissal version-aware.",
-    "Includes the cleaned photographic props, removal of prop 05, and 21 new photorealistic transparent e-commerce scene props.",
-    "Added one-tap scene combinations for desk, home, linen, aroma, kitchen, gift, storage, tea, beauty, coffee and vanity layouts."
+    "Added the full prop library to the original main-image and image-2 templates.",
+    "Added a Random props toggle under the template panel; nine-image generation and single-image shuffling now pick suitable props by scene type.",
+    "Added collision avoidance so props avoid products, titles and each other instead of overlapping."
   ],
   "apkMirrors": [
     "https://cdn.jsdelivr.net/gh/mwpinaistudio/mwpinaistudio-website@main/downloads/paipintong.apk",
