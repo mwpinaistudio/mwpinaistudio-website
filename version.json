@@ -2,19 +2,17 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.9.61",
-  "versionCode": 217,
+  "version": "1.9.62",
+  "versionCode": 218,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 28973282,
-  "sha256": "19191F3C4091C3E0F30AC2792994EA935C794F10DB06EC7B1D7E67727E79482C",
+  "sizeBytes": 28983924,
+  "sha256": "0EF8D0857A9BFF4E9B11EE9E179000C29635078274DBB0AA5F39A63351C319B4",
   "minAndroid": "7.0",
   "releasedAt": "2026-10-03",
   "notes": [
-    "Image 2 now offers six templates: the three layouts plus a no-text version of each.",
-    "Each layout adds small transparent props in the corners (plant, books, cup, towel, tray), kept under 30 percent of the product area so nothing covers the product.",
-    "The caption can be placed bottom right, bottom left or bottom centre.",
-    "Background blur is now applied automatically per layout and can be toggled off.",
-    "When generating, the image 2 layout is chosen automatically from the product category."
+    "Props are no longer placed automatically inside the image 2 templates.",
+    "There is now a standalone prop library in the Elements tool with three groups and 24 realistic transparent props: plants, mugs, trays, books, towels, baskets, risers, linen, plates, glass, candles, frames, pebbles, ornaments, vases, perfume, lipstick, brushes, soap, oil bottles, lemons, coffee beans, wooden spoons and spice jars.",
+    "Place any prop yourself, then drag, scale and rotate it like any other element."
   ],
   "apkMirrors": [
     "https://cdn.jsdelivr.net/gh/mwpinaistudio/mwpinaistudio-website@main/downloads/paipintong.apk",
