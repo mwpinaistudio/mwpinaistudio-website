@@ -2,17 +2,19 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.9.60",
-  "versionCode": 216,
+  "version": "1.9.61",
+  "versionCode": 217,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 28970115,
-  "sha256": "1E55107C75F48A2F772F5364CA6D5525D4C9ACA08265D1FC28E7958D54161318",
+  "sizeBytes": 28973282,
+  "sha256": "19191F3C4091C3E0F30AC2792994EA935C794F10DB06EC7B1D7E67727E79482C",
   "minAndroid": "7.0",
   "releasedAt": "2026-10-03",
   "notes": [
-    "Image 2 now has its own template picker with three layouts: A scene placement, B flat lay and C on a carrier.",
-    "Each layout uses a light background, centres the product at the specified size and adds a single-line English caption in the bottom right corner, with a soft product shadow.",
-    "Added a soft radial gradient stage background for the carrier layout."
+    "Image 2 now offers six templates: the three layouts plus a no-text version of each.",
+    "Each layout adds small transparent props in the corners (plant, books, cup, towel, tray), kept under 30 percent of the product area so nothing covers the product.",
+    "The caption can be placed bottom right, bottom left or bottom centre.",
+    "Background blur is now applied automatically per layout and can be toggled off.",
+    "When generating, the image 2 layout is chosen automatically from the product category."
   ],
   "apkMirrors": [
     "https://cdn.jsdelivr.net/gh/mwpinaistudio/mwpinaistudio-website@main/downloads/paipintong.apk",
