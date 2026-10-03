@@ -2,17 +2,17 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.9.62",
-  "versionCode": 218,
+  "version": "1.9.63",
+  "versionCode": 219,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 28983924,
-  "sha256": "0EF8D0857A9BFF4E9B11EE9E179000C29635078274DBB0AA5F39A63351C319B4",
+  "sizeBytes": 28974793,
+  "sha256": "558F7E6934B155AD39BFFAEC663446DA2F8585D4ACA99960E5F0FE06975E6097",
   "minAndroid": "7.0",
   "releasedAt": "2026-10-03",
   "notes": [
-    "Props are no longer placed automatically inside the image 2 templates.",
-    "There is now a standalone prop library in the Elements tool with three groups and 24 realistic transparent props: plants, mugs, trays, books, towels, baskets, risers, linen, plates, glass, candles, frames, pebbles, ornaments, vases, perfume, lipstick, brushes, soap, oil bottles, lemons, coffee beans, wooden spoons and spice jars.",
-    "Place any prop yourself, then drag, scale and rotate it like any other element."
+    "Replaced the previous prop library with the minimal spec-based set: flat spoon, binder clip, thin candle, wash cloth, flat cup, thin branch and small dish, all drawn to the supplied coordinates and colours.",
+    "Added a thin notebook and a small wood dish in the same flat style so all five pairing suggestions are complete.",
+    "Added five one-tap prop combos that drop two props into the bottom corners, with a note to keep one or two props per image."
   ],
   "apkMirrors": [
     "https://cdn.jsdelivr.net/gh/mwpinaistudio/mwpinaistudio-website@main/downloads/paipintong.apk",
