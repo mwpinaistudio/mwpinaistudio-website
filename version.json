@@ -2,17 +2,17 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.9.71",
-  "versionCode": 227,
+  "version": "1.9.72",
+  "versionCode": 228,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 36487424,
-  "sha256": "3F32AE3E7BF329E770B55B062F7CA4096E09E84B744E8FC56E6E409E884280C9",
+  "sizeBytes": 36488004,
+  "sha256": "173A019410BDAE1D3A2E4330C4D50758C485C77E2A7828999419A3077F5356B1",
   "minAndroid": "7.0",
   "releasedAt": "2026-10-03",
   "notes": [
-    "Removed the old 5 main-image templates and 6 image-2 templates; all nine images now share one layout system.",
-    "Kept only 12 universal layout choices with four-character names such as 图中底文, 左图右上 and 上图下文.",
-    "Nine-image generation and single-image shuffle now use the same universal layout pool."
+    "Added per-image layout lock. Locked layouts keep product and text positions during nine-image regeneration.",
+    "Added background-only shuffle, which changes the background without moving product or text.",
+    "Added text-layout-only shuffle, which changes the layout while keeping the AI text content unchanged."
   ],
   "apkMirrors": [
     "https://cdn.jsdelivr.net/gh/mwpinaistudio/mwpinaistudio-website@main/downloads/paipintong.apk",
