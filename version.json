@@ -2,17 +2,17 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.9.64",
-  "versionCode": 220,
+  "version": "1.9.65",
+  "versionCode": 221,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 30325749,
-  "sha256": "A7E59FF521A412B6B4D0A18DD341447C09C46D9D79D12BCC744D26C5220CCAC6",
+  "sizeBytes": 36488708,
+  "sha256": "4DE268FD85F1CDA2309098BBE6F481551F2EB13FDB9840A850C64F78454B56DE",
   "minAndroid": "7.0",
   "releasedAt": "2026-10-03",
   "notes": [
-    "Replaced the previous flat prop set with six transparent photographic props extracted from the supplied reference image, preserving real texture, lighting and soft edges.",
-    "The prop library now uses high-resolution PNG cutouts instead of simple flat SVG drawings.",
-    "Updated the three one-tap prop pairings to use the new photographic props and kept the existing drag, resize and rotate workflow."
+    "Cleaned the photographic prop cutouts by removing disconnected edge fragments and trimming excess transparent margins.",
+    "Removed prop 05 as requested and added 21 new photorealistic transparent e-commerce scene props across three reviewed batches.",
+    "Added one-tap scene combinations for desk, home, linen, aroma, kitchen, gift, storage, tea, beauty, coffee and vanity layouts."
   ],
   "apkMirrors": [
     "https://cdn.jsdelivr.net/gh/mwpinaistudio/mwpinaistudio-website@main/downloads/paipintong.apk",
