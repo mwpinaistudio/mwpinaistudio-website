@@ -2,15 +2,17 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.9.59",
-  "versionCode": 215,
+  "version": "1.9.60",
+  "versionCode": 216,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 28968824,
-  "sha256": "F3120226EEDE7588C802B1285137CCE8E0288A23698E6B6C9BCF8BFB44B1C21C",
+  "sizeBytes": 28970115,
+  "sha256": "1E55107C75F48A2F772F5364CA6D5525D4C9ACA08265D1FC28E7958D54161318",
   "minAndroid": "7.0",
-  "releasedAt": "2026-10-02",
+  "releasedAt": "2026-10-03",
   "notes": [
-    "Fixed tiny stickers growing when you try to drag them. The corner resize grip no longer covers the whole sticker once it is small, so dragging a shrunk sticker always moves it. Use pinch or the size slider to enlarge it again."
+    "Image 2 now has its own template picker with three layouts: A scene placement, B flat lay and C on a carrier.",
+    "Each layout uses a light background, centres the product at the specified size and adds a single-line English caption in the bottom right corner, with a soft product shadow.",
+    "Added a soft radial gradient stage background for the carrier layout."
   ],
   "apkMirrors": [
     "https://cdn.jsdelivr.net/gh/mwpinaistudio/mwpinaistudio-website@main/downloads/paipintong.apk",
