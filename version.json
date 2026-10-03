@@ -2,17 +2,18 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.9.69",
-  "versionCode": 225,
+  "version": "1.9.70",
+  "versionCode": 226,
   "apk": "downloads/paipintong.apk",
-  "sizeBytes": 36488060,
-  "sha256": "D77D77FC79F3BA86A6EF35899B9ACCBB19B134D8ADC1C6E9417EB7A863595072",
+  "sizeBytes": 36488396,
+  "sha256": "8801682073CA6B7AC67DDE1304FC1764E4A54C1934F7C205330F9C9FE948695A",
   "minAndroid": "7.0",
   "releasedAt": "2026-10-03",
   "notes": [
-    "AI-recognised titles and text are now preserved when switching main-image templates; templates only change position, size and layout.",
-    "Removed the generic replacement wording such as “商品展示” from generated task plans.",
-    "Quality checks now reflow or shrink text on collision instead of hiding or deleting it, preserving all AI text content."
+    "Added one shared universal layout set for all nine images: product position plus text position.",
+    "Nine-image generation now randomly selects from the universal layouts and single-image shuffle rerolls the current layout.",
+    "AI text is preserved when changing layouts; only position, size and alignment are adjusted.",
+    "Expanded image 2 text positions to top-left, top-centre, top-right, bottom-left, bottom-centre and bottom-right."
   ],
   "apkMirrors": [
     "https://cdn.jsdelivr.net/gh/mwpinaistudio/mwpinaistudio-website@main/downloads/paipintong.apk",
