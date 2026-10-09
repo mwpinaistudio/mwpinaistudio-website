@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>PaiPinTong | AI Listing Assistant for E-commerce Sellers</title>
+  <meta name="description" content="PaiPinTong turns product photos into editable, reusable e-commerce listing content, including titles, specifications, selling points, descriptions, packaging details and keywords." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="manifest" href="site.webmanifest" />
+</head>
+<body>
+  <div class="wrap">
+    <nav class="nav">
+      <div class="brand">MW <span>PinAI</span> Studio</div>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="paipintong.html" class="active">Download</a>
+        <a href="version.html">Version</a>
+        <a href="support.html">Support</a>
+        <a href="privacy.html">Privacy</a>
+      </div>
+    </nav>
+
+    <main>
+      <section class="hero download-hero product-hero product-hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow">PaiPinTong · AI e-commerce listing assistant</div>
+          <h1>Turn one product photo<br /><span>into complete listing content.</span></h1>
+          <p>Upload product photos or video and let AI prepare the listing information you need to move faster.</p>
+          <div class="hero-output-list">
+            <span>Titles</span><span>Specifications</span><span>Selling points</span><span>Descriptions</span><span>Packaging</span><span>Keywords</span>
+          </div>
+          <div class="download-actions">
+            <a class="button" href="#download">Try PaiPinTong Free</a>
+            <a class="button secondary" href="#demo">Watch 30-second demo</a>
+          </div>
+          <div class="badges">
+            <span class="badge" id="versionBadge">Version loading…</span>
+            <span class="badge" id="sizeBadge">APK loading…</span>
+            <span class="badge">Android 7.0+</span>
+            <span class="badge">Official direct APK</span>
+          </div>
+        </div>
+        <aside class="hero-output-preview" aria-label="Example listing output">
+          <div class="preview-head"><span>AI LISTING OUTPUT</span><em>Editable</em></div>
+          <div class="preview-source"><span>Product photo</span><b>→</b><strong>AI recognised</strong></div>
+          <div class="preview-result-grid">
+            <div><small>Title</small><strong>Portable Bluetooth Speaker</strong></div>
+            <div><small>Specifications</small><strong>Colour · Size · Material</strong></div>
+            <div><small>Selling points</small><strong>Clear sound · Compact</strong></div>
+            <div><small>Description</small><strong>Ready to edit</strong></div>
+            <div><small>Packaging</small><strong>Weight · Dimensions</strong></div>
+            <div><small>Keywords</small><strong>Speaker · Wireless · Portable</strong></div>
+          </div>
+        </aside>
+      </section>
+
+      <section class="panel demo-section" id="demo">
+        <div class="eyebrow">30-second demo</div>
+        <h2>See how PaiPinTong works</h2>
+        <p>Product photos → AI recognition → generated listing information → ready-to-edit result.</p>
+        <iframe class="demo-video-frame" src="demo.html?v=12" title="PaiPinTong feature demo" loading="lazy"></iframe>
+      </section>
+
+      <section class="panel compact-section">
+        <div class="eyebrow">How it works</div>
+        <h2>From product photo to editable listing content</h2>
+        <div class="home-step-grid">
+          <article><span>01</span><strong>Upload photos or video</strong><p>Add the product media you already use for your listing.</p></article>
+          <article><span>02</span><strong>AI recognises product details</strong><p>Extract visible information and organise it into structured fields.</p></article>
+          <article><span>03</span><strong>Review, save and share</strong><p>Edit the result and keep text, photos and video in one product file.</p></article>
+        </div>
+      </section>
+
+      <section class="panel compact-section">
+        <div class="eyebrow">Core capabilities</div>
+        <h2>Everything essential in one workflow</h2>
+        <div class="home-feature-grid">
+          <article class="card"><h3>Product media</h3><p>Manage product photos and short videos for each product record.</p></article>
+          <article class="card"><h3>AI Listing</h3><p>Prepare titles, specifications, selling points, descriptions and keywords.</p></article>
+          <article class="card"><h3>Share & reuse</h3><p>Save a complete HTML product file or share it with your team.</p></article>
+        </div>
+      </section>
+
+      <section class="panel download-panel compact-download" id="download">
+        <div class="eyebrow">Official Android APK</div>
+        <h2>Download PaiPinTong</h2>
+        <p>Download the official Android APK directly from this website. Review the release details before installing.</p>
+        <div class="release-info-grid">
+          <div><small>Version</small><strong id="downloadVersion">Loading…</strong></div>
+          <div><small>Android</small><strong>7.0+</strong></div>
+          <div><small>File size</small><strong id="downloadSize">Loading…</strong></div>
+        </div>
+        <p class="muted">SHA-256 checksum</p>
+        <code class="checksum" id="checksum">Loading checksum…</code>
+        <div class="download-actions download-panel-actions">
+          <button class="button" id="smartDownload" type="button">智能加速下载（推荐）</button>
+          <a class="button secondary" id="directDownload" href="https://github.com/mwpinaistudio/mwpinaistudio-website/releases/latest/download/paipintong.apk">普通下载 / Direct link</a>
+        </div>
+        <div class="smart-download">
+          <div class="smart-progress"><span id="smartBar"></span></div>
+          <p class="smart-status" id="smartStatus">正在测速…</p>
+        </div>
+        <div class="mirror-list" id="mirrorList"></div>
+        <p class="download-note">国内下载慢，是因为官方安装包托管在 GitHub 的境外节点，跟你的 5G 网速无关。「智能加速下载」会同时使用多条线路分段下载、断线自动重试，下载完成后自动校验 SHA-256 保证文件没被篡改。<br />Slow outside GitHub-friendly regions? The accelerator downloads in parallel chunks across every reachable mirror, auto-retries broken chunks and verifies the SHA-256 checksum before saving.</p>
+        <p class="download-note">PaiPinTong is distributed directly from the official website while Google Play developer verification is being resolved. The official APK, version information, privacy policy and support details are provided here.</p>
+        <details class="compact-install">
+          <summary>Installation help</summary>
+          <ol class="steps">
+            <li>Open the downloaded APK from your browser downloads or Files app.</li>
+            <li>Allow install permission for your browser or file manager if Android asks.</li>
+            <li>Tap Install and open PaiPinTong.</li>
+            <li>Create or sign in to your account.</li>
+          </ol>
+        </details>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>© <span id="year"></span> MW PinAI Studio.</span>
+      <span><a href="version.html">Version</a> · <a href="support.html">Support</a> · <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a></span>
+    </footer>
+  </div>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear()
+    fetch('version.json?ts=' + Date.now(), { cache: 'no-store' })
+      .then((response) => response.json())
+      .then((data) => {
+        document.getElementById('versionBadge').textContent = 'Version ' + data.version
+        document.getElementById('sizeBadge').textContent = (Number(data.sizeBytes || 0) / 1024 / 1024).toFixed(1) + ' MB'
+        document.getElementById('downloadVersion').textContent = data.version
+        document.getElementById('downloadSize').textContent = (Number(data.sizeBytes || 0) / 1024 / 1024).toFixed(1) + ' MB'
+        document.getElementById('checksum').textContent = data.sha256 || 'Not available'
+      })
+      .catch(() => {
+        document.getElementById('versionBadge').textContent = 'Official version'
+        document.getElementById('sizeBadge').textContent = 'Official APK'
+        document.getElementById('downloadVersion').textContent = 'Official'
+        document.getElementById('downloadSize').textContent = 'See version page'
+        document.getElementById('checksum').textContent = 'Download from this official page.'
+      })
+  </script>
+  <script src="download.js"></script>
+</body>
+</html>
+

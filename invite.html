@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>PaiPinTong | AI listing assistant for e-commerce sellers</title>
+  <meta name="description" content="Upload product photos or video and quickly create marketplace-ready titles, selling points, descriptions, specifications and price references." />
+  <meta property="og:title" content="PaiPinTong | AI listing assistant for e-commerce sellers" />
+  <meta property="og:description" content="Upload product photos or video and quickly create marketplace-ready listing content." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="wrap">
+    <main class="hero" style="padding-top:48px">
+      <div class="eyebrow">AI LISTING ASSISTANT FOR E-COMMERCE</div>
+      <h1>Your AI listing assistant<br><span style="color:#ff6f3c">for e-commerce sellers</span></h1>
+      <p class="lead">Upload product photos or video and let PaiPinTong prepare titles, selling points, descriptions, specifications and market price references for your listing workflow.</p>
+
+      <section class="panel demo-section">
+        <div class="eyebrow">APP FEATURE DEMO</div>
+        <h2>See PaiPinTong in action</h2>
+        <iframe class="demo-video-frame" src="demo.html?v=12" title="PaiPinTong feature demo" loading="lazy"></iframe>
+      </section>
+
+      <div class="panel" style="text-align:left">
+        <h2 style="margin-top:0">A friend invited you to try PaiPinTong</h2>
+        <p>New users can receive <strong>20 AI credits</strong> on their registration day. Already installed? Tap below to open the app and link the invitation.</p>
+        <p><a class="button" id="open-app" href="paipintong://invite">Open PaiPinTong and claim credits</a></p>
+        <p><a class="button secondary" href="https://github.com/mwpinaistudio/mwpinaistudio-website/releases/latest/download/paipintong.apk">Download PaiPinTong for Android</a></p>
+        <div class="notice">If PaiPinTong is not installed yet, download and install it first. Then return to this page and tap “Open PaiPinTong and claim credits”. If the app does not open automatically, return here and try again.</div>
+      </div>
+      <div class="panel">
+        <h2>Why try PaiPinTong?</h2>
+        <ul class="release-list">
+          <li>Recognises product photos and short videos up to 30 seconds</li>
+          <li>Organises Chinese and English titles, selling points, descriptions and specifications</li>
+          <li>Provides market price references and optimisation suggestions</li>
+          <li>Shares product information to common messaging and social apps</li>
+        </ul>
+      </div>
+    </main>
+  </div>
+  <script>
+    const ref = new URLSearchParams(location.search).get('ref') || ''
+    const open = document.getElementById('open-app')
+    open.href = 'paipintong://invite' + (ref ? '?ref=' + encodeURIComponent(ref) : '')
+    if (!ref) open.style.display = 'none'
+  </script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+# 系统垃圾
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# 依赖 / 构建产物
+node_modules/
+__pycache__/
+*.log
+
+# 本地备份
+_backup/
+
+# APK 一律走 GitHub Releases，不再提交进仓库
+# （每次提交 ~25MB 的 APK 就是当初把 .git 撑到 3GB 的原因）
+downloads/paipintong.apk
+downloads/*.apk
