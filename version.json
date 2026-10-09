@@ -2,17 +2,17 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.9.85",
-  "versionCode": 241,
-  "apk": "https://github.com/mwpinaistudio/mwpinaistudio-website/releases/download/v1.9.85/paipintong.apk",
-  "sizeBytes": 25963835,
-  "sha256": "02E3018F50696594E9D20CADEC64DFCCAFEE89F1B5DD2704E7481B4A60BECC54",
+  "version": "1.9.86",
+  "versionCode": 242,
+  "apk": "https://github.com/mwpinaistudio/mwpinaistudio-website/releases/download/v1.9.86/paipintong.apk",
+  "sizeBytes": 25963895,
+  "sha256": "1567DEC3CF1361CEEF1F20A5170553E35085DC0B8614954D261A59768E03C6DD",
   "minAndroid": "7.0",
-  "releasedAt": "2026-10-08",
+  "releasedAt": "2026-10-09",
   "notes": [
-    "Smaller install: the APK dropped from 34.8MB to 24.8MB, about 29 percent lighter and faster to download.",
-    "Removed a duplicated 14MB onnxruntime wasm file that the bundler emitted twice; only the copy actually loaded at runtime is kept now.",
-    "Scene props were converted from PNG to WebP: 7.16MB down to 0.62MB with transparency preserved."
+    "Image studio quality: fixed missed text-overlap detection.",
+    "Overlap check now has an area fallback, so long thin overlaps (like 300px wide by 6px tall) are no longer ignored.",
+    "Text overlap checks now ignore the 10px selection padding, so side-by-side text is no longer falsely flagged and genuine overlaps are caught."
   ],
   "apkMirrors": [
     "https://github.com/mwpinaistudio/mwpinaistudio-website/releases/latest/download/paipintong.apk"
