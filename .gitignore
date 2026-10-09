@@ -1,0 +1,12 @@
+# 系统垃圾
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# 依赖 / 构建产物
+node_modules/
+__pycache__/
+*.log
+
+# 本地备份
+_backup/

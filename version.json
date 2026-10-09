@@ -1,0 +1,20 @@
+{
+  "app": "PaiPinTong",
+  "nameZh": "拍品通",
+  "package": "com.paipintong.app",
+  "version": "1.9.85",
+  "versionCode": 241,
+  "apk": "downloads/paipintong.apk",
+  "sizeBytes": 25963835,
+  "sha256": "02E3018F50696594E9D20CADEC64DFCCAFEE89F1B5DD2704E7481B4A60BECC54",
+  "minAndroid": "7.0",
+  "releasedAt": "2026-10-08",
+  "notes": [
+    "Smaller install: the APK dropped from 34.8MB to 24.8MB, about 29 percent lighter and faster to download.",
+    "Removed a duplicated 14MB onnxruntime wasm file that the bundler emitted twice; only the copy actually loaded at runtime is kept now.",
+    "Scene props were converted from PNG to WebP: 7.16MB down to 0.62MB with transparency preserved."
+  ],
+  "apkMirrors": [
+    "https://raw.githubusercontent.com/mwpinaistudio/mwpinaistudio-website/main/downloads/paipintong.apk"
+  ]
+}
