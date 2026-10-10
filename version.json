@@ -2,17 +2,17 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.9.88",
-  "versionCode": 244,
-  "apk": "https://github.com/mwpinaistudio/mwpinaistudio-website/releases/download/v1.9.88/paipintong.apk",
-  "sizeBytes": 25965831,
-  "sha256": "4AA0D895E9F1C09F13DDDAA92777596B415C4B01E3B0FB89668CEB8E6673847D",
+  "version": "1.9.89",
+  "versionCode": 245,
+  "apk": "https://github.com/mwpinaistudio/mwpinaistudio-website/releases/download/v1.9.89/paipintong.apk",
+  "sizeBytes": 25965779,
+  "sha256": "D5CA32FAC4F2603BB33736F42ED848059D7C7D46BB15A29819B61DC8BBF1A55A",
   "minAndroid": "7.0",
   "releasedAt": "2026-10-10",
   "notes": [
-    "Image 5 must now pass the Doubao gate before it is produced; the other eight images are unchanged.",
-    "Doubao scores the rendered size image against cross-border e-commerce criteria and, below 90, returns concrete layout parameters (layout, product scale, product position, text size, spacing) plus the exact problems.",
-    "The app applies those parameters, re-renders and re-submits, up to 4 rounds, and only keeps the version Doubao scored 90+."
+    "Image 5 keeps the original generation path; the AI retouch is now an explicit action instead of an automatic gate.",
+    "Tap AI retouch next to the audit button, or on any row in the audit panel. The image gets an automated design review that scores it and returns concrete layout parameters plus the exact problems when it is below 90.",
+    "The app applies those parameters, re-renders and re-submits, up to 4 rounds, and keeps the best-scoring version."
   ],
   "apkMirrors": [
     "https://github.com/mwpinaistudio/mwpinaistudio-website/releases/latest/download/paipintong.apk"
