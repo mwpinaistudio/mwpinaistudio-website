@@ -2,17 +2,17 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.9.91",
-  "versionCode": 247,
-  "apk": "https://github.com/mwpinaistudio/mwpinaistudio-website/releases/download/v1.9.91/paipintong.apk",
-  "sizeBytes": 25966247,
-  "sha256": "0626FBC8B4D7B2C8D1AA6B0093EADC34E1D612029F588BD42D1103B96B8C9552",
+  "version": "1.9.92",
+  "versionCode": 248,
+  "apk": "https://github.com/mwpinaistudio/mwpinaistudio-website/releases/download/v1.9.92/paipintong.apk",
+  "sizeBytes": 25966251,
+  "sha256": "095E4D5B144591B06E156F7D6B41FFB4220E1B4092C5879A045D2B49EC9C1CB3",
   "minAndroid": "7.0",
   "releasedAt": "2026-10-10",
   "notes": [
-    "Fixed: when the review did not reach 90, the revised layout was thrown away and the image looked untouched. The revised version is now written back, saved and re-rendered every time.",
-    "When the review does not pass, the last revised version is applied rather than the untouched original, so you always see the AI edit. The status line shows current, original and best scores.",
-    "Doubao lists the problems, DeepSeek turns them into a layer-level edit plan, the local renderer rebuilds the image, then it is reviewed again - up to 4 rounds."
+    "Fixed the real reason the image never changed: the layout function edits layers in place, so the before/after check always matched, React got the same object and the canvas never repainted.",
+    "All edits now run on a deep copy, so the comparison works, a new slot object is produced and the image is redrawn.",
+    "Doubao reviews the image, DeepSeek writes a layer-level plan, the local renderer redraws it, then it is reviewed again - up to 4 rounds."
   ],
   "apkMirrors": [
     "https://github.com/mwpinaistudio/mwpinaistudio-website/releases/latest/download/paipintong.apk"
