@@ -2,18 +2,17 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.9.90",
-  "versionCode": 246,
-  "apk": "https://github.com/mwpinaistudio/mwpinaistudio-website/releases/download/v1.9.90/paipintong.apk",
-  "sizeBytes": 25966043,
-  "sha256": "21445C41500A8D53B9E17C24A9CB9A31A120910B9D773DF2246CE597DBA84F5C",
+  "version": "1.9.91",
+  "versionCode": 247,
+  "apk": "https://github.com/mwpinaistudio/mwpinaistudio-website/releases/download/v1.9.91/paipintong.apk",
+  "sizeBytes": 25966247,
+  "sha256": "0626FBC8B4D7B2C8D1AA6B0093EADC34E1D612029F588BD42D1103B96B8C9552",
   "minAndroid": "7.0",
   "releasedAt": "2026-10-10",
   "notes": [
-    "Doubao reviews the rendered image and reports the problems it can see.",
-    "DeepSeek then turns that report plus the current layout into a concrete, layer-level edit plan: layout choice, product size and position, text size, spacing, per-layer nudges.",
-    "The app applies the plan, re-renders and re-submits, up to 4 rounds, and keeps the best-scoring version. Image 5 keeps its normal generation path - AI retouch is an explicit action.",
-    "Fixed a repeated-call failure: every AI request now carries a unique request id."
+    "Fixed: when the review did not reach 90, the revised layout was thrown away and the image looked untouched. The revised version is now written back, saved and re-rendered every time.",
+    "When the review does not pass, the last revised version is applied rather than the untouched original, so you always see the AI edit. The status line shows current, original and best scores.",
+    "Doubao lists the problems, DeepSeek turns them into a layer-level edit plan, the local renderer rebuilds the image, then it is reviewed again - up to 4 rounds."
   ],
   "apkMirrors": [
     "https://github.com/mwpinaistudio/mwpinaistudio-website/releases/latest/download/paipintong.apk"
