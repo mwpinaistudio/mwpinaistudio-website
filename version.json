@@ -2,17 +2,17 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.9.87",
-  "versionCode": 243,
-  "apk": "https://github.com/mwpinaistudio/mwpinaistudio-website/releases/download/v1.9.87/paipintong.apk",
-  "sizeBytes": 25965435,
-  "sha256": "FB418591351300304068241FBF29F75BD766FBDA9E847A4100376EDE57B3A5A3",
+  "version": "1.9.88",
+  "versionCode": 244,
+  "apk": "https://github.com/mwpinaistudio/mwpinaistudio-website/releases/download/v1.9.88/paipintong.apk",
+  "sizeBytes": 25965831,
+  "sha256": "4AA0D895E9F1C09F13DDDAA92777596B415C4B01E3B0FB89668CEB8E6673847D",
   "minAndroid": "7.0",
-  "releasedAt": "2026-10-09",
+  "releasedAt": "2026-10-10",
   "notes": [
-    "New: Doubao vision review for the dimension image (image 5).",
-    "A final quality gate sends the rendered size image to Doubao, which scores it against cross-border e-commerce criteria: all dimensions present and consistent, clear units, readable numbers, correct callouts, nothing covering the product, clean alignment and hierarchy.",
-    "If it does not pass, the app tries another layout and re-submits, up to 4 rounds, and only keeps a version Doubao approves. Every failing report lists the concrete problems plus a one-line fix instruction."
+    "Image 5 must now pass the Doubao gate before it is produced; the other eight images are unchanged.",
+    "Doubao scores the rendered size image against cross-border e-commerce criteria and, below 90, returns concrete layout parameters (layout, product scale, product position, text size, spacing) plus the exact problems.",
+    "The app applies those parameters, re-renders and re-submits, up to 4 rounds, and only keeps the version Doubao scored 90+."
   ],
   "apkMirrors": [
     "https://github.com/mwpinaistudio/mwpinaistudio-website/releases/latest/download/paipintong.apk"
