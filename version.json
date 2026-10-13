@@ -2,17 +2,17 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.9.93",
-  "versionCode": 249,
-  "apk": "https://github.com/mwpinaistudio/mwpinaistudio-website/releases/download/v1.9.93/paipintong.apk",
-  "sizeBytes": 25966615,
-  "sha256": "575D373EFC74D4F9EDBBA9242CC32F5891E2327C5D5F45335C46DDE8A77D8244",
+  "version": "1.9.94",
+  "versionCode": 250,
+  "apk": "https://github.com/mwpinaistudio/mwpinaistudio-website/releases/download/v1.9.94/paipintong.apk",
+  "sizeBytes": 25968711,
+  "sha256": "9B6FB351191552331ED4349C8A8157E25F93D88EF73093DD42EFC5EE9628E83B",
   "minAndroid": "7.0",
   "releasedAt": "2026-10-10",
   "notes": [
-    "AI retouch now lists every applied edit: which layer moved and by how many pixels, which font size changed, whether the layout was swapped.",
-    "If a plan produces no layer changes, the app says so explicitly instead of silently returning the same image.",
-    "If the reviewer already scores the image 90+, the app reports that it passed and nothing needed changing - the only case where the image legitimately stays the same."
+    "Studio architecture upgrade, step 2: the renderer now executes a design blueprint.",
+    "Wording comes from a single source per language, so a block can no longer mix Chinese and Latin text. Blocks that repeat the exact same wording are hidden instead of drawn twice.",
+    "Font size is computed against real constraints (wrap width, line count, canvas safe area) with the same canvas measurement the renderer uses. Sizes are only reduced, never enlarged."
   ],
   "apkMirrors": [
     "https://github.com/mwpinaistudio/mwpinaistudio-website/releases/latest/download/paipintong.apk"
