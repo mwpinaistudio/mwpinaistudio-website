@@ -2,17 +2,17 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.9.94",
-  "versionCode": 250,
-  "apk": "https://github.com/mwpinaistudio/mwpinaistudio-website/releases/download/v1.9.94/paipintong.apk",
-  "sizeBytes": 25968711,
-  "sha256": "9B6FB351191552331ED4349C8A8157E25F93D88EF73093DD42EFC5EE9628E83B",
+  "version": "1.9.95",
+  "versionCode": 251,
+  "apk": "https://github.com/mwpinaistudio/mwpinaistudio-website/releases/download/v1.9.95/paipintong.apk",
+  "sizeBytes": 25969083,
+  "sha256": "48E23A0A4BC134878B655ECCABBD6421ABD8D08E1BEBEDC385BD25FBEB68C4A7",
   "minAndroid": "7.0",
   "releasedAt": "2026-10-10",
   "notes": [
-    "Studio architecture upgrade, step 2: the renderer now executes a design blueprint.",
-    "Wording comes from a single source per language, so a block can no longer mix Chinese and Latin text. Blocks that repeat the exact same wording are hidden instead of drawn twice.",
-    "Font size is computed against real constraints (wrap width, line count, canvas safe area) with the same canvas measurement the renderer uses. Sizes are only reduced, never enlarged."
+    "Studio architecture upgrade, step 3: the real product outline instead of the image rectangle.",
+    "Cutouts carry a transparent margin, so occlusion judged from the full rectangle was wrong. The product alpha is now scanned once to find the true content box, and layerBounds() returns that box for product layers.",
+    "Occlusion checks, text-on-product checks, the audit score and the auto-repair all now use the real outline."
   ],
   "apkMirrors": [
     "https://github.com/mwpinaistudio/mwpinaistudio-website/releases/latest/download/paipintong.apk"
