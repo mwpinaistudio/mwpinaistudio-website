@@ -2,17 +2,17 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.9.95",
-  "versionCode": 251,
-  "apk": "https://github.com/mwpinaistudio/mwpinaistudio-website/releases/download/v1.9.95/paipintong.apk",
-  "sizeBytes": 25969083,
-  "sha256": "48E23A0A4BC134878B655ECCABBD6421ABD8D08E1BEBEDC385BD25FBEB68C4A7",
+  "version": "1.9.96",
+  "versionCode": 252,
+  "apk": "https://github.com/mwpinaistudio/mwpinaistudio-website/releases/download/v1.9.96/paipintong.apk",
+  "sizeBytes": 25970455,
+  "sha256": "6AB00892989D90B7061CF9ABE15BE06494FDA5E3968FD7E767B38D7F3C26D139",
   "minAndroid": "7.0",
   "releasedAt": "2026-10-10",
   "notes": [
-    "Studio architecture upgrade, step 3: the real product outline instead of the image rectangle.",
-    "Cutouts carry a transparent margin, so occlusion judged from the full rectangle was wrong. The product alpha is now scanned once to find the true content box, and layerBounds() returns that box for product layers.",
-    "Occlusion checks, text-on-product checks, the audit score and the auto-repair all now use the real outline."
+    "Studio architecture upgrade, step 4: a constrained layout solver.",
+    "Positions are computed from constraints instead of tried at random. Same input always gives the same result, and a layout that is already valid is left untouched - only real violations (off-canvas, text on the product, overlapping elements) are resolved.",
+    "Elements sharing a component id move together, so a text block and its decoration lines never drift apart. Unresolvable conflicts are reported rather than forced."
   ],
   "apkMirrors": [
     "https://github.com/mwpinaistudio/mwpinaistudio-website/releases/latest/download/paipintong.apk"
