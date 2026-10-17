@@ -2,16 +2,18 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.9.97",
-  "versionCode": 253,
-  "apk": "https://github.com/mwpinaistudio/mwpinaistudio-website/releases/download/v1.9.97/paipintong.apk",
-  "sizeBytes": 25970667,
-  "sha256": "6715A07AD472E068B4FC8BC49263DB9DAC7029C16C797EDB304F640C94F4B559",
+  "version": "1.9.98",
+  "versionCode": 254,
+  "apk": "https://github.com/mwpinaistudio/mwpinaistudio-website/releases/download/v1.9.98/paipintong.apk",
+  "sizeBytes": 25970343,
+  "sha256": "9BDC18A3CD6E6905A796156C7270696E7E69D37EA61F88C8EC3E8750C6907D5F",
   "minAndroid": "7.0",
   "releasedAt": "2026-10-10",
   "notes": [
-    "Four persistent V2 output problems fixed: single-language text with duplicate blocks hidden, no text backgrounds, text kept off the product (shrinking it if it cannot be moved), and checkmark badges removed.",
-    "Every generated slot now goes through a final blueprint + solver pass after the repair step, so later steps cannot reintroduce these problems."
+    "Text fill is fully gone: the white boxes were separate panel layers, which are now removed entirely.",
+    "Overlapping text now gets the same shrink-and-re-solve fallback as text over the product.",
+    "Image 5 is a simple L/W/H display built from the AI-extracted dimensions; duplicate subtitle, body and spec list are suppressed.",
+    "The main product layer is moved to the top of the stack so text can no longer cover it."
   ],
   "apkMirrors": [
     "https://github.com/mwpinaistudio/mwpinaistudio-website/releases/latest/download/paipintong.apk"
