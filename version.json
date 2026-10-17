@@ -2,17 +2,16 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "2.0.0",
-  "versionCode": 256,
-  "apk": "https://github.com/mwpinaistudio/mwpinaistudio-website/releases/download/v2.0.0/paipintong.apk",
-  "sizeBytes": 25967915,
-  "sha256": "C9F008B450008058E3F5055C38597F06B96AB874C03AA084E3E7245AFEE071A3",
+  "version": "2.0.1",
+  "versionCode": 257,
+  "apk": "https://github.com/mwpinaistudio/mwpinaistudio-website/releases/download/v2.0.1/paipintong.apk",
+  "sizeBytes": 25968003,
+  "sha256": "6A374921AE3C30D069B1D1843A1A8E1C97C5518ED55F7E35C028758B609027FB",
   "minAndroid": "7.0",
-  "releasedAt": "2026-10-10",
+  "releasedAt": "2026-10-17",
   "notes": [
-    "Fixed: the product page entry landed in a studio with no source photo, so the generate button stayed disabled.",
-    "Entering the studio now imports that product photo as the working image when no studio source exists. It writes only studio state, so the product record and its saved photos are untouched.",
-    "An existing studio project is never overwritten, and the import runs once per visit so switching language cannot reset your cutout."
+    "Update checks now fall back to mirrors when GitHub Pages is unreachable: Pages, then raw.githubusercontent, then jsDelivr.",
+    "Each source gets two attempts with an 8 second timeout, so a blocked or slow manifest request no longer means a silent miss."
   ],
   "apkMirrors": [
     "https://github.com/mwpinaistudio/mwpinaistudio-website/releases/latest/download/paipintong.apk"
