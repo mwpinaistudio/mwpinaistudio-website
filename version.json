@@ -2,18 +2,16 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "1.9.98",
-  "versionCode": 254,
-  "apk": "https://github.com/mwpinaistudio/mwpinaistudio-website/releases/download/v1.9.98/paipintong.apk",
-  "sizeBytes": 25970343,
-  "sha256": "9BDC18A3CD6E6905A796156C7270696E7E69D37EA61F88C8EC3E8750C6907D5F",
+  "version": "1.9.99",
+  "versionCode": 255,
+  "apk": "https://github.com/mwpinaistudio/mwpinaistudio-website/releases/download/v1.9.99/paipintong.apk",
+  "sizeBytes": 25967607,
+  "sha256": "6C15C8EB9D557E0509712122EB2A5E4F8D6E8EC3495523480AB3499D47871C75",
   "minAndroid": "7.0",
   "releasedAt": "2026-10-10",
   "notes": [
-    "Text fill is fully gone: the white boxes were separate panel layers, which are now removed entirely.",
-    "Overlapping text now gets the same shrink-and-re-solve fallback as text over the product.",
-    "Image 5 is a simple L/W/H display built from the AI-extracted dimensions; duplicate subtitle, body and spec list are suppressed.",
-    "The main product layer is moved to the top of the stack so text can no longer cover it."
+    "AI retouch removed entirely: buttons, review loop, result panel and client service. The local audit (出图自检) stays.",
+    "Removed the Saved locally toast that appeared every time you opened an image and went back; it was fired by an automatic save."
   ],
   "apkMirrors": [
     "https://github.com/mwpinaistudio/mwpinaistudio-website/releases/latest/download/paipintong.apk"
