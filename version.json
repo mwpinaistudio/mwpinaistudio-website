@@ -2,16 +2,16 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "2.0.6",
-  "versionCode": 262,
-  "apk": "https://github.com/mwpinaistudio/mwpinaistudio-website/releases/download/v2.0.6/paipintong.apk",
-  "sizeBytes": 25985279,
-  "sha256": "BE6D6DF9C9E241F88E7F0F9188A8DE11EEDB3B37D4947C9A7CDDE682048C182A",
+  "version": "2.0.7",
+  "versionCode": 263,
+  "apk": "https://github.com/mwpinaistudio/mwpinaistudio-website/releases/download/v2.0.7/paipintong.apk",
+  "sizeBytes": 25984503,
+  "sha256": "88F4FE24929574576EECA6C9C8CB6049F7EFBBEB5457DF2506672E9C1C3E7407",
   "minAndroid": "7.0",
   "releasedAt": "2026-11-14",
   "notes": [
-    "Fixed the downgrade prompt: updates are now offered only when the remote versionCode is strictly greater than the installed one.",
-    "Previously any version-string difference counted as an update, so a stale cached manifest could offer an older release."
+    "Removed the e-commerce main image mode entirely: template, render logic, layout chip, apply function and audit rules.",
+    "The studio is back to the original templates and default flow. Native APK download and the versionCode-only update check are kept."
   ],
   "apkMirrors": [
     "https://github.com/mwpinaistudio/mwpinaistudio-website/releases/latest/download/paipintong.apk"
