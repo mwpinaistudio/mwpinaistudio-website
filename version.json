@@ -2,16 +2,15 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "2.1.0",
-  "versionCode": 266,
-  "apk": "https://github.com/mwpinaistudio/mwpinaistudio-website/releases/download/v2.1.0/paipintong.apk",
-  "sizeBytes": 25984319,
-  "sha256": "39E4FE7BA5742D07DE676C024FE4538AC57BAA0BC56D7B65554A9B9C00276FBE",
+  "version": "2.1.1",
+  "versionCode": 267,
+  "apk": "https://github.com/mwpinaistudio/mwpinaistudio-website/releases/download/v2.1.1/paipintong.apk",
+  "sizeBytes": 25984363,
+  "sha256": "C33557BEF7A85FB30B555796606ED1621C501E9FCFB798D79EFEBFA40A684E18",
   "minAndroid": "7.0",
   "releasedAt": "2026-11-14",
   "notes": [
-    "Sales mode enabled: membership and Alipay payment are visible by default.",
-    "The old test-credit entry is now Open membership; credit-request entries are hidden and reserved for a future help/feedback channel."
+    "Fixed Unknown action on Alipay online payment: opcpay calls now go to the opcpay edge function instead of the AI function."
   ],
   "apkMirrors": [
     "https://github.com/mwpinaistudio/mwpinaistudio-website/releases/latest/download/paipintong.apk"
