@@ -2,16 +2,16 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "2.0.4",
-  "versionCode": 260,
-  "apk": "https://github.com/mwpinaistudio/mwpinaistudio-website/releases/download/v2.0.4/paipintong.apk",
-  "sizeBytes": 25985247,
-  "sha256": "D0894CA9EEF5BABF2C3AB31D760C2D162CBA51E6994153C3186B05302D99C656",
+  "version": "2.0.5",
+  "versionCode": 261,
+  "apk": "https://github.com/mwpinaistudio/mwpinaistudio-website/releases/download/v2.0.5/paipintong.apk",
+  "sizeBytes": 25985303,
+  "sha256": "129820C505F35C7DB08E88AC2CA58FB40B79A8BA684EE8A0BDD2533317293A24",
   "minAndroid": "7.0",
   "releasedAt": "2026-11-14",
   "notes": [
-    "E-commerce main mode moved into the layout picker: image 1 now shows a '电商主图（无文字）' chip before the universal layouts.",
-    "Applying it hides all non-product layers, forces pure white, scales the product to 82% and enables the lighter contact shadow, ambient shadow and reflection. Switching to another layout restores the hidden layers."
+    "E-commerce main mode moved into the layout picker on image 1, as the first layout chip.",
+    "Update check queries all three manifest sources concurrently and uses the highest versionCode, so stale Pages/CDN caches cannot hide a newer release."
   ],
   "apkMirrors": [
     "https://github.com/mwpinaistudio/mwpinaistudio-website/releases/latest/download/paipintong.apk"
