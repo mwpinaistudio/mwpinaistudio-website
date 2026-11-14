@@ -10,8 +10,9 @@
   "minAndroid": "7.0",
   "releasedAt": "2026-11-14",
   "notes": [
-    "Removed the e-commerce main image mode entirely: template, render logic, layout chip, apply function and audit rules.",
-    "The studio is back to the original templates and default flow. Native APK download and the versionCode-only update check are kept."
+    "More stable image studio layouts and cleaner text handling.",
+    "Faster, more reliable in-app updates.",
+    "Bug fixes and performance improvements."
   ],
   "apkMirrors": [
     "https://github.com/mwpinaistudio/mwpinaistudio-website/releases/latest/download/paipintong.apk"

@@ -95,16 +95,11 @@
         <p class="muted">SHA-256 checksum</p>
         <code class="checksum" id="checksum">Loading checksum…</code>
         <div class="download-actions download-panel-actions">
-          <button class="button" id="smartDownload" type="button">智能加速下载（推荐）</button>
-          <a class="button secondary" id="directDownload" href="https://github.com/mwpinaistudio/mwpinaistudio-website/releases/latest/download/paipintong.apk">普通下载 / Direct link</a>
+          <a class="button" id="directDownload" href="https://github.com/mwpinaistudio/mwpinaistudio-website/releases/latest/download/paipintong.apk" rel="noopener">下载安装包（APK）</a>
+          <a class="button secondary" href="version.html">版本与校验信息</a>
         </div>
-        <div class="smart-download">
-          <div class="smart-progress"><span id="smartBar"></span></div>
-          <p class="smart-status" id="smartStatus">正在测速…</p>
-        </div>
-        <div class="mirror-list" id="mirrorList"></div>
-        <p class="download-note">国内下载慢，是因为官方安装包托管在 GitHub 的境外节点，跟你的 5G 网速无关。「智能加速下载」会同时使用多条线路分段下载、断线自动重试，下载完成后自动校验 SHA-256 保证文件没被篡改。<br />Slow outside GitHub-friendly regions? The accelerator downloads in parallel chunks across every reachable mirror, auto-retries broken chunks and verifies the SHA-256 checksum before saving.</p>
-        <p class="download-note">PaiPinTong is distributed directly from the official website while Google Play developer verification is being resolved. The official APK, version information, privacy policy and support details are provided here.</p>
+        <p class="download-note">下载完成后，请先核对文件大小与 SHA-256 校验值，再安装。安装时 Android 可能提示「允许安装未知来源应用」，这是直接分发 APK 的正常提示。</p>
+        <p class="download-note">只从本页面或官方 GitHub Releases 下载安装包。不要安装来自第三方站点的重打包文件。</p>
         <details class="compact-install">
           <summary>Installation help</summary>
           <ol class="steps">
@@ -132,6 +127,7 @@
         document.getElementById('downloadVersion').textContent = data.version
         document.getElementById('downloadSize').textContent = (Number(data.sizeBytes || 0) / 1024 / 1024).toFixed(1) + ' MB'
         document.getElementById('checksum').textContent = data.sha256 || 'Not available'
+        if (data.apk) document.getElementById('directDownload').href = data.apk
       })
       .catch(() => {
         document.getElementById('versionBadge').textContent = 'Official version'
@@ -141,7 +137,6 @@
         document.getElementById('checksum').textContent = 'Download from this official page.'
       })
   </script>
-  <script src="download.js"></script>
 </body>
 </html>
 
