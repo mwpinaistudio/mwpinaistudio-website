@@ -2,17 +2,16 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "2.0.2",
-  "versionCode": 258,
-  "apk": "https://github.com/mwpinaistudio/mwpinaistudio-website/releases/download/v2.0.2/paipintong.apk",
-  "sizeBytes": 25968551,
-  "sha256": "44205D67B421FDDD99E0E8FA6EF934279232D5E8E0C785DA1E6B9612F83AFC42",
+  "version": "2.0.3",
+  "versionCode": 259,
+  "apk": "https://github.com/mwpinaistudio/mwpinaistudio-website/releases/download/v2.0.3/paipintong.apk",
+  "sizeBytes": 25985039,
+  "sha256": "35245B36CDA476D089F6CBE61304E53C8BBCE4BB915E93FF38ED09EE01272797",
   "minAndroid": "7.0",
   "releasedAt": "2026-11-14",
   "notes": [
-    "New e-commerce main image mode: product 82%, no text, pure white background, lighter contact shadow plus ambient shadow and a subtle reflection.",
-    "Hard audit rules in this mode: any visible text, product below 70% of the frame, or missing product all fail.",
-    "Original templates and default flow are untouched; a checkbox in the studio setup toggles the new mode."
+    "Update no longer opens a browser: the APK downloads inside the app to the Downloads folder and shows a completion notification.",
+    "Android may ask once to allow installing from this app; that is the standard system prompt. A browser fallback remains if the native download fails."
   ],
   "apkMirrors": [
     "https://github.com/mwpinaistudio/mwpinaistudio-website/releases/latest/download/paipintong.apk"
