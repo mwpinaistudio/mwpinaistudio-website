@@ -5,12 +5,13 @@
   "version": "2.1.1",
   "versionCode": 267,
   "apk": "https://github.com/mwpinaistudio/mwpinaistudio-website/releases/download/v2.1.1/paipintong.apk",
-  "sizeBytes": 25984363,
-  "sha256": "C33557BEF7A85FB30B555796606ED1621C501E9FCFB798D79EFEBFA40A684E18",
+  "sizeBytes": 25979807,
+  "sha256": "04E9E35D2029C015DC631F43E180D81769A20140732FBC7317AE79772D961D9D",
   "minAndroid": "7.0",
   "releasedAt": "2026-11-14",
   "notes": [
-    "Fixed Unknown action on Alipay online payment: opcpay calls now go to the opcpay edge function instead of the AI function."
+    "Alipay callback now uses the official HTTPS page under the project website domain, enforced server-side.",
+    "Added the opcpay return page with an Open PaiPinTong deep link."
   ],
   "apkMirrors": [
     "https://github.com/mwpinaistudio/mwpinaistudio-website/releases/latest/download/paipintong.apk"
