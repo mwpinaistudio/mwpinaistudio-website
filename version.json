@@ -2,16 +2,17 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "2.0.1",
-  "versionCode": 257,
-  "apk": "https://github.com/mwpinaistudio/mwpinaistudio-website/releases/download/v2.0.1/paipintong.apk",
-  "sizeBytes": 25968003,
-  "sha256": "6A374921AE3C30D069B1D1843A1A8E1C97C5518ED55F7E35C028758B609027FB",
+  "version": "2.0.2",
+  "versionCode": 258,
+  "apk": "https://github.com/mwpinaistudio/mwpinaistudio-website/releases/download/v2.0.2/paipintong.apk",
+  "sizeBytes": 25968551,
+  "sha256": "44205D67B421FDDD99E0E8FA6EF934279232D5E8E0C785DA1E6B9612F83AFC42",
   "minAndroid": "7.0",
-  "releasedAt": "2026-10-17",
+  "releasedAt": "2026-11-14",
   "notes": [
-    "Update checks now fall back to mirrors when GitHub Pages is unreachable: Pages, then raw.githubusercontent, then jsDelivr.",
-    "Each source gets two attempts with an 8 second timeout, so a blocked or slow manifest request no longer means a silent miss."
+    "New e-commerce main image mode: product 82%, no text, pure white background, lighter contact shadow plus ambient shadow and a subtle reflection.",
+    "Hard audit rules in this mode: any visible text, product below 70% of the frame, or missing product all fail.",
+    "Original templates and default flow are untouched; a checkbox in the studio setup toggles the new mode."
   ],
   "apkMirrors": [
     "https://github.com/mwpinaistudio/mwpinaistudio-website/releases/latest/download/paipintong.apk"
