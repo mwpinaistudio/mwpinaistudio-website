@@ -2,17 +2,16 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "2.0.7",
-  "versionCode": 263,
-  "apk": "https://github.com/mwpinaistudio/mwpinaistudio-website/releases/download/v2.0.7/paipintong.apk",
-  "sizeBytes": 25984503,
-  "sha256": "88F4FE24929574576EECA6C9C8CB6049F7EFBBEB5457DF2506672E9C1C3E7407",
+  "version": "2.0.8",
+  "versionCode": 264,
+  "apk": "https://github.com/mwpinaistudio/mwpinaistudio-website/releases/download/v2.0.8/paipintong.apk",
+  "sizeBytes": 25983659,
+  "sha256": "D6E67FAB17BEFF9654B1C12266E942D5AC80E7DFE666462D65BA66853C5585E3",
   "minAndroid": "7.0",
   "releasedAt": "2026-11-14",
   "notes": [
-    "More stable image studio layouts and cleaner text handling.",
-    "Faster, more reliable in-app updates.",
-    "Bug fixes and performance improvements."
+    "Membership is now one product with four durations: weekly 420 credits ¥24, monthly 1,800 credits ¥59, quarterly 5,400 credits ¥159, annual 21,900 credits ¥588.",
+    "Removed the Silver / Gold / SVIP / Signature Elite levels; every paid plan is now PaiPinTong Member."
   ],
   "apkMirrors": [
     "https://github.com/mwpinaistudio/mwpinaistudio-website/releases/latest/download/paipintong.apk"
