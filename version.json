@@ -2,16 +2,16 @@
   "app": "PaiPinTong",
   "nameZh": "拍品通",
   "package": "com.paipintong.app",
-  "version": "2.0.9",
-  "versionCode": 265,
-  "apk": "https://github.com/mwpinaistudio/mwpinaistudio-website/releases/download/v2.0.9/paipintong.apk",
-  "sizeBytes": 25984311,
-  "sha256": "8CDE1A3A140AE9402EA83B4D4D41CFF39040BF3C2B032597193233789BFD9054",
+  "version": "2.1.0",
+  "versionCode": 266,
+  "apk": "https://github.com/mwpinaistudio/mwpinaistudio-website/releases/download/v2.1.0/paipintong.apk",
+  "sizeBytes": 25984319,
+  "sha256": "39E4FE7BA5742D07DE676C024FE4538AC57BAA0BC56D7B65554A9B9C00276FBE",
   "minAndroid": "7.0",
   "releasedAt": "2026-11-14",
   "notes": [
-    "Alipay online payment added alongside the existing manual flow: create a purchase, open Alipay, poll entitlement, credits granted automatically.",
-    "The original QR code + manual confirmation flow remains available as a fallback."
+    "Sales mode enabled: membership and Alipay payment are visible by default.",
+    "The old test-credit entry is now Open membership; credit-request entries are hidden and reserved for a future help/feedback channel."
   ],
   "apkMirrors": [
     "https://github.com/mwpinaistudio/mwpinaistudio-website/releases/latest/download/paipintong.apk"
